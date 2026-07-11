@@ -1,0 +1,727 @@
+PROYECTO MEMORIA
+REGISTRO MAESTRO DE ACTIVOS 3D
+==============================
+
+VERSIÓN
+-------
+1.0
+
+PROPÓSITO
+---------
+Registrar todos los activos 3D del proyecto durante su creación en Blender y su preparación para una futura importación a Unreal Engine.
+
+Este documento permite:
+
+- Saber qué activos existen.
+- Saber cuáles faltan.
+- Evitar duplicados.
+- Relacionar cada archivo .blend con su archivo exportado.
+- Registrar dimensiones, UV, materiales, colisiones, LOD y Nanite.
+- Registrar quién o qué agente modificó cada activo.
+- Registrar commits del repositorio de modelos.
+- Controlar licencias y procedencia.
+- Saber si el activo está listo en Blender, listo para exportar, exportado o pendiente de validación en Unreal.
+
+IMPORTANTE
+----------
+Durante la etapa inicial no es obligatorio probar los activos dentro de Unreal.
+
+Un activo puede quedar con uno de estos estados:
+
+- LISTO EN BLENDER:
+  El modelo está terminado y revisado técnicamente en Blender.
+
+- LISTO PARA EXPORTAR:
+  Cumple Checklist_Objetos.txt y tiene configuradas sus piezas, UV, materiales, pivote y colisiones cuando corresponda.
+
+- EXPORTADO:
+  Se generó correctamente el archivo FBX u otro formato definido.
+
+- PENDIENTE DE VALIDACIÓN EN UNREAL:
+  El activo todavía no se ha importado o probado en Unreal.
+
+La falta de validación en Unreal no bloquea el avance del repositorio de modelos.
+
+SÍMBOLOS
+--------
+[ ] No iniciado.
+[~] En progreso.
+[X] Completado.
+[R] Requiere revisión.
+[!] Bloqueado.
+[P] Provisional.
+[D] Descartado.
+[N/A] No aplica.
+[UE] Pendiente de validación en Unreal.
+
+================================================================================
+0. RUTAS OFICIALES DEL PROYECTO
+================================================================================
+
+Documentación:
+C:\Projects\ProyectoMemoria-Docs
+
+Modelos 3D:
+C:\Projects\ProyectoMemoria-Modelos3D
+
+Unreal:
+C:\Projects\ProyectoMemoria-Unreal
+
+REGLAS
+------
+[ ] Este registro se edita únicamente en ProyectoMemoria-Docs.
+[ ] Los archivos .blend se editan únicamente en ProyectoMemoria-Modelos3D.
+[ ] Los archivos de Unreal se editan únicamente en ProyectoMemoria-Unreal.
+[ ] La validación en Unreal puede quedar pendiente.
+[ ] El avance de Blender no se bloquea por no disponer todavía de Unreal.
+[ ] Cada activo se relaciona mediante ID, versión y commit fuente.
+
+================================================================================
+1. CONVENCIÓN DE IDENTIFICADORES
+================================================================================
+
+CATEGORÍAS
+----------
+ARC = Arquitectura.
+FUR = Mobiliario.
+PRP = Props.
+CHR = Personajes.
+ENT = Entidades.
+ANI = Animales.
+VEH = Vehículos.
+ENV = Exteriores.
+VFX = Efectos.
+MAT = Materiales.
+TEX = Texturas.
+ANM = Animaciones.
+DOC = Documentos jugables.
+UI  = Interfaz.
+
+ZONAS
+-----
+GEN = Generales.
+LIB = Biblioteca.
+EDU = Educación.
+MAN = Mantenimiento.
+ING = Ingeniería.
+CIE = Ciencias.
+MED = Medicina.
+PSI = Psicología.
+INF = Informática.
+ART = Artes.
+AUD = Auditorio.
+HIS = Historia.
+DER = Derecho.
+GYM = Gimnasio.
+RES = Residencias.
+REC = Rectoría.
+EXT = Exteriores.
+COM = Compartido.
+MAIN = Principal.
+MISC = Misceláneo.
+
+FORMATO
+-------
+CATEGORÍA-ZONA-NÚMERO
+
+Ejemplos:
+FUR-LIB-001
+ARC-GEN-002
+PRP-PSI-003
+CHR-MAIN-001
+ENT-LIB-001
+ENV-EXT-001
+
+REGLAS
+------
+[ ] El ID no se reutiliza.
+[ ] El ID no cambia aunque cambie el nombre visible.
+[ ] Los activos descartados conservan su ID.
+[ ] Las variantes reciben su propio ID.
+[ ] Las piezas móviles importantes reciben su propio ID si se exportan separadas.
+
+================================================================================
+2. CONVENCIÓN DE NOMBRES
+================================================================================
+
+Static Mesh: SM_
+Skeletal Mesh: SK_
+Material: M_
+Material Instance: MI_
+Texture: T_
+Blueprint: BP_
+Collision: UCX_, UBX_, UCP_, USP_
+
+Ejemplos:
+SM_Desk_Student_A
+SM_Bookshelf_Library_A
+SM_DoorLeaf_Classroom_A
+SK_Character_Geiner
+UCX_SM_Desk_Student_A_00
+
+REGLAS
+------
+[ ] Sin espacios.
+[ ] Sin tildes.
+[ ] Sin caracteres especiales.
+[ ] Usar nombres descriptivos.
+[ ] Mantener sufijos A, B, C para variantes.
+[ ] Mantener coherencia entre Blender y el archivo exportado.
+
+================================================================================
+3. ESTADOS DE PRODUCCIÓN
+================================================================================
+
+[ ] Planeado.
+[ ] En referencia.
+[ ] En blockout.
+[ ] En modelado.
+[ ] Modelado.
+[ ] UV pendiente.
+[ ] Texturas pendientes.
+[ ] Materiales pendientes.
+[ ] Colisión pendiente.
+[ ] LOD pendiente.
+[ ] Listo en Blender.
+[ ] Listo para exportar.
+[ ] Exportado.
+[UE] Pendiente de validación en Unreal.
+[ ] Validado en Unreal.
+[ ] Requiere corrección.
+[ ] Rechazado.
+[ ] Descartado.
+
+NIVEL DE CALIDAD
+----------------
+[ ] Placeholder.
+[ ] Provisional.
+[ ] Beta.
+[ ] Final.
+[ ] Hero asset.
+
+================================================================================
+4. PLANTILLA DE ACTIVO
+================================================================================
+
+ID:
+____________________________________________________________
+
+Nombre en Blender:
+____________________________________________________________
+
+Archivo .blend:
+____________________________________________________________
+
+Archivo exportado:
+____________________________________________________________
+
+Nombre previsto en Unreal:
+____________________________________________________________
+
+Descripción:
+____________________________________________________________
+
+Categoría:
+____________________________________________________________
+
+Zona o edificio:
+____________________________________________________________
+
+Función:
+[ ] Decorativo.
+[ ] Interactivo.
+[ ] Recogible.
+[ ] Animado.
+[ ] Narrativo.
+[ ] Modular.
+[ ] Hero asset.
+[ ] Obstáculo.
+[ ] Física.
+[ ] Ambiental.
+[ ] Otro: _________________________________________________
+
+Estado:
+[ ] Planeado.
+[ ] En blockout.
+[ ] En modelado.
+[ ] Modelado.
+[ ] UV pendiente.
+[ ] Texturas pendientes.
+[ ] Materiales pendientes.
+[ ] Colisión pendiente.
+[ ] Listo en Blender.
+[ ] Listo para exportar.
+[ ] Exportado.
+[UE] Pendiente de validación en Unreal.
+[ ] Validado en Unreal.
+[ ] Requiere corrección.
+[ ] Rechazado.
+[ ] Descartado.
+
+Nivel de calidad:
+[ ] Placeholder.
+[ ] Provisional.
+[ ] Beta.
+[ ] Final.
+[ ] Hero asset.
+
+================================================================================
+5. UBICACIÓN DE ARCHIVOS
+================================================================================
+
+Repositorio de documentación:
+C:\Projects\ProyectoMemoria-Docs
+
+Repositorio de modelos:
+C:\Projects\ProyectoMemoria-Modelos3D
+
+Ruta del .blend:
+____________________________________________________________
+
+Ruta de texturas:
+____________________________________________________________
+
+Ruta del FBX:
+____________________________________________________________
+
+Ruta de scripts:
+____________________________________________________________
+
+Ruta prevista en Unreal:
+C:\Projects\ProyectoMemoria-Unreal\Content\...
+
+Blueprint previsto:
+____________________________________________________________
+
+================================================================================
+6. DIMENSIONES Y ESCALA
+================================================================================
+
+Dimensiones esperadas:
+X: __________ m
+Y: __________ m
+Z: __________ m
+
+Dimensiones reales en Blender:
+X: __________ m
+Y: __________ m
+Z: __________ m
+
+Unidades:
+[ ] Metric.
+[ ] Unit Scale 1.0.
+[ ] 1 unidad de Blender = 1 metro.
+
+Transformaciones:
+Location X: ______ Y: ______ Z: ______
+Rotation X: ______ Y: ______ Z: ______
+Scale X: ______ Y: ______ Z: ______
+
+Revisión:
+[ ] Dimensiones correctas.
+[ ] Escala aplicada.
+[ ] Rotación aplicada.
+[ ] Scale = 1,1,1.
+[ ] No existe escala negativa.
+[ ] Se comparó con una referencia humana o modular.
+
+================================================================================
+7. ORIENTACIÓN Y PIVOTE
+================================================================================
+
+Orientación:
+[ ] Z hacia arriba.
+[ ] Frente según convención del proyecto.
+[ ] Coincide con activos similares.
+
+Pivote:
+[ ] Centro inferior.
+[ ] Esquina inferior.
+[ ] Bisagra.
+[ ] Centro de masa.
+[ ] Punto modular.
+[ ] Otro: _________________________________________________
+
+Revisión:
+[ ] Pivote correcto.
+[ ] Facilita colocación y rotación.
+[ ] Piezas móviles con pivotes propios.
+[ ] Origen cercano a la geometría.
+
+================================================================================
+8. GEOMETRÍA Y TOPOLOGÍA
+================================================================================
+
+Vértices: __________________
+Caras: _____________________
+Triángulos: ________________
+
+[ ] Sin vértices duplicados accidentales.
+[ ] Sin caras duplicadas.
+[ ] Sin caras internas innecesarias.
+[ ] Sin vértices sueltos.
+[ ] Sin agujeros accidentales.
+[ ] Sin geometría degenerada.
+[ ] Booleanos revisados.
+[ ] Modificadores revisados.
+[ ] Biseles razonables.
+[ ] Cantidad de polígonos razonable.
+[ ] Partes móviles separadas.
+[ ] Sin detalles innecesarios.
+
+================================================================================
+9. NORMALES Y SOMBREADO
+================================================================================
+
+[ ] Face Orientation revisado.
+[ ] Normales correctas.
+[ ] Sin caras invertidas.
+[ ] Smooth/Flat correcto.
+[ ] Bordes duros correctos.
+[ ] Sin artefactos.
+[ ] Tangentes preparadas cuando corresponde.
+[ ] Sombreado revisado con iluminación de prueba.
+
+================================================================================
+10. UV
+================================================================================
+
+UV principal:
+[ ] Existe cuando aplica.
+[ ] Costuras correctas.
+[ ] Sin deformación visible.
+[ ] Sin superposición accidental.
+[ ] Superposición intencional documentada.
+[ ] Margen correcto.
+[ ] Densidad coherente.
+[ ] Revisado con checker.
+[ ] Islas dentro del espacio esperado.
+
+UV de lightmap:
+[ ] Creada.
+[ ] Se generará más adelante.
+[N/A] No aplica.
+[UE] Pendiente de validación en Unreal.
+
+Notas:
+____________________________________________________________
+
+================================================================================
+11. MATERIALES Y TEXTURAS
+================================================================================
+
+Cantidad de Material Slots:
+__________________
+
+Materiales:
+1. _________________________________________________________
+2. _________________________________________________________
+3. _________________________________________________________
+4. _________________________________________________________
+
+[ ] Sin slots vacíos.
+[ ] Sin materiales duplicados.
+[ ] Nombres correctos.
+[ ] Cantidad justificada.
+[ ] Materiales reutilizables.
+[ ] Texturas organizadas.
+[ ] Resolución razonable.
+[ ] Sin texturas faltantes.
+[ ] Base Color preparada.
+[ ] Normal preparada.
+[ ] Roughness preparada.
+[ ] Metallic preparada si aplica.
+[ ] Ambient Occlusion preparada si aplica.
+[ ] Emissive preparada si aplica.
+[ ] Opacity preparada si aplica.
+
+================================================================================
+12. COLISIONES
+================================================================================
+
+¿Requiere colisión?
+[ ] Sí.
+[N/A] No.
+
+Tipo previsto:
+[ ] Automática en Unreal.
+[ ] Personalizada en Blender.
+[ ] Caja.
+[ ] Cápsula.
+[ ] Esfera.
+[ ] Varias formas convexas.
+[ ] Compleja justificada.
+[N/A] Sin colisión.
+
+Nombre:
+____________________________________________________________
+
+[ ] Representa el volumen general.
+[ ] No bloquea huecos importantes.
+[ ] No tiene detalle excesivo.
+[ ] Es convexa cuando corresponde.
+[ ] El nombre coincide con la malla.
+[ ] Usa numeración _00, _01, _02.
+[UE] Prueba definitiva pendiente en Unreal.
+
+================================================================================
+13. PIEZAS MÓVILES
+================================================================================
+
+¿Tiene piezas móviles?
+[ ] Sí.
+[N/A] No.
+
+Lista:
+1. _________________________________________________________
+2. _________________________________________________________
+3. _________________________________________________________
+4. _________________________________________________________
+
+[ ] Están separadas.
+[ ] Tienen nombres propios.
+[ ] Tienen pivotes correctos.
+[ ] Tienen colisión propia cuando aplica.
+[ ] Encajan en posición inicial.
+[ ] Se documentó cómo deben moverse.
+
+================================================================================
+14. LOD Y NANITE
+================================================================================
+
+[ ] Sin LOD por ahora.
+[ ] LOD automático futuro.
+[ ] LOD manual.
+[ ] Nanite previsto.
+[ ] Decidir después de pruebas.
+[N/A] No aplica.
+
+LOD0: __________________ triángulos
+LOD1: __________________ triángulos
+LOD2: __________________ triángulos
+
+Notas:
+____________________________________________________________
+
+================================================================================
+15. EXPORTACIÓN
+================================================================================
+
+Formato:
+[ ] FBX.
+[ ] GLTF.
+[ ] Otro: _________________________________________________
+
+Estado:
+[ ] No exportado.
+[ ] Listo para exportar.
+[ ] Exportado.
+[R] Requiere nueva exportación.
+
+Fecha:
+____________________________________________________________
+
+Archivo:
+____________________________________________________________
+
+Configuración:
+Forward: __________________
+Up: _______________________
+Apply Transform: __________
+Apply Unit: _______________
+Export Selected: [ ] Sí [ ] No
+
+[ ] Solo se exportaron los objetos correctos.
+[ ] No se exportaron cámaras.
+[ ] No se exportaron luces.
+[ ] No se exportaron referencias.
+[ ] No se exportó el maniquí de escala.
+[ ] No se exportaron objetos ocultos accidentalmente.
+[ ] El archivo exportado puede inspeccionarse.
+[ ] La escala aparente coincide con la esperada.
+
+================================================================================
+16. VALIDACIÓN EN UNREAL
+================================================================================
+
+Esta sección puede permanecer pendiente durante la etapa de modelado.
+
+Estado:
+[UE] Pendiente de validación en Unreal.
+[ ] Importado.
+[ ] Probado.
+[ ] Validado.
+[R] Requiere corrección.
+
+Fecha:
+____________________________________________________________
+
+Versión de Unreal:
+____________________________________________________________
+
+Resultado:
+[ ] Escala correcta.
+[ ] Pivote correcto.
+[ ] Colisión correcta.
+[ ] UV correcta.
+[ ] Materiales correctos.
+[ ] Primera persona correcta.
+[ ] Tercera persona correcta.
+[ ] NavMesh correcto.
+[ ] Rendimiento aceptable.
+[ ] Reimportación correcta.
+
+Observaciones:
+____________________________________________________________
+
+================================================================================
+17. CONTROL DE VERSIONES
+================================================================================
+
+Rama:
+____________________________________________________________
+
+Último commit en modelos:
+____________________________________________________________
+
+Versión del activo:
+____________________________________________________________
+
+Commit de importación en Unreal:
+[UE] Pendiente.
+____________________________________________________________
+
+Agente:
+[ ] Codex.
+[ ] Claude Code.
+[ ] Manual.
+[ ] Combinación.
+
+Archivos modificados:
+-
+-
+-
+
+================================================================================
+18. LICENCIA Y PROCEDENCIA
+================================================================================
+
+Origen:
+[ ] Creado desde cero.
+[ ] Basado en referencias.
+[ ] Activo externo modificado.
+[ ] Generado parcialmente con IA.
+[ ] Otro: _________________________________________________
+
+Autor:
+____________________________________________________________
+
+Fuente:
+____________________________________________________________
+
+Licencia:
+____________________________________________________________
+
+Atribución:
+____________________________________________________________
+
+Fecha:
+____________________________________________________________
+
+Archivo de licencia:
+____________________________________________________________
+
+Estado legal:
+[ ] Aprobado.
+[R] Requiere revisión.
+[D] No usar.
+
+================================================================================
+19. HISTORIAL DEL ACTIVO
+================================================================================
+
+Fecha:
+____________________________________________________________
+
+Agente:
+____________________________________________________________
+
+Cambio:
+____________________________________________________________
+
+Archivo:
+____________________________________________________________
+
+Commit:
+____________________________________________________________
+
+Resultado:
+____________________________________________________________
+
+================================================================================
+20. RESUMEN RÁPIDO
+================================================================================
+
+[ ] Registrado.
+[ ] Nombre correcto.
+[ ] Dimensiones correctas.
+[ ] Transformaciones aplicadas.
+[ ] Pivote correcto.
+[ ] Geometría limpia.
+[ ] Normales correctas.
+[ ] UV correcta.
+[ ] Materiales preparados.
+[ ] Texturas preparadas.
+[ ] Colisión preparada o N/A.
+[ ] Piezas móviles preparadas o N/A.
+[ ] LOD/Nanite definido.
+[ ] Listo en Blender.
+[ ] Listo para exportar.
+[ ] Exportado.
+[UE] Pendiente de validación en Unreal.
+[ ] Validado en Unreal.
+
+================================================================================
+21. ÍNDICE GENERAL DE ACTIVOS
+================================================================================
+
+FORMATO
+-------
+ID | Nombre | Categoría | Zona | Estado | Archivo .blend | Exportado | Unreal | Commit
+
+ACTIVOS INICIALES CONOCIDOS
+---------------------------
+FUR-COM-001 | Estantería de libros A | FUR | COM | [R] Revisar | Pendiente | No confirmado | [UE] Pendiente | Pendiente
+
+FUR-COM-002 | Escritorio A | FUR | COM | [R] Revisar | Pendiente | No confirmado | [UE] Pendiente | Pendiente
+
+FUR-COM-003 | Pupitre A | FUR | COM | [R] Revisar | Pendiente | No confirmado | [UE] Pendiente | Pendiente
+
+NUEVOS ACTIVOS
+--------------
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+________________________________________________________________________________
+
+================================================================================
+22. INSTRUCCIÓN PARA CODEX O CLAUDE CODE
+================================================================================
+
+Antes de crear o modificar un activo:
+
+1. Lee este registro.
+2. Lee Checklist_Objetos.txt.
+3. Lee la sección correspondiente de la guía de dimensiones.
+4. Identifica o crea el ID del activo.
+5. Indica el archivo .blend que modificarás.
+6. Indica las dimensiones esperadas.
+7. Indica si requiere UV, materiales, colisión o piezas móviles.
+8. No modifiques otros activos.
+9. Al terminar, actualiza este registro.
+10. Si Unreal todavía no está disponible, marca:
+    [UE] Pendiente de validación en Unreal.
+
+No es necesario detener el trabajo de modelado por no poder probar todavía en Unreal.
+
+FIN DEL DOCUMENTO
