@@ -301,16 +301,16 @@ Antes de comenzar:
 
 PRUEBA MÍNIMA DE INTEGRACIÓN
 ----------------------------
-[ ] Crear APMTestActor.
-[ ] Exponer una propiedad EditDefaultsOnly.
-[ ] Exponer una función BlueprintCallable.
-[ ] Crear evento BlueprintImplementableEvent.
-[ ] Crear BP_TestActor.
+[X] Crear APMTestActor. (Source/ProyectoMemoria/PMTestActor.h/.cpp).
+[X] Exponer una propiedad EditDefaultsOnly. (TestLabel).
+[X] Exponer una función BlueprintCallable. (RunTestPing).
+[X] Crear evento BlueprintImplementableEvent. (OnTestPing).
+[ ] Crear BP_TestActor. Aún no existe ningún Blueprint (Content/ solo tiene .gitkeep).
 [ ] Modificar propiedad desde Blueprint.
 [ ] Llamar función C++ desde Blueprint.
 [ ] Ejecutar evento Blueprint desde C++.
-[ ] Colocar en L_Developer_Testing.
-[ ] Compilar.
+[ ] Colocar en L_Developer_Testing. El nivel todavía no existe.
+[ ] Compilar. Sin confirmar todavía.
 [ ] Ejecutar.
 [ ] Confirmar funcionamiento.
 [ ] Eliminar la clase de prueba o conservarla como ejemplo documentado.

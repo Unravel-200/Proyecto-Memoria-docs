@@ -12,7 +12,7 @@ PROPÓSITO
 Este archivo centraliza los controles de producción que complementan los demás documentos del proyecto.
 
 La copia oficial de este archivo se mantiene exclusivamente en:
-C:\Projects\ProyectoMemoria-Docs\Produccion
+C:\Users\jeffa\Desktop\Proyecto\Proyecto-Memoria-docs\Produccion
 
 No sustituye:
 
@@ -62,21 +62,21 @@ Ninguna tarea se considera completada hasta que:
 REPOSITORIOS
 ------------
 1. Documentación oficial:
-   C:\Projects\ProyectoMemoria-Docs
+   C:\Users\jeffa\Desktop\Proyecto\Proyecto-Memoria-docs
 
 2. Modelos 3D:
-   C:\Projects\ProyectoMemoria-Modelos3D
+   C:\Users\jeffa\Desktop\Proyecto\Modelos-3D
 
 3. Juego en Unreal:
-   C:\Projects\ProyectoMemoria-Unreal
+   C:\Users\jeffa\Desktop\Proyecto\Proyecto-Memory
 
 FUENTE OFICIAL
 --------------
 Toda la documentación editable existe únicamente en:
 
-C:\Projects\ProyectoMemoria-Docs
+C:\Users\jeffa\Desktop\Proyecto\Proyecto-Memoria-docs
 
-Los repositorios ProyectoMemoria-Modelos3D y ProyectoMemoria-Unreal no deben
+Los repositorios Modelos-3D y Proyecto-Memory no deben
 contener copias editables de los checklists ni de los documentos maestros.
 
 Cada uno puede contener únicamente un README.md que indique la ruta de la
@@ -85,7 +85,7 @@ documentación oficial.
 RESPONSABILIDAD DE CADA REPOSITORIO
 -----------------------------------
 
-ProyectoMemoria-Docs:
+Proyecto-Memoria-docs:
 - Historia.
 - Checklists.
 - Guías de dimensiones.
@@ -93,14 +93,14 @@ ProyectoMemoria-Docs:
 - Registro maestro de activos.
 - Registros de errores, riesgos, licencias y dependencias.
 
-ProyectoMemoria-Modelos3D:
+Modelos-3D:
 - Archivos .blend.
 - Texturas fuente.
 - Scripts de Blender.
 - Referencias permitidas.
 - Exportaciones FBX u otros formatos aprobados.
 
-ProyectoMemoria-Unreal:
+Proyecto-Memory:
 - Archivo .uproject.
 - Código C++.
 - Blueprints.
@@ -112,9 +112,9 @@ ProyectoMemoria-Unreal:
 
 REGLA DE EDICIÓN
 ----------------
-[ ] Los documentos se editan solo en ProyectoMemoria-Docs.
-[ ] Los modelos se editan solo en ProyectoMemoria-Modelos3D.
-[ ] El juego se edita solo en ProyectoMemoria-Unreal.
+[ ] Los documentos se editan solo en Proyecto-Memoria-docs.
+[ ] Los modelos se editan solo en Modelos-3D.
+[ ] El juego se edita solo en Proyecto-Memory.
 [ ] No crear un repositorio Git dentro de otro.
 [ ] Mantener los tres repositorios como carpetas hermanas.
 [ ] No duplicar documentos oficiales.
@@ -126,13 +126,13 @@ RUTAS DE DOCUMENTACIÓN
 ----------------------
 
 Producción:
-C:\Projects\ProyectoMemoria-Docs\Produccion
+C:\Users\jeffa\Desktop\Proyecto\Proyecto-Memoria-docs\Produccion
 
 Modelos 3D:
-C:\Projects\ProyectoMemoria-Docs\Modelos3D
+C:\Users\jeffa\Desktop\Proyecto\Proyecto-Memoria-docs\Modelos3D
 
 Unreal:
-C:\Projects\ProyectoMemoria-Docs\Unreal
+C:\Users\jeffa\Desktop\Proyecto\Proyecto-Memoria-docs\Unreal
 
 ====================================================================================
 1. MAPA DE DOCUMENTOS DEL PROYECTO
@@ -419,41 +419,43 @@ ____________________________________________________________
 
 VERSIÓN ACTUAL
 --------------
-____________________________________________________________
+v0.0.1 — Configuración base (en progreso).
 
 RAMA ACTUAL
 -----------
-____________________________________________________________
+main (en los tres repositorios).
 
 ÚLTIMO COMMIT
 -------------
-____________________________________________________________
+Proyecto-Memory: 76b89bf (docs: eliminar copia local de Docs/).
+Proyecto-Memoria-docs: 622526b (Docs).
+Modelos-3D: sin commits todavía.
 
 AGENTE ACTUAL
 -------------
 [ ] Codex.
-[ ] Claude Code.
+[X] Claude Code.
 [ ] Ninguno.
 
 TAREA ACTUAL
 ------------
-____________________________________________________________
+Revisar el estado real del proyecto y actualizar los checklists de producción para que reflejen lo ya construido.
 
 ÚLTIMA VERSIÓN JUGABLE
 ----------------------
-____________________________________________________________
+Ninguna todavía.
 
 ÚLTIMA VERSIÓN ESTABLE
 ----------------------
-____________________________________________________________
+Ninguna todavía.
 
 SIGUIENTE HITO
 --------------
-____________________________________________________________
+Completar v0.0.1: crear Blueprint hijo de APMTestActor, verificar que el proyecto compila y abre en el editor, crear los niveles base (L_Developer_Testing, L_AssetValidation, L_MainMenu_Placeholder) y crear el tag v0.0.1_setup.
 
 PRINCIPAL BLOQUEO
 -----------------
-____________________________________________________________
+No hay evidencia todavía de que el proyecto se haya compilado o abierto en el editor de Unreal; falta verificarlo antes de dar la v0.0.1 por completa.
 
 ====================================================================================
 6. REGISTRO MAESTRO DE ACTIVOS
@@ -1732,7 +1734,7 @@ ____________________________________________________________
 
 INICIO DE SESIÓN
 ----------------
-Lee los siguientes documentos desde C:\Projects\ProyectoMemoria-Docs antes de hacer cambios:
+Lee los siguientes documentos desde C:\Users\jeffa\Desktop\Proyecto\Proyecto-Memoria-docs antes de hacer cambios:
 
 1. Proyecto_Memoria_Control_Maestro_Produccion.txt
 2. Checklist_Versiones.txt

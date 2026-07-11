@@ -112,8 +112,8 @@ ACTIVOS YA EXISTENTES
 
 PROYECTO DE UNREAL
 ------------------
-[?] Confirmar si el proyecto de Unreal ya fue creado.
-[?] Confirmar versión exacta de Unreal Engine.
+[X] Confirmar si el proyecto de Unreal ya fue creado. Sí: Proyecto-Memory\UnrealProject\ProyectoMemoria.uproject.
+[X] Confirmar versión exacta de Unreal Engine. 5.8 (EngineAssociation del .uproject).
 [?] Confirmar plantilla inicial.
 [X] Usar arquitectura híbrida: C++ + Blueprints.
 [X] Usar C++ para sistemas centrales y lógica reutilizable.
@@ -368,10 +368,10 @@ Tener un proyecto limpio, protegido y reproducible.
 
 CHECKLIST
 ---------
-[ ] Crear repositorio GitHub.
-[ ] Crear rama main.
+[X] Crear repositorio GitHub. (Proyecto-Memory, Modelos-3D y Proyecto-Memoria-docs, cada uno con remoto en GitHub bajo Unravel-200).
+[X] Crear rama main.
 [ ] Crear rama develop si se decide usarla.
-[ ] Configurar Git LFS.
+[X] Configurar Git LFS.
 [ ] Rastrear:
     *.uasset
     *.umap
@@ -380,26 +380,26 @@ CHECKLIST
     *.wav
     *.tga
     *.exr
-[ ] Crear .gitignore de Unreal.
+[X] Crear .gitignore de Unreal.
 [ ] Ignorar:
     Binaries/
     DerivedDataCache/
     Intermediate/
     Saved/
     .vs/
-[ ] Crear estructura de carpetas del repositorio.
-[ ] Confirmar estructura de tres repositorios:
-    - ProyectoMemoria-Docs.
-    - ProyectoMemoria-Modelos3D.
-    - ProyectoMemoria-Unreal.
-[ ] Confirmar que cada repositorio tiene su propio .git.
-[ ] Crear proyecto Unreal con soporte C++.
-[ ] Definir versión exacta de Unreal.
+[X] Crear estructura de carpetas del repositorio.
+[X] Confirmar estructura de tres repositorios:
+    - Proyecto-Memoria-docs.
+    - Modelos-3D.
+    - Proyecto-Memory.
+[X] Confirmar que cada repositorio tiene su propio .git.
+[X] Crear proyecto Unreal con soporte C++.
+[X] Definir versión exacta de Unreal. 5.8.
 [ ] Instalar y verificar el entorno de compilación compatible.
 [ ] Instalar componentes de C++ requeridos por Unreal.
 [ ] Compilar el proyecto en Development Editor.
-[ ] Crear el módulo principal ProyectoMemoria.
-[ ] Crear una clase C++ mínima de prueba.
+[X] Crear el módulo principal ProyectoMemoria.
+[X] Crear una clase C++ mínima de prueba. (APMTestActor).
 [ ] Crear un Blueprint hijo de esa clase.
 [ ] Confirmar comunicación C++ → Blueprint.
 [ ] Confirmar comunicación Blueprint → C++.
@@ -407,21 +407,21 @@ CHECKLIST
 [ ] Confirmar compilación desde un clon limpio.
 [ ] Crear carpeta SourceAssets.
 [ ] Crear carpeta Exports.
-[ ] Crear el repositorio independiente ProyectoMemoria-Docs.
-[ ] Confirmar que la documentación oficial existe únicamente en ProyectoMemoria-Docs.
-[ ] Crear las carpetas General, Produccion, Modelos3D, Unreal y Registros.
-[ ] Registrar la ruta local de ProyectoMemoria-Docs.
-[ ] Confirmar que Claude Code puede leer ProyectoMemoria-Docs.
-[ ] Confirmar que Codex puede leer ProyectoMemoria-Docs.
-[ ] Crear README.md en ProyectoMemoria-Modelos3D con la ruta de documentación.
-[ ] Crear README.md en ProyectoMemoria-Unreal con la ruta de documentación.
-[ ] Confirmar que no hay repositorios Git anidados.
-[ ] Confirmar que los tres repositorios son carpetas hermanas.
+[X] Crear el repositorio independiente Proyecto-Memoria-docs.
+[X] Confirmar que la documentación oficial existe únicamente en Proyecto-Memoria-docs. (Se eliminó la copia local en Proyecto-Memory\Docs).
+[~] Crear las carpetas General, Produccion, Modelos3D, Unreal y Registros. Existen Produccion, Modelos3D y Unreal; faltan General y Registros.
+[X] Registrar la ruta local de Proyecto-Memoria-docs.
+[X] Confirmar que Claude Code puede leer Proyecto-Memoria-docs.
+[ ] Confirmar que Codex puede leer Proyecto-Memoria-docs.
+[ ] Crear README.md en Modelos-3D con la ruta de documentación.
+[X] Crear README.md en Proyecto-Memory con la ruta de documentación.
+[X] Confirmar que no hay repositorios Git anidados.
+[X] Confirmar que los tres repositorios son carpetas hermanas.
 [ ] Configurar nombres y prefijos.
 [ ] Crear nivel L_Developer_Testing.
 [ ] Crear nivel L_AssetValidation.
 [ ] Crear nivel L_MainMenu_Placeholder.
-[ ] Crear primer commit.
+[X] Crear primer commit.
 [ ] Crear tag v0.0.1_setup.
 
 CRITERIOS DE ACEPTACIÓN
@@ -436,14 +436,15 @@ CRITERIOS DE ACEPTACIÓN
 [ ] El proyecto compila desde un clon limpio.
 [ ] Blender puede abrir activos de prueba.
 [ ] main está estable.
-[ ] La documentación oficial se puede leer desde ambos repositorios de trabajo.
-[ ] No existen copias editables contradictorias de los documentos.
-[ ] Los README de Modelos3D y Unreal apuntan a ProyectoMemoria-Docs.
+[X] La documentación oficial se puede leer desde ambos repositorios de trabajo.
+[X] No existen copias editables contradictorias de los documentos.
+[~] Los README de Modelos3D y Unreal apuntan a Proyecto-Memoria-docs. El de Proyecto-Memory sí; falta crearlo en Modelos-3D.
 
 ESTADO
 ------
 [~] Parcialmente iniciado.
-Falta verificar configuración real.
+Hecho: proyecto Unreal 5.8 creado con módulo C++ ProyectoMemoria y clase de prueba APMTestActor, Git LFS y .gitignore configurados, los tres repositorios existen como carpetas hermanas con su propio remoto, y la documentación quedó centralizada únicamente en Proyecto-Memoria-docs.
+Falta: Blueprint hijo de APMTestActor y prueba de comunicación C++/Blueprint, verificar compilación real en el editor, niveles base, README.md en Modelos-3D, carpetas General y Registros, y el tag v0.0.1_setup.
 
 ------------------------------------------------------------------------------------------
 VERSIÓN 0.1.0 — PERSONAJE, MOVIMIENTO Y CÁMARAS
