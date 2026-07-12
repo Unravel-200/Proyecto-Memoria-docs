@@ -305,14 +305,14 @@ PRUEBA MÍNIMA DE INTEGRACIÓN
 [X] Exponer una propiedad EditDefaultsOnly. (TestLabel).
 [X] Exponer una función BlueprintCallable. (RunTestPing).
 [X] Crear evento BlueprintImplementableEvent. (OnTestPing).
-[ ] Crear BP_TestActor. Aún no existe ningún Blueprint (Content/ solo tiene .gitkeep).
-[ ] Modificar propiedad desde Blueprint.
-[ ] Llamar función C++ desde Blueprint.
-[ ] Ejecutar evento Blueprint desde C++.
-[ ] Colocar en L_Developer_Testing. El nivel todavía no existe.
-[ ] Compilar. Sin confirmar todavía.
+[X] Crear BP_TestActor. (/Game/Blueprints/Test/BP_TestActor, hijo de APMTestActor).
+[ ] Modificar propiedad desde Blueprint. Falta hacerlo a mano en el editor.
+[ ] Llamar función C++ desde Blueprint. Falta cablear RunTestPing() en el grafo del Blueprint.
+[ ] Ejecutar evento Blueprint desde C++. Falta implementar el nodo del evento OnTestPing.
+[X] Colocar en L_Developer_Testing. (nivel creado en Content/Maps/L_Developer_Testing.umap).
+[X] Compilar. (Result: Succeeded).
 [ ] Ejecutar.
-[ ] Confirmar funcionamiento.
+[ ] Confirmar funcionamiento. Falta la prueba interactiva en el editor (los pasos anteriores sin marcar).
 [ ] Eliminar la clase de prueba o conservarla como ejemplo documentado.
 
 POLÍTICA DE COMMITS

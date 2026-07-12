@@ -491,14 +491,14 @@ CHECKLIST
 [X] Confirmar que cada repositorio tiene su propio .git.
 [X] Crear proyecto Unreal con soporte C++.
 [X] Definir versión exacta de Unreal. 5.8.
-[ ] Instalar y verificar el entorno de compilación compatible.
-[ ] Instalar componentes de C++ requeridos por Unreal.
-[ ] Compilar el proyecto en Development Editor.
+[X] Instalar y verificar el entorno de compilación compatible.
+[X] Instalar componentes de C++ requeridos por Unreal.
+[X] Compilar el proyecto en Development Editor. (Result: Succeeded, sin errores).
 [X] Crear el módulo principal ProyectoMemoria.
 [X] Crear una clase C++ mínima de prueba. (APMTestActor).
-[ ] Crear un Blueprint hijo de esa clase.
-[ ] Confirmar comunicación C++ → Blueprint.
-[ ] Confirmar comunicación Blueprint → C++.
+[X] Crear un Blueprint hijo de esa clase. (BP_TestActor, en /Game/Blueprints/Test).
+[X] Confirmar comunicación C++ → Blueprint. (TestLabel del constructor de APMTestActor llega correctamente al CDO del Blueprint).
+[~] Confirmar comunicación Blueprint → C++. Falta cablear a mano en el editor: llamar RunTestPing() desde el grafo e implementar el evento OnTestPing (ver sección 4.2 y Arquitectura C++/Blueprints).
 [ ] Confirmar que el proyecto recompila después de cerrarlo.
 [ ] Confirmar compilación desde un clon limpio.
 [ ] Crear carpeta SourceAssets.
@@ -514,7 +514,7 @@ CHECKLIST
 [X] Confirmar que no hay repositorios Git anidados.
 [X] Confirmar que los tres repositorios son carpetas hermanas.
 [ ] Configurar nombres y prefijos.
-[ ] Crear nivel L_Developer_Testing.
+[X] Crear nivel L_Developer_Testing.
 [ ] Crear nivel L_AssetValidation.
 [ ] Crear nivel L_MainMenu_Placeholder.
 [X] Crear primer commit.
