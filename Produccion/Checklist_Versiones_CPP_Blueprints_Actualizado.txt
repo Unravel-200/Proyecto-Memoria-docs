@@ -505,11 +505,11 @@ CHECKLIST
 [ ] Crear carpeta Exports.
 [X] Crear el repositorio independiente Proyecto-Memoria-docs.
 [X] Confirmar que la documentación oficial existe únicamente en Proyecto-Memoria-docs. (Se eliminó la copia local en Proyecto-Memory\Docs).
-[~] Crear las carpetas General, Produccion, Modelos3D, Unreal y Registros. Existen Produccion, Modelos3D y Unreal; faltan General y Registros.
+[X] Crear las carpetas General, Produccion, Modelos3D, Unreal y Registros.
 [X] Registrar la ruta local de Proyecto-Memoria-docs.
 [X] Confirmar que Claude Code puede leer Proyecto-Memoria-docs.
 [ ] Confirmar que Codex puede leer Proyecto-Memoria-docs.
-[ ] Crear README.md en Modelos-3D con la ruta de documentación.
+[X] Crear README.md en Modelos-3D con la ruta de documentación.
 [X] Crear README.md en Proyecto-Memory con la ruta de documentación.
 [X] Confirmar que no hay repositorios Git anidados.
 [X] Confirmar que los tres repositorios son carpetas hermanas.
@@ -534,7 +534,7 @@ CRITERIOS DE ACEPTACIÓN
 [ ] main está estable.
 [X] La documentación oficial se puede leer desde ambos repositorios de trabajo.
 [X] No existen copias editables contradictorias de los documentos.
-[~] Los README de Modelos3D y Unreal apuntan a Proyecto-Memoria-docs. El de Proyecto-Memory sí; falta crearlo en Modelos-3D.
+[X] Los README de Modelos3D y Unreal apuntan a Proyecto-Memoria-docs.
 
 ESTADO
 ------
