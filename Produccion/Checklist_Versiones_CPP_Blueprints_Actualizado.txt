@@ -498,7 +498,7 @@ CHECKLIST
 [X] Crear una clase C++ mínima de prueba. (APMTestActor).
 [X] Crear un Blueprint hijo de esa clase. (BP_TestActor, en /Game/Blueprints/Test).
 [X] Confirmar comunicación C++ → Blueprint. (TestLabel del constructor de APMTestActor llega correctamente al CDO del Blueprint).
-[~] Confirmar comunicación Blueprint → C++. Falta cablear a mano en el editor: llamar RunTestPing() desde el grafo e implementar el evento OnTestPing (ver sección 4.2 y Arquitectura C++/Blueprints).
+[~] Confirmar comunicación Blueprint → C++. Falta cablear a mano en el editor: llamar RunTestPing() desde el grafo e implementar el evento OnTestPing (ver sección 4.2 y Arquitectura C++/Blueprints). En pausa: la laptop usada se calienta demasiado corriendo el editor de Unreal; retomar cuando se trabaje desde un equipo más adecuado, o hacerlo en la otra PC.
 [ ] Confirmar que el proyecto recompila después de cerrarlo.
 [ ] Confirmar compilación desde un clon limpio.
 [ ] Crear carpeta SourceAssets.
