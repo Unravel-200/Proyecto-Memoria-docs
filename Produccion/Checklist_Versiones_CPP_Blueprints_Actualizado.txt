@@ -355,6 +355,102 @@ REGLAS
 [ ] No usar Hot Reload como sustituto de una compilación limpia para cambios estructurales.
 
 ==========================================================================================
+4.2. MAPA COMPLETO DE CLASES C++ A PROGRAMAR
+==========================================================================================
+
+PROPÓSITO
+---------
+Esta sección enumera cada clase C++ prevista para el proyecto (ver también
+Proyecto_Memoria_Arquitectura_CPP_Blueprints.txt), agrupada por sistema y con la
+versión jugable en la que se necesita por primera vez. Se actualiza en la misma
+sesión en que Codex o Claude Code crean, modifican o descartan una clase, para que
+siempre se pueda ver "todo lo que falta programar en C++" en un solo lugar.
+
+CRITERIO PARA MARCAR UNA CLASE COMO [X]
+----------------------------------------
+[ ] Header (.h) y .cpp creados en la carpeta correspondiente de Source/ProyectoMemoria/.
+[ ] Compila sin errores.
+[ ] Tiene al menos un Blueprint hijo cuando corresponde.
+[ ] Se probó en L_Developer_Testing o el nivel indicado.
+[ ] Está documentada en Proyecto_Memoria_Arquitectura_CPP_Blueprints.txt si cambia la
+    estructura propuesta.
+
+-----------------------------------------------------------
+JUGADOR — necesario desde v0.1.0
+-----------------------------------------------------------
+[X] APMTestActor — clase de prueba de integración C++/Blueprint (no es parte del juego final).
+[ ] APMPlayerCharacter — Actor. Movimiento, cápsula, salud/estado, referencia a componentes.
+[ ] APMPlayerController — Controller. Input, cambio de cámara, posesión del personaje.
+[ ] UPMCameraModeComponent — Component. Cambio 1P/3P, colisión de cámara, sensibilidad.
+[ ] UPMInteractionComponent — Component. Detección y ejecución de interacción (raycast/overlap).
+[ ] UPMInventoryComponent — Component. Inventario simple, objetos clave.
+[ ] UPMEvidenceComponent — Component. Registro de evidencias recolectadas.
+[ ] UPMFearComponent — Component. Estado de miedo del jugador.
+
+-----------------------------------------------------------
+EQUIPO DEL JUGADOR — necesario desde v0.5.0 (linterna) y v0.9.0 (radio)
+-----------------------------------------------------------
+[ ] UPMFlashlightComponent — Component. Encendido, batería, apagón.
+[ ] UPMPhoneComponent — Component. Mensajes de Nicolás, fotografías.
+[ ] UPMRadioComponent — Component. Comunicación con acompañantes, reparación en v0.9.0.
+
+-----------------------------------------------------------
+INTERACCIÓN Y MUNDO — necesario desde v0.2.0
+-----------------------------------------------------------
+[ ] IPMInteractableInterface — Interface. Contrato de interacción (Interact, GetInteractionText).
+[ ] APMInteractableActor — Actor base. Clase padre de objetos interactivos.
+[ ] APMDoorBase — Actor. Abrir/cerrar, bloqueo, estado guardable, pivote en bisagra.
+[ ] UPMItemDefinition — Objeto de datos. Definición estática de un objeto de inventario.
+[ ] UPMItemInstance — Objeto de datos. Instancia concreta de un objeto en el inventario.
+[ ] FPMEvidenceRecord (struct) — Datos de una evidencia individual.
+
+-----------------------------------------------------------
+GESTIÓN GLOBAL / SUBSISTEMAS — necesario progresivamente desde v0.0.1 a v0.6.0
+-----------------------------------------------------------
+[ ] UPMSaveGame — SaveGame. Estructura de datos guardados (ver sección 9 del control maestro).
+[ ] UPMSaveSubsystem — Subsystem. Guardar, cargar, ranuras, detección de corrupción.
+[ ] UPMDayNightSubsystem — Subsystem. Estado de día/noche, transición, amanecer/anochecer.
+[ ] UPMChapterSubsystem — Subsystem. Capítulo actual, avance de capítulo.
+[ ] UPMNarrativeStateSubsystem — Subsystem. Gameplay Tags narrativos, estado de amigos, pistas vistas.
+[ ] UPMObjectiveSubsystem — Subsystem. Objetivo actual, lista de objetivos.
+[ ] UPMEndingSubsystem — Subsystem. Condiciones y desbloqueo de finales.
+[ ] UPMFearDirectorSubsystem — Subsystem. Selección y cooldown de eventos de terror.
+
+-----------------------------------------------------------
+IA / NPC — necesario desde v0.5.0 (residual/archivista) y v0.7.0 (compañeros)
+-----------------------------------------------------------
+[ ] APMNPCBase — Actor/Character. Base común de todo NPC.
+[ ] APMCompanionBase — hereda de APMNPCBase. Seguimiento, distancia, reacción a eventos.
+[ ] APMResidualNPCBase — hereda de APMNPCBase. Comportamiento residual/ambiguo.
+[ ] APMImitatorBase — hereda de APMNPCBase. Lógica de doble/imitador.
+[ ] APMChaserBase — hereda de APMNPCBase. Patrulla, detección, persecución, pérdida del jugador.
+[ ] APMHorrorEventBase — Actor. Clase base de eventos de terror activables por el director de miedo.
+
+-----------------------------------------------------------
+DATOS (Data Assets) — necesario desde v0.4.0 en adelante
+-----------------------------------------------------------
+[ ] UPMChapterData — Data Asset. Configuración de cada capítulo.
+[ ] UPMClueData — Data Asset. Configuración de cada pista/evidencia.
+[ ] UPMNPCData — Data Asset. Configuración de cada NPC.
+[ ] UPMHorrorEventData — Data Asset. Configuración de cada evento de terror.
+[ ] UPMEndingData — Data Asset. Condiciones de cada final.
+
+-----------------------------------------------------------
+GAMEPLAY TAGS — necesario desde v0.1.0 (se usan progresivamente)
+-----------------------------------------------------------
+[ ] Registrar la lista de Gameplay Tags iniciales de la sección 7 del control maestro
+    (Chapter.*, NPC.Type.*, Friend.*, Clue.*, Ending.*) en el proyecto.
+[ ] Confirmar que se leen y escriben solo desde C++ (subsistemas) o Data Assets, nunca
+    como bool sueltos en Blueprint.
+
+REGLA DE ESTA SECCIÓN
+----------------------
+[ ] No crear una clase que no esté aquí sin agregarla primero.
+[ ] No marcar [X] una clase sin cumplir el criterio de la parte superior.
+[ ] Actualizar esta sección en la misma sesión en que se crea, modifica o descarta una clase.
+[ ] Si una clase deja de ser necesaria, marcarla [D] Descartada y explicar por qué, no borrarla.
+
+==========================================================================================
 5. PLAN COMPLETO POR VERSIONES JUGABLES
 ==========================================================================================
 
