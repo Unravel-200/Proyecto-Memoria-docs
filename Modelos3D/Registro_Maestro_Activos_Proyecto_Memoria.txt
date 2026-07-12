@@ -725,7 +725,7 @@ PRP-LIB-005 | Consola/panel de control | PRP | LIB | [ ] Planeado | Pendiente | 
 
 Colección restringida (10 x 14 m):
 FUR-LIB-007 | Estantería alta estándar (repetible) | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Bookshelf_Library_A.blend | No | [UE] Pendiente | Pendiente
-PRP-LIB-006 | Set de libros (pequeño/mediano/grande) | PRP | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+PRP-LIB-006 | Set de libros (pequeño/mediano/grande) | PRP | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_BookRow_Library_A.blend | No | [UE] Pendiente | Pendiente
 FUR-LIB-008 | Estantería especial con mecanismo oculto (interactiva, la manipula Nicolás) | FUR | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 ARC-LIB-002 | Compuerta oculta hacia el sótano | ARC | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 
