@@ -539,8 +539,8 @@ CRITERIOS DE ACEPTACIÓN
 ESTADO
 ------
 [~] Parcialmente iniciado.
-Hecho: proyecto Unreal 5.8 creado con módulo C++ ProyectoMemoria y clase de prueba APMTestActor, Git LFS y .gitignore configurados, los tres repositorios existen como carpetas hermanas con su propio remoto, y la documentación quedó centralizada únicamente en Proyecto-Memoria-docs.
-Falta: Blueprint hijo de APMTestActor y prueba de comunicación C++/Blueprint, verificar compilación real en el editor, niveles base, README.md en Modelos-3D, carpetas General y Registros, y el tag v0.0.1_setup.
+Hecho: proyecto Unreal 5.8 creado con módulo C++ ProyectoMemoria, compilación confirmada (Result: Succeeded), clase de prueba APMTestActor y su Blueprint hijo BP_TestActor con herencia C++ -> Blueprint verificada, nivel L_Developer_Testing creado, Git LFS y .gitignore configurados, los tres repositorios existen como carpetas hermanas con su propio remoto, documentación centralizada en Proyecto-Memoria-docs con General/ y Registros/ ya creados, y README.md presente en los tres repositorios.
+Falta: cablear a mano en el editor la llamada Blueprint -> C++ de BP_TestActor (en pausa por limitaciones de hardware, ver sección 4.2), crear los niveles L_AssetValidation y L_MainMenu_Placeholder, y crear el tag v0.0.1_setup.
 
 ------------------------------------------------------------------------------------------
 VERSIÓN 0.1.0 — PERSONAJE, MOVIMIENTO Y CÁMARAS
