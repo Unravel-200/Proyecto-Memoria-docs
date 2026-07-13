@@ -731,7 +731,7 @@ ARC-LIB-002 | Compuerta oculta hacia el sótano | ARC | LIB | [X] Listo en Blend
 
 Sótano 1 (45 x 35 m):
 PRP-LIB-007 | Bombilla colgante vieja (parpadeante) | PRP | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_HangingBulb_Library_A.blend | No | [UE] Pendiente | Pendiente
-FUR-LIB-009 | Estante de metal industrial (sótano) | FUR | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+FUR-LIB-009 | Estante de metal industrial (sótano) | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_MetalShelf_LibraryBasement_A.blend | No | [UE] Pendiente | Pendiente
 DOC-LIB-001 | Manuscrito "Historias Prohibidas del Campus" (hero asset) | DOC | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 ARC-LIB-003 | Puerta metálica pesada del sótano | ARC | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 VFX-LIB-001 | Fluido oscuro (decal/VFX, no es static mesh) | VFX | LIB | [ ] Planeado | N/A | N/A | N/A | Pendiente
