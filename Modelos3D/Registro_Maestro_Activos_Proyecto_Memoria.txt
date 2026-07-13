@@ -714,7 +714,7 @@ ARC-LIB-001 | Puerta principal doble (cierre magnético) | ARC | LIB | [X] Listo
 Recepción (6 x 8 m):
 FUR-LIB-003 | Mostrador de guardas | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Desk_LibraryGuard_A.blend | No | [UE] Pendiente | Pendiente
 FUR-LIB-004 | Silla de guarda | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Chair_LibraryGuard_A.blend | No | [UE] Pendiente | Pendiente
-PRP-LIB-002 | Teléfono de recepción | PRP | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+PRP-LIB-002 | Teléfono de recepción | PRP | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Phone_LibraryReception_A.blend | No | [UE] Pendiente | Pendiente
 PRP-LIB-003 | Libro de registro de entradas | PRP | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 
 Cuarto de vigilancia (5 x 7 m):
