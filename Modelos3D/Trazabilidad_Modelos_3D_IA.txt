@@ -65,8 +65,16 @@ esta nota:
   proceso de generación. Los activos fueron excluidos del juego por
   decisión del propietario.
 
+NOTA SOBRE CONSERVACIÓN DE SCRIPTS
+-----------------------------------
+A partir de ARC-LIB-005 (2026-07-12, sesión posterior a la creación de
+este informe), el usuario pidió conservar el archivo .py de cada modelo
+junto al .blend, en vez de eliminarlo tras confirmar el build. Todos los
+activos listados desde ARC-LIB-005 en adelante tienen su script real
+conservado en el repositorio (no reconstruido desde la conversación).
+
 ================================================================================
-ÍNDICE DE ACTIVOS DOCUMENTADOS (20)
+ÍNDICE DE ACTIVOS DOCUMENTADOS (33)
 ================================================================================
 FUR-LIB-007  SM_Bookshelf_Library_A.blend
 PRP-LIB-006  SM_BookRow_Library_A.blend
@@ -88,6 +96,19 @@ PRP-LIB-004  SM_MonitorSet_LibrarySurveillance_A.blend
 PRP-LIB-005  SM_Console_LibrarySurveillance_A.blend
 ARC-LIB-004  SM_Door_LibraryService_A.blend
 PRP-LIB-008  SM_ExitSign_Library_A.blend
+ARC-LIB-005  SM_VestibuloBlockout_Library_A.blend
+ARC-LIB-006  SM_RecepcionBlockout_Library_A.blend
+ARC-LIB-007  SM_VigilanciaBlockout_Library_A.blend
+ARC-LIB-008  SM_ColeccionRestringidaBlockout_Library_A.blend
+ARC-LIB-009  SM_Sotano1Blockout_Library_A.blend
+ARC-EXT-001  SM_PlazaFloorBlockout_A.blend
+ARC-EXT-002  SM_Fountain_PlazaCentral_A.blend
+FUR-EXT-001  SM_Bench_PlazaCentral_A.blend
+PRP-EXT-001  SM_Lamppost_PlazaCentral_A.blend
+ARC-GEN-002  SM_VestibuloBlockout_Generales_A.blend
+ARC-GEN-003  SM_SodaBlockout_Generales_A.blend
+ARC-GEN-004  SM_Stairs_Generales_A.blend
+FUR-GEN-001  SM_DiningSet_Soda_A.blend
 
 ================================================================================
 DETALLE POR ACTIVO
@@ -472,8 +493,252 @@ Referencias externas: Ninguna.
 Materiales: M_Plastic_ExitSignHousing y M_Emissive_ExitSign (procedurales).
 No verificable: Contenido exacto del script eliminado.
 
+------------------------------------------------------------------------------
+ARC-LIB-005 — SM_VestibuloBlockout_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_VestibuloBlockout_Library_A.blend
+Script conservado: Biblioteca/SM_VestibuloBlockout_Library_A.py (real, no
+  reconstruido).
+Commits: 717d311 — 2026-07-12 22:54:53 -0600 (versión inicial: piso 12x15 m,
+  paredes, puerta principal 2.20 m, hueco 1.80 m hacia recepción);
+  bf88451 — 2026-07-12 23:30:59 -0600 (se agrega hueco de 1.10 m en la
+  pared derecha, hacia la salida lateral ARC-LIB-004).
+Generado por IA: Sí, completo.
+Instrucción original: Blockout de arquitectura del vestíbulo de la
+  Biblioteca (piso y paredes), primer espacio del edificio.
+Fuente de las dimensiones: Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt,
+  sección 10.1 (Biblioteca Central, vestíbulo 12x15 m); espesores de pared
+  y altura de piso académico de la Guía de Dimensiones.
+Correcciones solicitadas: 1 ronda (agregar el hueco de salida lateral,
+  ver arriba).
+Referencias externas: Ninguna.
+Materiales: M_Floor_VestibuloBlockout, M_Wall_VestibuloBlockout (procedurales).
+
+------------------------------------------------------------------------------
+ARC-LIB-006 — SM_RecepcionBlockout_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_RecepcionBlockout_Library_A.blend
+Script conservado: Biblioteca/SM_RecepcionBlockout_Library_A.py (real).
+Commit: 973060d — 2026-07-12 23:03:27 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Blockout de la sala de recepción (6x8 m), conectada
+  detrás del vestíbulo.
+Fuente de las dimensiones: sección 10.1 del documento narrativo.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Floor_RecepcionBlockout, M_Wall_RecepcionBlockout (procedurales).
+
+------------------------------------------------------------------------------
+ARC-LIB-007 — SM_VigilanciaBlockout_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_VigilanciaBlockout_Library_A.blend
+Script conservado: Biblioteca/SM_VigilanciaBlockout_Library_A.py (real).
+Commits: 7dae03a — 2026-07-12 23:14:36 -0600 (versión inicial: 5x7 m,
+  pared trasera cerrada, "sin salida definida"); def2789 — 2026-07-12
+  23:23:08 -0600 (se abre la pared trasera hacia la colección restringida).
+Generado por IA: Sí, completo.
+Instrucción original: Blockout del cuarto de vigilancia (5x7 m).
+Fuente de las dimensiones: sección 10.1 del documento narrativo.
+Correcciones solicitadas: Ninguna sobre el diseño; se modificó para
+  conectar con la sala siguiente cuando se planeó la colección restringida.
+Referencias externas: Ninguna.
+Materiales: M_Floor_VigilanciaBlockout, M_Wall_VigilanciaBlockout (procedurales).
+
+------------------------------------------------------------------------------
+ARC-LIB-008 — SM_ColeccionRestringidaBlockout_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_ColeccionRestringidaBlockout_Library_A.blend
+Script conservado: Biblioteca/SM_ColeccionRestringidaBlockout_Library_A.py (real).
+Commit: def2789 — 2026-07-12 23:23:08 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Blockout de la colección restringida (10x14 m),
+  donde está la estantería con mecanismo (FUR-LIB-008) y la compuerta
+  (ARC-LIB-002) del Capítulo 1.
+Fuente de las dimensiones: sección 10.1 del documento narrativo.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Floor_ColeccionRestringidaBlockout, M_Wall_ColeccionRestringidaBlockout
+  (procedurales).
+
+------------------------------------------------------------------------------
+ARC-LIB-009 — SM_Sotano1Blockout_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Sotano1Blockout_Library_A.blend
+Script conservado: Biblioteca/SM_Sotano1Blockout_Library_A.py (real).
+Commit: 3181829 — 2026-07-12 23:26:55 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Blockout del Sótano 1 (45x35 m), accesible solo por
+  la compuerta oculta en el piso de la colección restringida (conexión
+  vertical, no una pared).
+Fuente de las dimensiones: sección 10.1 del documento narrativo.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Floor_Sotano1Blockout, M_Wall_Sotano1Blockout (procedurales,
+  tono de concreto distinto de los pisos superiores).
+
+------------------------------------------------------------------------------
+ARC-EXT-001 — SM_PlazaFloorBlockout_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Plaza/SM_PlazaFloorBlockout_A.blend
+Script conservado: Plaza/SM_PlazaFloorBlockout_A.py (real).
+Commit: dca3df8 — 2026-07-12 23:50:26 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Piso base de la Plaza Central (45x45 m), solo
+  geometría; el usuario indicó explícitamente que el material de
+  pavimento final debe ser compartido para todo el campus, no
+  específico de esta plaza, y se resolverá después.
+Fuente de las dimensiones: Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt,
+  sección 8.1.
+Correcciones solicitadas: Ninguna sobre el modelo.
+Referencias externas: Ninguna.
+Materiales: M_PLACEHOLDER_Pavement (nombre deliberadamente marcado como
+  temporal).
+
+------------------------------------------------------------------------------
+ARC-EXT-002 — SM_Fountain_PlazaCentral_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Plaza/SM_Fountain_PlazaCentral_A.blend
+Script conservado: Plaza/SM_Fountain_PlazaCentral_A.py (real).
+Commits: c124c80 — 2026-07-12 23:53:00 -0600 (versión con surtidor
+  central simple); 9a88a45 — 2026-07-13 00:31:22 -0600 (versión final:
+  centro vacío, sin escultura).
+Generado por IA: Sí, completo.
+Instrucción original: Fuente central de la plaza (20 m de diámetro).
+Iteración: se probaron 5 conceptos de escultura central a pedido del
+  usuario (figura alegórica con libro, manos sosteniendo una antorcha,
+  columnas rotas cubiertas de musgo, versión de 3 niveles con corona
+  dorada, y la versión simple con surtidor) — ninguno convenció como
+  blockout generado por script ("no me gusta", "horrible", "ninguno me
+  gusta"). Se decidió dejar el centro vacío y posponer el detalle
+  escultórico a la fase de arte final.
+Fuente de las dimensiones: sección 8.1 del documento narrativo.
+Correcciones solicitadas: 5 rondas de rediseño del centro (ver arriba),
+  resultado final: sin escultura.
+Referencias externas: Ninguna (todas las variantes fueron ideas de texto
+  propuestas por Claude, no imágenes de referencia).
+Materiales: M_Stone_FountainRim, M_Water_FountainSurface (procedurales).
+Estado: [P] Provisional, ver Registro_Maestro_Activos_Proyecto_Memoria.txt.
+
+------------------------------------------------------------------------------
+FUR-EXT-001 — SM_Bench_PlazaCentral_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Plaza/SM_Bench_PlazaCentral_A.blend
+Script conservado: Plaza/SM_Bench_PlazaCentral_A.py (real).
+Commit: 87b2169 — 2026-07-13 00:36:20 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Banca de la plaza, en concreto/piedra (distinta de
+  la banca de madera del vestíbulo de la Biblioteca).
+Fuente de las dimensiones: Estimación propia.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Concrete_PlazaBench (procedural).
+
+------------------------------------------------------------------------------
+PRP-EXT-001 — SM_Lamppost_PlazaCentral_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Plaza/SM_Lamppost_PlazaCentral_A.blend
+Script conservado: Plaza/SM_Lamppost_PlazaCentral_A.py (real).
+Commit: d8b8944 — 2026-07-13 00:46:50 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Farola de la plaza.
+Iteración: primera versión con poste recto (rechazada, "no me gusta esa
+  forma, quiero que tenga una forma como de L"); segunda versión con
+  poste en L y brazo de 0.7 m (aprobada); se alargó el brazo a 1.3 m a
+  pedido del usuario.
+Fuente de las dimensiones: Estimación propia.
+Correcciones solicitadas: 2 rondas (forma en L, luego brazo más largo).
+Referencias externas: Ninguna.
+Materiales: M_Metal_Lamppost, M_Emissive_LamppostBulb (procedurales).
+
+------------------------------------------------------------------------------
+ARC-GEN-002 — SM_VestibuloBlockout_Generales_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Generales/SM_VestibuloBlockout_Generales_A.blend
+Script conservado: Generales/SM_VestibuloBlockout_Generales_A.py (real).
+Commit: 542699e — 2026-07-13 01:07:59 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Blockout del vestíbulo de Estudios Generales.
+Fuente de las dimensiones: dimensiones del vestíbulo son estimación
+  propia (el documento narrativo no da una medida específica para esta
+  subsala); ubicación en el edificio según sección 10.2 (70x45 m, 5
+  niveles).
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Floor_VestibuloGeneralesBlockout, M_Wall_VestibuloGeneralesBlockout
+  (procedurales).
+
+------------------------------------------------------------------------------
+ARC-GEN-003 — SM_SodaBlockout_Generales_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Generales/SM_SodaBlockout_Generales_A.blend
+Script conservado: Generales/SM_SodaBlockout_Generales_A.py (real).
+Commit: ca991a7 — 2026-07-13 01:12:37 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Blockout de la Soda (15x12 m), descrita en el
+  Capítulo 2 del documento narrativo (recibo de Nicolás fechado en 1974,
+  bandejas para personas ausentes).
+Fuente de las dimensiones: sección 10.2 del documento narrativo.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Floor_SodaBlockout, M_Wall_SodaBlockout (procedurales).
+
+------------------------------------------------------------------------------
+ARC-GEN-004 — SM_Stairs_Generales_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Generales/SM_Stairs_Generales_A.blend
+Script conservado: Generales/SM_Stairs_Generales_A.py (real).
+Commit: cecb76d — 2026-07-13 01:25:12 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Escaleras principales en forma de U con descanso
+  central, según pedido explícito del usuario.
+Iteración: v1 tenía un error de conexión (el segundo tramo arrancaba del
+  borde equivocado del descanso, "la parte de descanso no conecta con la
+  que continua subiendo"); se corrigió. El usuario también pidió que no
+  hubiera paredes/bloques macizos debajo de la escalera ("quiero que se
+  pueda estar debajo de ellas"); se rediseñó de escalones macizos a
+  escalones tipo losa con soportes delgados en los bordes. Un intento de
+  agregar zancas diagonales continuas produjo un bug de rotación (altura
+  total saltó a 6.3 m en vez de 4.5 m); se descartó ese enfoque y se usó
+  soporte por escalón en su lugar. El usuario aceptó el resultado como
+  provisional ("por el momento dejemoslo así").
+Fuente de las dimensiones: Guia_Dimensiones_Blender_Unreal_Proyecto_Memoria.txt,
+  sección 5 (ancho 2.20 m, huella 0.30 m, contrahuella, descanso 2.20x2.20 m).
+Correcciones solicitadas: 2 rondas (conexión del descanso, luego espacio
+  transitable debajo).
+Referencias externas: Ninguna.
+Materiales: M_Concrete_Stairs (procedural).
+Estado: [P] Provisional, ver Registro_Maestro_Activos_Proyecto_Memoria.txt.
+
+------------------------------------------------------------------------------
+FUR-GEN-001 — SM_DiningSet_Soda_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Generales/SM_DiningSet_Soda_A.blend
+Script conservado: Generales/SM_DiningSet_Soda_A.py (real).
+Commit: fc5c973 — 2026-07-13 01:38:52 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Mesa y sillas de comedor para la Soda.
+Iteración/bug corregido: tras unir las piezas de cada silla, el origen
+  del objeto quedaba en el punto del primer trozo creado (el asiento, a
+  0.45 m de altura), no en el piso. Al reposicionar cada silla con una
+  asignación directa de location, esto las hundía 0.45 m bajo tierra
+  (patas invisibles bajo el suelo), dando la impresión visual de que la
+  mesa flotaba ("la mesa no esta elevada? siento que no calza con la
+  altura" / "mira que la mesa está en el aire", con imagen adjunta del
+  usuario). Se corrigió re-centrando el origen de cada silla en el piso
+  (cursor 3D en 0,0,0 + origin_set) antes de rotarla/reposicionarla.
+  Verificado numéricamente tras la corrección: min_z paso de -0.45 a 0.0.
+Fuente de las dimensiones: Estimación propia (mobiliario de cafetería
+  estándar).
+Correcciones solicitadas: 1 ronda (bug de hundimiento de sillas).
+Referencias externas: Ninguna (el usuario compartió una captura de
+  pantalla del propio resultado en Blender para señalar el problema, no
+  una referencia externa de diseño).
+Materiales: M_Plastic_SodaFurniture (procedural).
+
 ================================================================================
-RESUMEN DE ELEMENTOS NO VERIFICABLES (aplica a los 20 activos)
+RESUMEN DE ELEMENTOS NO VERIFICABLES (aplica a los 20 activos originales;
+los 13 activos añadidos desde ARC-LIB-005 tienen su script real conservado,
+no aplica la limitación de "contenido exacto del script" a esos)
 ================================================================================
 [ ] Contenido exacto (código fuente) de cada script de Python: no se
     conservó ningún archivo .py; la descripción de cada script en este
