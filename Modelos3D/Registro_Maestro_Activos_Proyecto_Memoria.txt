@@ -737,7 +737,7 @@ ARC-LIB-003 | Puerta metálica pesada del sótano | ARC | LIB | [X] Listo en Ble
 VFX-LIB-001 | Fluido oscuro (decal/VFX, no es static mesh) | VFX | LIB | [ ] Planeado | N/A | N/A | N/A | Pendiente
 
 Salida lateral:
-ARC-LIB-004 | Puerta de servicio lateral (seguro débil, sin lógica especial de bloqueo) | ARC | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ARC-LIB-004 | Puerta de servicio lateral (seguro débil, sin lógica especial de bloqueo) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Door_LibraryService_A.blend | No | [UE] Pendiente | Pendiente
 PRP-LIB-008 | Señalización de salida de emergencia | PRP | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 
 ________________________________________________________________________________
