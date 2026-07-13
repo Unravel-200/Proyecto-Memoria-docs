@@ -1717,62 +1717,112 @@ EN UNREAL
 AGENTE ACTUAL
 -------------
 [ ] Codex.
-[ ] Claude Code.
-[X] Ninguno indicado al crear este documento.
+[X] Claude Code.
+[ ] Ninguno indicado al crear este documento.
 
 RAMA ACTUAL
 -----------
-Pendiente de completar:
-________________________________________
+main (en los tres repositorios: Modelos-3D, Proyecto-Memoria-docs,
+Proyecto-Memory).
 
 VERSIÓN EN PROGRESO
 -------------------
-Recomendación inicial:
-v0.0.1 — Configuración base.
+v0.0.1 completa en su mayoría (falta cableado manual de BP_TestActor,
+en pausa por limitaciones de hardware — ver sección 4.2/4.3). Trabajo
+actual es de modelado 3D (Modelos-3D), no corresponde todavía a una
+versión jugable del checklist de la sección 5; es preparación de
+activos para v0.4.0 (Blockout de la Biblioteca) y edificios
+posteriores.
 
-TAREA ACTUAL
-------------
-Pendiente de completar:
-________________________________________
+TAREA ACTUAL (al cierre de la sesión del 2026-07-13)
+------------------------------------------------------
+Modelado en Blender de activos y arquitectura de tres zonas, en
+paralelo a que Codex trabaja en Proyecto-Memory (C++, empezó con
+APMPlayerCharacter/APMPlayerController en la rama
+feature/v0.1-player-cameras — NO tocar esa rama ni el repo
+Proyecto-Memory desde Modelos-3D/Docs).
+
+Estado por zona:
+- Biblioteca (Capítulo 1): INVENTARIO COMPLETO — 20 activos de
+  mobiliario/props Fase 1 + 5 piezas de arquitectura (vestíbulo,
+  recepción, vigilancia, colección restringida, sótano 1), todos
+  conectados y alineados en un mismo sistema de coordenadas.
+  Nota: la silla de guarda (antes FUR-LIB-004/FUR-LIB-006) fue
+  ELIMINADA a petición del usuario (diseñada con fotos de referencia
+  externas no deseadas); esos dos IDs quedaron [D] Descartados,
+  pendientes de rehacerse sin esa referencia.
+- Plaza Central (Capítulo 2): piso, fuente (SIN escultura central,
+  ver abajo), bancas y farolas listos. Faltan los árboles
+  perimetrales — el usuario los va a modelar A MANO en Blender
+  (2 intentos por script rechazados, "parecía poste de luz"; no
+  intentar de nuevo por script sin que el usuario lo pida).
+- Estudios Generales (Capítulo 2): vestíbulo, soda y escaleras
+  (provisional) listos, más la mesa/sillas de la soda. Pendiente:
+  ARC-GEN-001 (fachada con el Árbol del Conocimiento — el usuario
+  decidió dejarlo pendiente por ser otra forma orgánica como los
+  árboles, no intentar por script sin confirmar con el usuario
+  primero), mostrador de cocina/caja (FUR-GEN-002), bandejas
+  (PRP-GEN-001), blockout del aula (ARC-GEN-005), pupitres
+  (FUR-GEN-003), escritorio (FUR-GEN-004) y pizarra (PRP-GEN-002)
+  del aula.
+
+PENDIENTES PROVISIONALES (marcados [P] en Registro_Maestro_Activos,
+requieren revisión en la fase de arte final o una corrección técnica
+más adelante):
+- ARC-EXT-002 (fuente de la plaza): sin escultura central. Se
+  probaron 5 conceptos y ninguno convenció generado por script.
+- ARC-GEN-004 (escaleras de Generales): sin zancas diagonales
+  continuas (bug de rotación no resuelto), tiene soportes delgados
+  por escalón en su lugar; funcional pero no es el diseño final.
 
 ÚLTIMO COMMIT
 -------------
-Pendiente:
-________________________________________
+Modelos-3D: fc5c973 (feat(FUR-GEN-001): mesa y 4 sillas de la soda).
+Proyecto-Memoria-docs: af9c3b2 (docs: agregar 13 activos pendientes
+al informe de trazabilidad de IA).
 
 ARCHIVOS MODIFICADOS
 --------------------
-Pendiente:
-________________________________________
+Ver commits del 2026-07-12 y 2026-07-13 en Modelos-3D (carpetas
+Biblioteca/, Plaza/, Generales/) y en Proyecto-Memoria-docs
+(Modelos3D/Registro_Maestro_Activos_Proyecto_Memoria.txt y
+Modelos3D/Trazabilidad_Modelos_3D_IA.txt).
 
 PRUEBAS REALIZADAS
 ------------------
-Pendiente:
-________________________________________
+Cada activo se revisó visualmente en Blender (GUI) por el usuario
+antes de aprobarse; ninguno se ha exportado ni probado en Unreal
+todavía (todos en estado [UE] Pendiente).
 
 PROBLEMAS CONOCIDOS
 -------------------
-Pendiente:
-________________________________________
+- El usuario no puede abrir Unreal Editor en su laptop actual
+  (se sobrecalienta). Todo el trabajo de esta sesión fue en Blender;
+  exportar/importar a Unreal queda pendiente hasta trabajar desde
+  otro equipo, o hacerlo headless con mucho cuidado.
+- Formas orgánicas (árboles, esculturas, follaje) no funcionan bien
+  generadas a ciegas por script — ya fallaron 2 veces con árboles y
+  5 veces con la fuente. No reintentar sin pedir dirección primero.
 
 SIGUIENTE TAREA
 ---------------
-Recomendación:
-1. Confirmar creación del proyecto Unreal.
-2. Configurar Git LFS.
-3. Configurar .gitignore.
-4. Crear L_Developer_Testing.
-5. Probar Codex MCP con Blender.
-6. Validar un pupitre existente.
-7. Exportarlo a Unreal.
-8. Confirmar escala y colisión.
+Recomendación, en orden:
+1. Terminar Estudios Generales: FUR-GEN-002, PRP-GEN-001, ARC-GEN-005,
+   FUR-GEN-003, FUR-GEN-004, PRP-GEN-002.
+2. Decidir con el usuario cómo abordar ARC-GEN-001 (fachada con el
+   Árbol del Conocimiento) y ENV-EXT-001 (árboles de la plaza).
+3. Cuando el usuario pueda usar Unreal: exportar FBX de todo lo
+   "Listo en Blender" e importar/validar en L_AssetValidation.
+4. Revisar en qué va Codex (rama feature/v0.1-player-cameras) antes
+   de tocar Proyecto-Memory.
 
 NO MODIFICAR
 ------------
-Hasta confirmar:
-- Documentos narrativos.
-- Guía de dimensiones.
-- main directamente.
+- Proyecto-Memory (repo de Unreal) mientras Codex trabaje ahí — solo
+  código C++, no assets de Blender.
+- La silla eliminada (FUR-LIB-004/006): no volver a crearla sin que
+  el usuario lo pida explícitamente.
+- main directamente sin commit descriptivo.
 
 ==========================================================================================
 10. PLANTILLA DE ACTUALIZACIÓN DESPUÉS DE CADA SESIÓN
