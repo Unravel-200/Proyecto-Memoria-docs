@@ -751,7 +751,10 @@ Recepción:
 ARC-LIB-006 | Blockout arquitectónico de recepción (piso + paredes, 6x8 m, alineado con el vestíbulo en Y=7.5) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_RecepcionBlockout_Library_A.blend (script: SM_RecepcionBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
 
 Cuarto de vigilancia:
-ARC-LIB-007 | Blockout arquitectónico de vigilancia (piso + paredes, 5x7 m, alineado con recepción en Y=15.5; pared trasera cerrada, sin salida definida) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_VigilanciaBlockout_Library_A.blend (script: SM_VigilanciaBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
+ARC-LIB-007 | Blockout arquitectónico de vigilancia (piso + paredes, 5x7 m, alineado con recepción en Y=15.5; pared trasera con hueco de 1.80 m hacia la colección restringida en Y=22.5) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_VigilanciaBlockout_Library_A.blend (script: SM_VigilanciaBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
+
+Colección restringida:
+ARC-LIB-008 | Blockout arquitectónico de la colección restringida (piso + paredes, 10x14 m, alineado con vigilancia en Y=22.5; pared trasera cerrada, la salida real es la compuerta ARC-LIB-002 en el piso) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_ColeccionRestringidaBlockout_Library_A.blend (script: SM_ColeccionRestringidaBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
 
 ________________________________________________________________________________
 ________________________________________________________________________________
