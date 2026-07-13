@@ -747,6 +747,9 @@ junto al .blend, sin eliminarlo (regla vigente desde 2026-07-12).
 Vestíbulo:
 ARC-LIB-005 | Blockout arquitectónico del vestíbulo (piso + paredes, 12x15 m) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_VestibuloBlockout_Library_A.blend (script: SM_VestibuloBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
 
+Recepción:
+ARC-LIB-006 | Blockout arquitectónico de recepción (piso + paredes, 6x8 m, alineado con el vestíbulo en Y=7.5) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_RecepcionBlockout_Library_A.blend (script: SM_RecepcionBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
