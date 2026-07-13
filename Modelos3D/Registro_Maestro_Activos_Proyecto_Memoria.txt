@@ -759,6 +759,16 @@ ARC-LIB-008 | Blockout arquitectónico de la colección restringida (piso + pare
 Sótano 1:
 ARC-LIB-009 | Blockout arquitectónico del Sótano 1 (piso + techo + paredes, 45x35 m, techo de 3.5 m, concreto; posicionado bajo la colección restringida, Z=-3.7 a -0.2; se accede solo por la compuerta ARC-LIB-002, sin conexión de pared con las salas de arriba) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Sotano1Blockout_Library_A.blend (script: SM_Sotano1Blockout_Library_A.py) | No | [UE] Pendiente | Pendiente
 
+PLAZA CENTRAL — INVENTARIO FASE 1 (Capítulo 2)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 2,
+y sección 8.1 (Fuentes) / 6.1 (Zona Central). Zona EXT (exteriores).
+
+ARC-EXT-001 | Piso base de la plaza (geometría plana, 45x45 m; material provisional, el pavimento definitivo será un material compartido para todo el campus, se hará después) | ARC | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ARC-EXT-002 | Fuente central (20 m de diámetro) | ARC | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+FUR-EXT-001 | Bancas de la plaza | FUR | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+PRP-EXT-001 | Farolas | PRP | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ENV-EXT-001 | Árboles perimetrales | ENV | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
