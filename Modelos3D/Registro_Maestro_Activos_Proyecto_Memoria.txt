@@ -707,7 +707,7 @@ No incluye sala de lectura, sala de computadoras, salas grupales ni sótano 2
 
 Vestíbulo (12 x 15 m):
 FUR-LIB-001 | Mostrador de recepción del vestíbulo | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Desk_LibraryLobby_A.blend | No | [UE] Pendiente | Pendiente
-FUR-LIB-002 | Bancas de espera | FUR | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+FUR-LIB-002 | Bancas de espera | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Bench_LibraryLobby_A.blend | No | [UE] Pendiente | Pendiente
 PRP-LIB-001 | Cartel/directorio del edificio | PRP | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 ARC-LIB-001 | Puerta principal doble (cierre magnético) | ARC | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 
