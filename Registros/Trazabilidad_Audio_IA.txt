@@ -1,0 +1,57 @@
+PROYECTO MEMORIA
+INFORME DE TRAZABILIDAD DE AUDIO GENERADO POR IA
+==================================================
+
+PROPÓSITO
+---------
+Registrar la procedencia de música, efectos de sonido y voces generados o
+asistidos por IA que puedan llegar al juego, al tráiler o a la página de
+publicación. Ver la política completa en
+Produccion/Proyecto_Memoria_Control_Maestro_Produccion.txt, sección 15.1.
+
+Este documento NO certifica legalidad, originalidad ni idoneidad de ningún
+recurso. Esa evaluación requiere una auditoría separada por parte del
+equipo del proyecto.
+
+CUÁNDO AGREGAR UNA ENTRADA
+----------------------------
+[ ] Se crea una nueva pista de audio, efecto o voz destinada al juego.
+[ ] Se modifica significativamente un recurso de audio existente.
+[ ] Se utilizan referencias, muestras o archivos externos.
+[ ] Cambia la herramienta o el método de generación.
+
+PLANTILLA DE ENTRADA
+---------------------
+Nombre y ruta:
+____________________________________________________________
+
+Herramienta o prompt utilizado:
+____________________________________________________________
+
+Fecha aproximada y commit:
+____________________________________________________________
+
+Instrucciones con las que fue creado:
+____________________________________________________________
+
+Referencias o archivos externos utilizados:
+____________________________________________________________
+
+Cambios y correcciones solicitados:
+____________________________________________________________
+
+Dependencias externas (bibliotecas de sonido, voces, licencias):
+____________________________________________________________
+
+Generado completamente por IA o modificado manualmente:
+____________________________________________________________
+
+Elementos cuya procedencia no se puede confirmar:
+____________________________________________________________
+
+================================================================================
+ÍNDICE DE ACTIVOS DOCUMENTADOS (0)
+================================================================================
+Sin entradas todavía.
+
+FIN DEL DOCUMENTO

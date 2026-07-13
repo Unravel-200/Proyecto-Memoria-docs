@@ -15,7 +15,8 @@ Proyecto-Memoria-docs/
 ├── Modelos3D/
 │   ├── Checklist_Objetos.txt
 │   ├── Guia_Dimensiones_Blender_Unreal_Proyecto_Memoria.txt
-│   └── Registro_Maestro_Activos_Proyecto_Memoria.txt
+│   ├── Registro_Maestro_Activos_Proyecto_Memoria.txt
+│   └── Trazabilidad_Modelos_3D_IA.txt
 ├── Unreal/
 │   └── Proyecto_Memoria_Arquitectura_CPP_Blueprints.txt
 └── Registros/
@@ -23,8 +24,17 @@ Proyecto-Memoria-docs/
     ├── Registro_Riesgos.txt
     ├── Registro_Dependencias.txt
     ├── Registro_Licencias.txt
-    └── Registro_Activos_Importados.txt
+    ├── Registro_Activos_Importados.txt
+    ├── Trazabilidad_Audio_IA.txt
+    ├── Trazabilidad_Visual_IA.txt
+    └── Trazabilidad_Narrativa_IA.txt
 ```
+
+## Trazabilidad de contenido generado por IA
+
+Cualquier recurso generado con IA que pueda llegar al juego debe registrarse
+en el archivo de trazabilidad correspondiente. Ver la política completa en
+`Produccion/Proyecto_Memoria_Control_Maestro_Produccion.txt`, sección 15.1.
 
 Los repositorios `Modelos-3D` y `Proyecto-Memory` solo deben incluir un README que apunte a esta ubicación.
 

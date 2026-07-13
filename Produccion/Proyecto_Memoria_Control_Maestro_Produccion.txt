@@ -1436,6 +1436,83 @@ REGLAS
 [ ] No copiar directamente diseños protegidos.
 
 ====================================================================================
+15.1. TRAZABILIDAD DE CONTENIDO GENERADO POR IA
+====================================================================================
+
+PROPÓSITO
+---------
+Cualquier recurso generado con asistencia de IA que pueda llegar al juego, al
+tráiler o a la página de publicación (Steam u otra) debe tener su procedencia
+documentada. Esta regla aplica sin importar qué se esté generando: modelos
+3D, audio, imágenes, texturas, UI, narrativa o código. Ningún agente (Codex,
+Claude Code u otro) debe darse por terminado con una tarea de generación de
+contenido sin haber consultado esta sección.
+
+REGLA SIMPLE
+------------
+Si un recurso generado con IA llegará al juego, al tráiler o a la página de
+publicación, debe conocerse su procedencia. Se actualiza una entrada por
+activo nuevo o por cambio significativo; no se documenta cada mensaje ni
+cada ajuste menor por separado.
+
+CUÁNDO REGISTRAR UNA ENTRADA
+-----------------------------
+[ ] Se crea un nuevo activo (modelo .blend, pista de audio, imagen, textura,
+    fragmento narrativo, etc.) destinado al juego.
+[ ] Se modifica significativamente un activo existente.
+[ ] Se utilizan referencias, texturas, materiales o archivos externos.
+[ ] Cambia la herramienta o el método de generación.
+
+QUÉ NO ES NECESARIO REGISTRAR
+-------------------------------
+[ ] Preguntas o consejos de IA que no producen un activo.
+[ ] Pruebas temporales descartadas.
+[ ] Correcciones pequeñas de un activo ya registrado (se añaden a su entrada
+    existente, no se crea una nueva).
+[ ] Explicaciones para aprender una herramienta (Blender, Unreal, etc.).
+[ ] Cada mensaje de la conversación con el agente.
+
+DÓNDE REGISTRAR SEGÚN EL TIPO DE CONTENIDO
+--------------------------------------------
+Modelos 3D:
+  Proyecto-Memoria-docs/Modelos3D/Trazabilidad_Modelos_3D_IA.txt
+
+Música, efectos de sonido y voces:
+  Proyecto-Memoria-docs/Registros/Trazabilidad_Audio_IA.txt
+
+Imágenes, UI y texturas:
+  Proyecto-Memoria-docs/Registros/Trazabilidad_Visual_IA.txt
+
+Historia, diálogos y contenido narrativo:
+  Proyecto-Memoria-docs/Registros/Trazabilidad_Narrativa_IA.txt
+
+Código (C++ y Blueprints):
+  Basta con el historial de Git y una declaración general de asistencia por
+  IA en el README correspondiente. No hace falta documentar cada función o
+  clase por separado.
+
+QUÉ DEBE INCLUIR CADA ENTRADA
+-------------------------------
+[ ] Nombre y ruta del activo.
+[ ] Script, herramienta o prompt utilizado para generarlo (o nota de que no
+    se conservó, si aplica).
+[ ] Fecha aproximada y commit, si existe.
+[ ] Instrucciones con las que fue creado.
+[ ] Referencias o archivos externos utilizados.
+[ ] Cambios y correcciones solicitados y por quién.
+[ ] Materiales, texturas, fuentes o dependencias externas.
+[ ] Si fue generado completamente por IA o modificado manualmente.
+[ ] Elementos cuya procedencia no se pueda confirmar (marcados como tal, sin
+    inventar información).
+
+REGLA FINAL
+-----------
+Este registro documenta hechos verificables sobre el proceso de generación.
+No certifica legalidad, originalidad ni idoneidad de ningún activo: esa
+evaluación requiere una auditoría separada por parte del equipo del
+proyecto.
+
+====================================================================================
 16. COPIAS DE SEGURIDAD Y RECUPERACIÓN
 ====================================================================================
 

@@ -1,0 +1,55 @@
+PROYECTO MEMORIA
+INFORME DE TRAZABILIDAD NARRATIVA GENERADA POR IA
+===================================================
+
+PROPÓSITO
+---------
+Registrar la procedencia de historia, diálogos y contenido narrativo
+generado o asistido por IA que pueda llegar al juego, al tráiler o a la
+página de publicación. Ver la política completa en
+Produccion/Proyecto_Memoria_Control_Maestro_Produccion.txt, sección 15.1.
+
+Este documento NO certifica legalidad, originalidad ni idoneidad de ningún
+contenido. Esa evaluación requiere una auditoría separada por parte del
+equipo del proyecto.
+
+CUÁNDO AGREGAR UNA ENTRADA
+----------------------------
+[ ] Se crea contenido narrativo nuevo destinado al juego (capítulos,
+    diálogos, documentos jugables, descripciones de personajes o eventos).
+[ ] Se modifica significativamente contenido narrativo existente.
+[ ] Se utilizan referencias o archivos externos.
+[ ] Cambia la herramienta o el método de generación.
+
+PLANTILLA DE ENTRADA
+---------------------
+Nombre y ubicación del contenido (documento y sección):
+____________________________________________________________
+
+Herramienta o prompt utilizado:
+____________________________________________________________
+
+Fecha aproximada y commit:
+____________________________________________________________
+
+Instrucciones con las que fue creado:
+____________________________________________________________
+
+Referencias o archivos externos utilizados:
+____________________________________________________________
+
+Cambios y correcciones solicitados:
+____________________________________________________________
+
+Generado completamente por IA o modificado manualmente:
+____________________________________________________________
+
+Elementos cuya procedencia no se puede confirmar:
+____________________________________________________________
+
+================================================================================
+ÍNDICE DE ACTIVOS DOCUMENTADOS (0)
+================================================================================
+Sin entradas todavía.
+
+FIN DEL DOCUMENTO

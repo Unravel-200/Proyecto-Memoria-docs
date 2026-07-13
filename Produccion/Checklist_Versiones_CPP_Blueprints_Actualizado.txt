@@ -206,6 +206,9 @@ AL TERMINAR
 [ ] Revisar errores.
 [ ] Revisar escala y colisión.
 [ ] Ejecutar git diff cuando aplique.
+[ ] Si se generó o modificó significativamente un activo con IA (modelo,
+    audio, imagen, narrativa), registrar la entrada correspondiente según
+    Proyecto_Memoria_Control_Maestro_Produccion.txt, sección 15.1.
 [ ] Actualizar este documento.
 [ ] Escribir archivos modificados.
 [ ] Escribir tareas pendientes.

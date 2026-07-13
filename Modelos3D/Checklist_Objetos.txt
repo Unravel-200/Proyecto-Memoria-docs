@@ -1214,6 +1214,8 @@ Este resumen debe completarse siempre, aunque se utilice el checklist detallado.
 [ ] Rendimiento aceptable.
 [ ] Guardado en Git.
 [ ] Commit realizado.
+[ ] Si el activo se generó o modificó con IA, registrada su entrada en
+    Trazabilidad_Modelos_3D_IA.txt (ver Control Maestro, sección 15.1).
 [ ] Activo aprobado.
 
 =================================================================
