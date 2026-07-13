@@ -58,11 +58,15 @@ esta nota:
   de Descargas, no incorporados nunca al repositorio). El usuario pidió
   eliminar el modelo y cualquier rastro de esa referencia.
 - Dos archivos de murales decorativos y un modelo de estantería con
-  libros, preexistentes en el repositorio antes de esta sesión (no fueron
-  creados por Claude). El usuario indicó que no se incluirán en el juego.
+  libros, preexistentes en el repositorio antes de esta sesión. Estos
+  activos fueron generados mediante Claude Code en una sesión anterior,
+  según declaración del propietario. No se conservan la sesión ni los
+  scripts originales que permitan verificar independientemente su
+  proceso de generación. Los activos fueron excluidos del juego por
+  decisión del propietario.
 
 ================================================================================
-ÍNDICE DE ACTIVOS DOCUMENTADOS (19)
+ÍNDICE DE ACTIVOS DOCUMENTADOS (20)
 ================================================================================
 FUR-LIB-007  SM_Bookshelf_Library_A.blend
 PRP-LIB-006  SM_BookRow_Library_A.blend
@@ -469,7 +473,7 @@ Materiales: M_Plastic_ExitSignHousing y M_Emissive_ExitSign (procedurales).
 No verificable: Contenido exacto del script eliminado.
 
 ================================================================================
-RESUMEN DE ELEMENTOS NO VERIFICABLES (aplica a los 19 activos)
+RESUMEN DE ELEMENTOS NO VERIFICABLES (aplica a los 20 activos)
 ================================================================================
 [ ] Contenido exacto (código fuente) de cada script de Python: no se
     conservó ningún archivo .py; la descripción de cada script en este
