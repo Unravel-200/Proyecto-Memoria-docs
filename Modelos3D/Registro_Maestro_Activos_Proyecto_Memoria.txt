@@ -777,7 +777,7 @@ para la demo vertical, no el edificio completo). Zona GEN.
 ARC-GEN-001 | Fachada con el Árbol del Conocimiento tallado (20-22 m ancho x 12-15 m alto) | ARC | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 ARC-GEN-002 | Blockout del vestíbulo (14x12 m; puerta principal 2.20 m al frente, hueco 2.00 m atrás hacia soda/escaleras) | ARC | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_VestibuloBlockout_Generales_A.blend (script: SM_VestibuloBlockout_Generales_A.py) | No | [UE] Pendiente | Pendiente
 ARC-GEN-003 | Blockout de la Soda (15x12 m, alineada con el vestíbulo en Y=6.0; pared trasera cerrada por ahora) | ARC | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_SodaBlockout_Generales_A.blend (script: SM_SodaBlockout_Generales_A.py) | No | [UE] Pendiente | Pendiente
-ARC-GEN-004 | Escaleras principales | ARC | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ARC-GEN-004 | Escaleras principales, forma de U con descanso central (sube 4.5 m, un piso completo) | ARC | GEN | [P] Provisional — escalones tipo losa con soportes delgados en los bordes (espacio de abajo transitable, sin zancas continuas todavía por un bug de rotación no resuelto; el usuario aceptó dejarlo así por ahora) | Modelos-3D/Generales/SM_Stairs_Generales_A.blend (script: SM_Stairs_Generales_A.py) | No | [UE] Pendiente | Pendiente
 ARC-GEN-005 | Blockout de un aula (8x10 m, cuarto piso) | ARC | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 FUR-GEN-001 | Mesas y sillas de comedor (Soda) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 FUR-GEN-002 | Mostrador de cocina/caja (Soda) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
