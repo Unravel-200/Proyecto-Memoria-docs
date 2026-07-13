@@ -763,7 +763,7 @@ PLAZA CENTRAL — INVENTARIO FASE 1 (Capítulo 2)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 2,
 y sección 8.1 (Fuentes) / 6.1 (Zona Central). Zona EXT (exteriores).
 
-ARC-EXT-001 | Piso base de la plaza (geometría plana, 45x45 m; material provisional, el pavimento definitivo será un material compartido para todo el campus, se hará después) | ARC | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ARC-EXT-001 | Piso base de la plaza (geometría plana, 45x45 m; material provisional M_PLACEHOLDER_Pavement, el pavimento definitivo será un material compartido para todo el campus, se hará después) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_PlazaFloorBlockout_A.blend (script: SM_PlazaFloorBlockout_A.py) | No | [UE] Pendiente | Pendiente
 ARC-EXT-002 | Fuente central (20 m de diámetro) | ARC | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 FUR-EXT-001 | Bancas de la plaza | FUR | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 PRP-EXT-001 | Farolas | PRP | EXT | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
