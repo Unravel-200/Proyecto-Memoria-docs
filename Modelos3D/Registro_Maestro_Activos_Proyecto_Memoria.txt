@@ -721,7 +721,7 @@ Cuarto de vigilancia (5 x 7 m):
 FUR-LIB-005 | Escritorio de vigilancia | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Desk_LibrarySurveillance_A.blend | No | [UE] Pendiente | Pendiente
 FUR-LIB-006 | Silla de vigilancia (reutiliza activo de FUR-LIB-004) | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Chair_LibraryGuard_A.blend | No | [UE] Pendiente | Pendiente
 PRP-LIB-004 | Set de monitores (4, planos con base, actualizado a 2026) | PRP | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_MonitorSet_LibrarySurveillance_A.blend | No | [UE] Pendiente | Pendiente
-PRP-LIB-005 | Consola/panel de control | PRP | LIB | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+PRP-LIB-005 | Consola/panel de control | PRP | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Console_LibrarySurveillance_A.blend | No | [UE] Pendiente | Pendiente
 
 Colección restringida (10 x 14 m):
 FUR-LIB-007 | Estantería alta estándar (repetible) | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Bookshelf_Library_A.blend | No | [UE] Pendiente | Pendiente
