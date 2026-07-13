@@ -769,6 +769,23 @@ FUR-EXT-001 | Bancas de la plaza (concreto/piedra) | FUR | EXT | [X] Listo en Bl
 PRP-EXT-001 | Farolas (poste en L, brazo horizontal de 1.3 m, farol hexagonal colgante) | PRP | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_Lamppost_PlazaCentral_A.blend (script: SM_Lamppost_PlazaCentral_A.py) | No | [UE] Pendiente | Pendiente
 ENV-EXT-001 | Árboles perimetrales | ENV | EXT | [!] Pendiente — el usuario lo va a modelar a mano en Blender (no generado por script; 2 intentos por script rechazados, "parecía poste de luz"). Archivo de intento sin aprobar en Modelos-3D/Plaza/SM_Tree_PlazaCentral_A.blend/.py, sin commitear, solo como posible punto de partida. Alternativa a considerar: usar assets de vegetación de Quixel/Fab (gratis en Unreal) en vez de modelarlo desde cero. | N/A | No | N/A | Pendiente
 
+ESTUDIOS GENERALES — INVENTARIO FASE 1 (Capítulo 2)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 2,
+y sección 10.2 (edificio 70x45 m, 5 niveles; solo se modela lo necesario
+para la demo vertical, no el edificio completo). Zona GEN.
+
+ARC-GEN-001 | Fachada con el Árbol del Conocimiento tallado (20-22 m ancho x 12-15 m alto) | ARC | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ARC-GEN-002 | Blockout del vestíbulo | ARC | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ARC-GEN-003 | Blockout de la Soda (15x12 m) | ARC | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ARC-GEN-004 | Escaleras principales | ARC | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+ARC-GEN-005 | Blockout de un aula (8x10 m, cuarto piso) | ARC | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+FUR-GEN-001 | Mesas y sillas de comedor (Soda) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+FUR-GEN-002 | Mostrador de cocina/caja (Soda) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+PRP-GEN-001 | Bandejas puestas para "personas ausentes" (Soda) | PRP | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+FUR-GEN-003 | Pupitres (aula) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+FUR-GEN-004 | Escritorio del profesor (aula) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+PRP-GEN-002 | Pizarra (aula, donde escribe el Profesor sin rostro) | PRP | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
