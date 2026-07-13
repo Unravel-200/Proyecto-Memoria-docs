@@ -382,9 +382,13 @@ CRITERIO PARA MARCAR UNA CLASE COMO [X]
 JUGADOR — necesario desde v0.1.0
 -----------------------------------------------------------
 [X] APMTestActor — clase de prueba de integración C++/Blueprint (no es parte del juego final).
-[ ] APMPlayerCharacter — Actor. Movimiento, cápsula, salud/estado, referencia a componentes.
-[ ] APMPlayerController — Controller. Input, cambio de cámara, posesión del personaje.
-[ ] UPMCameraModeComponent — Component. Cambio 1P/3P, colisión de cámara, sensibilidad.
+[~] APMPlayerCharacter — ACharacter. Movimiento, cápsula y componentes de cámara.
+    Header/.cpp, compilación y commit confirmados; Blueprint hijo y PIE pendientes.
+[~] APMPlayerController — Controller. Enhanced Input, cambio de cámara y posesión.
+    Header/.cpp, compilación y commit confirmados; assets de Input y PIE pendientes.
+[~] UPMCameraModeComponent — Component. Cambio 1P/3P y política de colisión de cámara.
+    Header/.cpp, compilación y commit confirmados; Blueprint/PIE pendientes. La sensibilidad
+    está en APMPlayerController porque allí se traduce el input.
 [ ] UPMInteractionComponent — Component. Detección y ejecución de interacción (raycast/overlap).
 [ ] UPMInventoryComponent — Component. Inventario simple, objetos clave.
 [ ] UPMEvidenceComponent — Component. Registro de evidencias recolectadas.
@@ -511,7 +515,8 @@ CHECKLIST
 [X] Crear las carpetas General, Produccion, Modelos3D, Unreal y Registros.
 [X] Registrar la ruta local de Proyecto-Memoria-docs.
 [X] Confirmar que Claude Code puede leer Proyecto-Memoria-docs.
-[ ] Confirmar que Codex puede leer Proyecto-Memoria-docs.
+[X] Confirmar que Codex puede leer Proyecto-Memoria-docs. (Verificado durante la
+    implementación y auditoría de v0.1.0).
 [X] Crear README.md en Modelos-3D con la ruta de documentación.
 [X] Crear README.md en Proyecto-Memory con la ruta de documentación.
 [X] Confirmar que no hay repositorios Git anidados.
@@ -555,31 +560,31 @@ Tener un personaje provisional completamente controlable.
 
 CHECKLIST
 ---------
-[ ] Crear APMPlayerCharacter en C++.
-[ ] Crear APMPlayerController en C++.
-[ ] Crear UPMCameraModeComponent en C++ o componente equivalente.
+[~] Crear APMPlayerCharacter en C++. Código compilado; Blueprint hijo y PIE pendientes.
+[~] Crear APMPlayerController en C++. Código compilado; assets de Input y PIE pendientes.
+[~] Crear UPMCameraModeComponent en C++ o componente equivalente. Código compilado; PIE pendiente.
 [ ] Crear BP_PlayerCharacter como hijo de APMPlayerCharacter.
 [ ] Configurar malla, cámaras y valores editables en Blueprint.
-[ ] Movimiento.
-[ ] Caminar.
-[ ] Correr.
-[ ] Agacharse.
-[ ] Desactivar salto si no es necesario.
-[ ] Configurar cápsula.
-[ ] Primera persona.
-[ ] Tercera persona.
-[ ] Cambio entre cámaras.
-[ ] Colisión de cámara.
-[ ] Sensibilidad.
-[ ] Invertir eje opcional.
-[ ] Movimiento de cámara reducido opcional.
-[ ] Interacción básica con teclado/mando.
+[~] Movimiento. Base C++ compilada; Input Assets y prueba PIE pendientes.
+[~] Caminar. Velocidad editable de 300 cm/s; prueba PIE pendiente.
+[~] Correr. Velocidad editable de 550 cm/s y cancelación al agacharse; prueba PIE pendiente.
+[~] Agacharse. Crouch híbrido toque/hold compilado; temporización y prueba PIE pendientes.
+[?] Desactivar salto si no es necesario. Requiere decisión de diseño.
+[~] Configurar cápsula. Radio 42 cm y semialtura 96 cm en C++; validación PIE pendiente.
+[~] Primera persona. Cámara y política de rotación implementadas; validación visual pendiente.
+[~] Tercera persona. Spring Arm y cámara implementados; validación visual pendiente.
+[~] Cambio entre cámaras. Lógica C++ implementada; Input Asset y prueba PIE pendientes.
+[~] Colisión de cámara. Spring Arm configurado para ECC_Camera; prueba contra paredes pendiente.
+[~] Sensibilidad. Valores X/Y expuestos en APMPlayerController; ajuste en Blueprint pendiente.
+[~] Invertir eje opcional. Opción expuesta en APMPlayerController; prueba PIE pendiente.
+[?] Movimiento de cámara reducido opcional. Requiere decisión de diseño.
+[?] Interacción básica con teclado/mando. Aclarar alcance de v0.1.0 frente al sistema de v0.2.0.
 [ ] Probar pasillos de 2,50 m.
 [ ] Probar puertas de 1,20 m.
 [ ] Probar escaleras.
 [ ] Probar habitaciones pequeñas.
-[ ] Guardar configuración de perspectiva.
-[ ] Crear mapa de prueba.
+[?] Guardar configuración de perspectiva. CurrentMode es Transient; falta decidir persistencia.
+[~] Crear mapa de prueba. L_Developer_Testing ya existe y se reutilizará; configuración, geometría y PIE de v0.1.0 pendientes.
 [ ] Crear tag v0.1.0_player.
 
 CRITERIOS DE ACEPTACIÓN
@@ -596,7 +601,34 @@ CRITERIOS DE ACEPTACIÓN
 
 ESTADO
 ------
-[ ] No confirmado.
+[~] En progreso — base C++ compilada y comprometida; integración jugable en Unreal Editor pendiente.
+
+EVIDENCIA CONFIRMADA — 2026-07-13
+---------------------------------
+- Rama local: feature/v0.1-player-cameras.
+- f8dfb21: APMPlayerCharacter, APMPlayerController y UPMCameraModeComponent;
+  movimiento y cámaras.
+- e8095b4: agachado híbrido.
+- 5eccd8e: limpieza de sprint/crouch al finalizar o perder posesión.
+- 947681f: HANDOFF_CODEX.md y EDITOR_SETUP_V0.1.md actualizados.
+- Unreal Engine 5.8, Win64 Development Editor: UHT, compilación y enlace Succeeded.
+- CompileAllBlueprints con NullRHI/unattended: 0 errores, 0 warnings y 0 Blueprints
+  sin cargar; BP_TestActor existente compila.
+- Revisión estática: responsabilidades separadas entre Character, Controller y
+  CameraMode; sin lógica central nueva en Level Blueprint.
+
+PENDIENTE PARA [X]
+------------------
+- Crear y compilar BP_PlayerCharacter, BP_PlayerController, cinco Input Actions,
+  IMC_Player y GameMode de prueba.
+- Configurar teclado, ratón y mando y ejecutar PIE en L_Developer_Testing.
+- Probar crouch híbrido, movimiento, 1P/3P, colisión, pasillo de 2,50 m, puerta de
+  1,20 m, escaleras, habitaciones pequeñas y 60 FPS.
+- Resolver Enhanced Input como decisión oficial, salto, cámara reducida, alcance
+  de interacción y persistencia de perspectiva.
+- Ejecutar regresión y solo entonces crear tag, PR o merge.
+- No hay push, merge ni tag de v0.1.0; la rama permanece local y la versión oficial
+  anterior no está formalmente cerrada.
 
 ------------------------------------------------------------------------------------------
 VERSIÓN 0.2.0 — SISTEMA DE INTERACCIÓN Y OBJETOS
@@ -1716,31 +1748,33 @@ EN UNREAL
 
 AGENTE ACTUAL
 -------------
-[ ] Codex.
-[X] Claude Code.
+[X] Codex.
+[ ] Claude Code.
 [ ] Ninguno indicado al crear este documento.
 
 RAMA ACTUAL
 -----------
-main (en los tres repositorios: Modelos-3D, Proyecto-Memoria-docs,
-Proyecto-Memory).
+- Proyecto-Memory: feature/v0.1-player-cameras.
+- Proyecto-Memoria-docs: main.
+- Modelos-3D: main. Existen dos archivos del propietario sin seguimiento en
+  Plaza/SM_Tree_PlazaCentral_A.blend y Plaza/SM_Tree_PlazaCentral_A.py; no tocar.
 
 VERSIÓN EN PROGRESO
 -------------------
-v0.0.1 completa en su mayoría (falta cableado manual de BP_TestActor,
-en pausa por limitaciones de hardware — ver sección 4.2/4.3). Trabajo
-actual es de modelado 3D (Modelos-3D), no corresponde todavía a una
-versión jugable del checklist de la sección 5; es preparación de
-activos para v0.4.0 (Blockout de la Biblioteca) y edificios
-posteriores.
+v0.0.1 continúa parcialmente iniciada: falta el cableado manual de BP_TestActor,
+los niveles restantes y su cierre formal. En Proyecto-Memory, v0.1.0 tiene su base
+C++ en progreso dentro de feature/v0.1-player-cameras, sin merge, tag ni prueba PIE.
+El modelado 3D continúa como preparación paralela de activos para versiones futuras.
 
-TAREA ACTUAL (al cierre de la sesión del 2026-07-13)
-------------------------------------------------------
-Modelado en Blender de activos y arquitectura de tres zonas, en
-paralelo a que Codex trabaja en Proyecto-Memory (C++, empezó con
-APMPlayerCharacter/APMPlayerController en la rama
-feature/v0.1-player-cameras — NO tocar esa rama ni el repo
-Proyecto-Memory desde Modelos-3D/Docs).
+TAREA ACTUAL (al cierre conjunto del 2026-07-13)
+------------------------------------------------
+Codex terminó la base C++ compilada de APMPlayerCharacter,
+APMPlayerController y UPMCameraModeComponent, incluyendo movimiento, sprint,
+agachado híbrido, primera/tercera persona y cambio de cámara. La integración del
+Editor está especificada en Proyecto-Memory/EDITOR_SETUP_V0.1.md, pero no se ha
+ejecutado por las limitaciones térmicas de la laptop actual.
+
+El estado de Blender entregado por Claude Code se conserva como línea paralela:
 
 Estado por zona:
 - Biblioteca (Capítulo 1): INVENTARIO COMPLETO — 20 activos de
@@ -1778,51 +1812,63 @@ más adelante):
 ÚLTIMO COMMIT
 -------------
 Modelos-3D: fc5c973 (feat(FUR-GEN-001): mesa y 4 sillas de la soda).
-Proyecto-Memoria-docs: af9c3b2 (docs: agregar 13 activos pendientes
-al informe de trazabilidad de IA).
+Proyecto-Memoria-docs antes de esta actualización: 96b4a31
+(docs: actualizar registro de trabajo actual con el cierre de la sesión 2026-07-13).
+Proyecto-Memory antes del próximo handoff: 947681f
+(docs(editor): agregar guía de integración v0.1.0).
 
 ARCHIVOS MODIFICADOS
 --------------------
-Ver commits del 2026-07-12 y 2026-07-13 en Modelos-3D (carpetas
-Biblioteca/, Plaza/, Generales/) y en Proyecto-Memoria-docs
-(Modelos3D/Registro_Maestro_Activos_Proyecto_Memoria.txt y
-Modelos3D/Trazabilidad_Modelos_3D_IA.txt).
+- Proyecto-Memory: UnrealProject/Source/ProyectoMemoria/Player/*.h/.cpp,
+  UnrealProject/Source/ProyectoMemoria/ProyectoMemoria.Build.cs, HANDOFF_CODEX.md y
+  EDITOR_SETUP_V0.1.md, según los commits de la rama feature.
+- Proyecto-Memoria-docs: este checklist, más los registros de modelado de los
+  commits previos de Claude Code.
+- Modelos-3D: ver commits del 2026-07-12 y 2026-07-13. Los dos archivos de árbol
+  sin seguimiento pertenecen al propietario y no forman parte de estos commits.
 
 PRUEBAS REALIZADAS
 ------------------
-Cada activo se revisó visualmente en Blender (GUI) por el usuario
-antes de aprobarse; ninguno se ha exportado ni probado en Unreal
-todavía (todos en estado [UE] Pendiente).
+- C++ v0.1.0: UHT, compilación y enlace Win64 Development Editor exitosos con
+  Unreal Engine 5.8; CompileAllBlueprints headless terminó con 0 errores y
+  0 warnings. Todavía no existe validación jugable PIE.
+- Blender: cada activo aprobado se revisó visualmente en GUI por el usuario;
+  ninguno se ha exportado ni probado en Unreal y permanece [UE] Pendiente.
 
 PROBLEMAS CONOCIDOS
 -------------------
 - El usuario no puede abrir Unreal Editor en su laptop actual
-  (se sobrecalienta). Todo el trabajo de esta sesión fue en Blender;
-  exportar/importar a Unreal queda pendiente hasta trabajar desde
-  otro equipo, o hacerlo headless con mucho cuidado.
+  porque se sobrecalienta. Integración, exportación/importación y PIE quedan
+  pendientes hasta usar un equipo adecuado. No iniciar Unreal ni shaders en esta
+  laptop sin autorización explícita.
 - Formas orgánicas (árboles, esculturas, follaje) no funcionan bien
   generadas a ciegas por script — ya fallaron 2 veces con árboles y
   5 veces con la fuente. No reintentar sin pedir dirección primero.
+- El checklist exige prueba manual antes de usar [X]; la compilación por sí sola
+  solo permite registrar la base de v0.1.0 como [~].
 
 SIGUIENTE TAREA
 ---------------
 Recomendación, en orden:
-1. Terminar Estudios Generales: FUR-GEN-002, PRP-GEN-001, ARC-GEN-005,
-   FUR-GEN-003, FUR-GEN-004, PRP-GEN-002.
-2. Decidir con el usuario cómo abordar ARC-GEN-001 (fachada con el
-   Árbol del Conocimiento) y ENV-EXT-001 (árboles de la plaza).
-3. Cuando el usuario pueda usar Unreal: exportar FBX de todo lo
-   "Listo en Blender" e importar/validar en L_AssetValidation.
-4. Revisar en qué va Codex (rama feature/v0.1-player-cameras) antes
-   de tocar Proyecto-Memory.
+1. Al abrir una nueva sesión, leer esta sección y Proyecto-Memory/HANDOFF_CODEX.md;
+   verificar ramas, últimos commits y worktrees antes de editar.
+2. En la laptop actual, continuar solo con trabajo liviano. La siguiente tarea
+   recomendada de Codex es preparar QA_PLAYER_V0.1.md a partir de
+   EDITOR_SETUP_V0.1.md, sin abrir Unreal.
+3. En una PC adecuada, ejecutar EDITOR_SETUP_V0.1.md desde la sección 1 y registrar
+   BP/Input/PIE como PASS, FAIL o BLOCKED antes de cambiar [~] a [X].
+4. Para modelado, continuar Estudios Generales o los árboles únicamente cuando el
+   usuario elija retomar esa línea y confirme el alcance.
 
 NO MODIFICAR
 ------------
-- Proyecto-Memory (repo de Unreal) mientras Codex trabaje ahí — solo
-  código C++, no assets de Blender.
+- No tocar Modelos-3D desde la tarea de C++; preservar especialmente los dos
+  archivos de árbol sin seguimiento del propietario.
+- No añadir assets de Blender a Proyecto-Memory durante la integración de Player.
 - La silla eliminada (FUR-LIB-004/006): no volver a crearla sin que
   el usuario lo pida explícitamente.
-- main directamente sin commit descriptivo.
+- No hacer push, merge, rebase o tag sin autorización explícita.
+- No modificar main directamente sin commit descriptivo y alcance revisado.
 
 ==========================================================================================
 10. PLANTILLA DE ACTUALIZACIÓN DESPUÉS DE CADA SESIÓN
