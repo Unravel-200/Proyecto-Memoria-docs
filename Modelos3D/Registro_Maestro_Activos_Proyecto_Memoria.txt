@@ -740,6 +740,13 @@ Salida lateral:
 ARC-LIB-004 | Puerta de servicio lateral (seguro débil, sin lógica especial de bloqueo) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Door_LibraryService_A.blend | No | [UE] Pendiente | Pendiente
 PRP-LIB-008 | Señalización de salida de emergencia | PRP | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_ExitSign_Library_A.blend | No | [UE] Pendiente | Pendiente
 
+ARQUITECTURA — BLOCKOUT POR SALA (Fase 2, en progreso)
+A partir de este punto se conserva también el script .py de cada activo,
+junto al .blend, sin eliminarlo (regla vigente desde 2026-07-12).
+
+Vestíbulo:
+ARC-LIB-005 | Blockout arquitectónico del vestíbulo (piso + paredes, 12x15 m) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_VestibuloBlockout_Library_A.blend (script: SM_VestibuloBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
