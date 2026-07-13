@@ -756,6 +756,9 @@ ARC-LIB-007 | Blockout arquitectónico de vigilancia (piso + paredes, 5x7 m, ali
 Colección restringida:
 ARC-LIB-008 | Blockout arquitectónico de la colección restringida (piso + paredes, 10x14 m, alineado con vigilancia en Y=22.5; pared trasera cerrada, la salida real es la compuerta ARC-LIB-002 en el piso) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_ColeccionRestringidaBlockout_Library_A.blend (script: SM_ColeccionRestringidaBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
 
+Sótano 1:
+ARC-LIB-009 | Blockout arquitectónico del Sótano 1 (piso + techo + paredes, 45x35 m, techo de 3.5 m, concreto; posicionado bajo la colección restringida, Z=-3.7 a -0.2; se accede solo por la compuerta ARC-LIB-002, sin conexión de pared con las salas de arriba) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Sotano1Blockout_Library_A.blend (script: SM_Sotano1Blockout_Library_A.py) | No | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
