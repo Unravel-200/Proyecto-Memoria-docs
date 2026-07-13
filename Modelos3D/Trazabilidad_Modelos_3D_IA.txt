@@ -1,0 +1,485 @@
+PROYECTO MEMORIA
+INFORME DE TRAZABILIDAD DE MODELOS 3D GENERADOS POR IA
+========================================================
+
+PROPÓSITO
+---------
+Documentar, para cada modelo 3D generado durante esta sesión de trabajo con
+Claude (Sonnet 5), el proceso exacto de creación, las instrucciones dadas,
+las correcciones solicitadas y las referencias utilizadas.
+
+Este documento NO certifica que ningún activo sea legal, original o esté
+listo para publicarse. Esa evaluación requiere una auditoría separada por
+parte del equipo del proyecto. Este informe únicamente registra hechos
+verificables sobre cómo se generó cada archivo.
+
+Cualquier dato que no se pueda comprobar está marcado explícitamente como
+tal, no se completó por inferencia.
+
+MÉTODO DE GENERACIÓN GENERAL (aplica a todos los activos listados)
+--------------------------------------------------------------------
+Todos los modelos de este informe se generaron mediante scripts de Python
+ejecutados en Blender 5.1 en modo headless
+(`blender --background --python script.py`), sin abrir la interfaz gráfica
+durante la generación. El usuario nunca editó la geometría directamente en
+Blender: solo abrió cada archivo ya generado en la interfaz gráfica (modo
+normal, sin `--background`) para revisarlo visualmente, y dio
+retroalimentación en lenguaje natural en el chat. Cada corrección se aplicó
+regenerando el script y volviendo a guardar el mismo archivo .blend.
+
+Todos los materiales son procedurales (nodos Principled BSDF de Blender,
+solo con valores de color/rugosidad/metalicidad), creados dentro del mismo
+script. Ningún modelo de este informe usa texturas de imagen, fuentes
+tipográficas externas, ni assets descargados.
+
+LIMITACIÓN IMPORTANTE: LOS SCRIPTS NO SE CONSERVARON
+-------------------------------------------------------
+Cada script de Python se escribió como archivo temporal en la raíz de
+Modelos-3D (por ejemplo, `build_bookshelf.py`) y se eliminó (`rm`)
+inmediatamente después de confirmar que el .blend correspondiente se había
+guardado correctamente. No existe copia del código fuente exacto de ningún
+script.
+
+La descripción de "lógica del script" en cada entrada de este informe se
+reconstruye desde el historial de esta conversación (que Claude sí
+conserva como contexto), no desde un archivo verificable de forma
+independiente. Si se necesita el código exacto, tendría que volver a
+escribirse desde cero; no es una recuperación de un archivo existente.
+
+ACTIVOS EXCLUIDOS DE ESTE INFORME POR INSTRUCCIÓN DEL USUARIO
+-----------------------------------------------------------------
+Los siguientes elementos fueron eliminados del repositorio y de este
+informe a petición explícita del usuario, y no se documentan más allá de
+esta nota:
+
+- Un modelo de silla de oficina (ID de registro FUR-LIB-004 / FUR-LIB-006)
+  que había sido diseñado usando como referencia visual dos fotografías de
+  producto proporcionadas por el usuario (archivos locales en su carpeta
+  de Descargas, no incorporados nunca al repositorio). El usuario pidió
+  eliminar el modelo y cualquier rastro de esa referencia.
+- Dos archivos de murales decorativos y un modelo de estantería con
+  libros, preexistentes en el repositorio antes de esta sesión (no fueron
+  creados por Claude). El usuario indicó que no se incluirán en el juego.
+
+================================================================================
+ÍNDICE DE ACTIVOS DOCUMENTADOS (19)
+================================================================================
+FUR-LIB-007  SM_Bookshelf_Library_A.blend
+PRP-LIB-006  SM_BookRow_Library_A.blend
+FUR-LIB-008  SM_Bookshelf_Door_A.blend
+ARC-LIB-002  SM_Hatch_Library_A.blend
+PRP-LIB-007  SM_HangingBulb_Library_A.blend
+FUR-LIB-009  SM_MetalShelf_LibraryBasement_A.blend
+DOC-LIB-001  SM_Manuscript_ForbiddenHistories_Library.blend
+ARC-LIB-003  SM_Door_LibraryBasement_A.blend
+FUR-LIB-001  SM_Desk_LibraryLobby_A.blend
+FUR-LIB-002  SM_Bench_LibraryLobby_A.blend
+PRP-LIB-001  SM_DirectorySign_Library_A.blend
+ARC-LIB-001  SM_Door_LibraryMain_A.blend
+FUR-LIB-003  SM_Desk_LibraryGuard_A.blend
+PRP-LIB-002  SM_Phone_LibraryReception_A.blend
+PRP-LIB-003  SM_LogBook_LibraryReception_A.blend
+FUR-LIB-005  SM_Desk_LibrarySurveillance_A.blend
+PRP-LIB-004  SM_MonitorSet_LibrarySurveillance_A.blend
+PRP-LIB-005  SM_Console_LibrarySurveillance_A.blend
+ARC-LIB-004  SM_Door_LibraryService_A.blend
+PRP-LIB-008  SM_ExitSign_Library_A.blend
+
+================================================================================
+DETALLE POR ACTIVO
+================================================================================
+
+------------------------------------------------------------------------------
+FUR-LIB-007 — SM_Bookshelf_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Bookshelf_Library_A.blend
+Commit: 0bab614 — 2026-07-12 01:02:42 -0600
+Generado por IA: Sí, completo. Sin edición manual del usuario en Blender.
+Instrucción original: Crear la estantería FUR-LIB-007 del inventario de la
+  Biblioteca, primer objeto de la sesión de modelado.
+Script (reconstruido, no conservado): Blockout de 9 cajas primitivas unidas
+  (2 paneles laterales, panel trasero, base, tapa, 4 entrepaños), origen en
+  centro inferior, rotación/escala aplicadas, normales recalculadas, UV con
+  Smart UV Project, colisión UCX_ de caja única, material procedural
+  M_Wood_Library.
+Fuente de las dimensiones: Guía_Dimensiones_Blender_Unreal_Proyecto_Memoria.txt,
+  sección 8 "Estantería alta" (ancho 0.90–1.20 m, profundidad 0.30–0.45 m,
+  alto 1.80–2.20 m). Resultado: 1.05 x 0.35 x 2.00 m.
+Correcciones solicitadas: Ninguna; aprobada en la primera revisión visual.
+Referencias externas: Ninguna.
+Materiales: M_Wood_Library (procedural, sin textura).
+No verificable: Contenido exacto del script eliminado (ver limitación general).
+
+------------------------------------------------------------------------------
+PRP-LIB-006 — SM_BookRow_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_BookRow_Library_A.blend
+Commit: 5d215b3 — 2026-07-12 01:31:56 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el set de libros PRP-LIB-006 para la
+  estantería.
+Script (reconstruido): 5 libros como cajas primitivas con tamaños e
+  inclinación aleatoria (semilla fija `random.seed(42)`), unidos en una
+  sola malla, UV con Smart UV Project.
+Fuente de las dimensiones: Guía_Dimensiones..., sección 8 "Libros"
+  (pequeño 0.14x0.21x0.02 m, mediano 0.17x0.24x0.03 m, grande
+  0.22x0.30x0.04 m).
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_BookCover_Library (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+FUR-LIB-008 — SM_Bookshelf_Door_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Bookshelf_Door_A.blend
+Commit: 22fcaeb — 2026-07-12 01:45:32 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la estantería con mecanismo oculto que
+  Nicolás manipula en el Capítulo 1 del documento narrativo (revela una
+  compuerta al sótano).
+Script (reconstruido): Primera versión con un marco de bisagra visible en
+  el borde. Tras discutir la función narrativa del objeto (debe pasar
+  desapercibida como una estantería normal), se regeneró sin el marco
+  visible, dejando el pivote de bisagra oculto y un libro que sobresale
+  ligeramente como única pista de interacción.
+Fuente de las dimensiones: Igual que FUR-LIB-007 (misma familia de
+  estantería).
+Correcciones solicitadas: 1 ronda — el usuario preguntó "¿cuál es la idea
+  de esa estantería en el juego?"; tras la explicación, pidió quitar el
+  marco de bisagra visible y usar una pista más sutil.
+Referencias externas: Ninguna (la decisión de diseño se basó en el texto
+  de Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 1).
+Materiales: M_Wood_LibrarySpecial (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+ARC-LIB-002 — SM_Hatch_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Hatch_Library_A.blend
+Commit: 00016a6 — 2026-07-12 01:49:49 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la compuerta oculta hacia el sótano que
+  revela FUR-LIB-008.
+Script (reconstruido): Marco fijo (SM_HatchFrame_Library_A) + hoja móvil
+  con pivote de bisagra (SM_HatchDoor_Library_A), abertura de 1.10 x 1.10 m.
+Fuente de las dimensiones: Estimación propia, sin entrada específica en la
+  Guía para "compuertas"; se usó como referencia de holgura mínima el
+  diámetro de la cápsula del jugador (0.84 m) descrito en la Guía, sección
+  "Personaje y cámara".
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Metal_HatchLibrary (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+PRP-LIB-007 — SM_HangingBulb_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_HangingBulb_Library_A.blend
+Commit: 8a8b2f3 — 2026-07-12 02:05:56 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la bombilla colgante parpadeante del sótano
+  (descrita en el Capítulo 1 del documento narrativo).
+Script (reconstruido): 4 iteraciones:
+  1. Cordón (cilindro liso) + portalámparas + bombilla.
+  2. Tras pedido del usuario de que sea una cadena, se reemplazó el cordón
+     por eslabones de torus apilados con rotación alternada.
+  3. El usuario indicó que parecían "argollas una encima de otra", no una
+     cadena real; se corrigió con eslabones ovalados (torus elongado y
+     rotado 90° en Z de forma alterna) que se entrelazan correctamente.
+  4. El usuario pidió más separación entre eslabones ("se ve demasiado
+     pegado"); se aumentó el espaciado de 22 a 16 eslabones.
+Fuente de las dimensiones: Estimación propia, sin entrada específica en la
+  Guía para "bombilla colgante".
+Correcciones solicitadas: 3 rondas (ver arriba).
+Referencias externas: Ninguna.
+Materiales: M_Metal_BulbFixture y M_Glass_BulbEmissive (procedurales, el
+  segundo con emisión).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+FUR-LIB-009 — SM_MetalShelf_LibraryBasement_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_MetalShelf_LibraryBasement_A.blend
+Commit: 2a74c69 — 2026-07-12 18:57:36 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el estante de metal industrial del sótano
+  (descrito en el Capítulo 1 como "estantes de metal pesado").
+Script (reconstruido): Estructura abierta de 4 postes de esquina y 5
+  niveles, sin paneles laterales/traseros, 1.20 x 0.45 x 2.20 m.
+Fuente de las dimensiones: Extrapolación propia de la familia
+  "estantería", sin entrada específica en la Guía para estanterías
+  industriales.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Metal_ShelfRusted (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+DOC-LIB-001 — SM_Manuscript_ForbiddenHistories_Library.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Manuscript_ForbiddenHistories_Library.blend
+Commit: 3508618 — 2026-07-12 19:02:11 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el manuscrito "Historias Prohibidas del
+  Campus", hero asset del Capítulo 1.
+Script (reconstruido): Tomo con biselado en los bordes (modificador Bevel
+  aplicado), correa y broche, páginas visibles en el canto. Nota de
+  proceso: la primera versión se nombró incorrectamente con prefijo
+  "PRP_" en vez de "SM_" (error propio, no del usuario); se eliminó y se
+  reconstruyó completa con el nombre correcto, no fue un simple renombrado.
+Fuente de las dimensiones: Extrapolación de Guía_Dimensiones..., sección 8
+  "Libros — Grande" (0.22x0.30x0.04 m), agrandado porque el texto
+  narrativo lo describe como "un libro de gran volumen".
+Correcciones solicitadas: Ninguna sobre el diseño (solo la corrección de
+  nombre, autodetectada).
+Referencias externas: Ninguna.
+Materiales: M_Leather_ManuscriptCover y M_Paper_ManuscriptPages
+  (procedurales).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+ARC-LIB-003 — SM_Door_LibraryBasement_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Door_LibraryBasement_A.blend
+Commit: ee9232a — 2026-07-12 19:26:09 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la puerta metálica pesada del sótano que se
+  cierra de golpe (Capítulo 1).
+Script (reconstruido): Marco fijo + hoja con 3 refuerzos horizontales y
+  manija, pivote de bisagra en el borde.
+Fuente de las dimensiones: Guía_Dimensiones..., sección 3 "Puerta interior
+  simple" (recomendado 1.20 x 2.40 m).
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Metal_BasementDoor (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+FUR-LIB-001 — SM_Desk_LibraryLobby_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Desk_LibraryLobby_A.blend
+Commit: efc807f — 2026-07-12 20:04:53 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el mostrador de recepción del vestíbulo.
+Script (reconstruido): 2 iteraciones. La primera era un bloque sólido sin
+  espacio para las piernas; el usuario señaló que un escritorio real
+  necesita ese hueco, y se reconstruyó con panel frontal sólido + pedestal
+  lateral + hueco libre de 1.42 m.
+Fuente de las dimensiones: Guía_Dimensiones..., sección 8 "Mostrador"
+  (alto 1.00–1.10 m, profundidad 0.60–0.80 m, ancho modular 1.20–2.40 m).
+Correcciones solicitadas: 1 ronda (hueco para las piernas).
+Referencias externas: Ninguna.
+Materiales: M_Wood_LobbyDesk (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+FUR-LIB-002 — SM_Bench_LibraryLobby_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Bench_LibraryLobby_A.blend
+Commit: c14c700 — 2026-07-12 20:19:56 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la banca de espera del vestíbulo.
+Script (reconstruido): Asiento, respaldo y 4 patas, cajas primitivas
+  unidas.
+Fuente de las dimensiones: Estimación propia; la Guía no tiene una entrada
+  específica para bancas de biblioteca.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Wood_LobbyBench (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+PRP-LIB-001 — SM_DirectorySign_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_DirectorySign_Library_A.blend
+Commit: d5d8713 — 2026-07-12 20:57:27 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar un cartel/directorio para el vestíbulo. Nota
+  importante: este objeto NO proviene del documento narrativo; Claude lo
+  propuso como decoración ambiental genérica de vestíbulo, y el usuario
+  confirmó dejarlo cuando se le preguntó explícitamente por su origen.
+Script (reconstruido): Panel con marco de 4 tiras, pivote en la cara
+  trasera para montaje en pared.
+Fuente de las dimensiones: Estimación propia.
+Correcciones solicitadas: Ninguna sobre el diseño.
+Referencias externas: Ninguna.
+Materiales: M_Panel_DirectorySign y M_Metal_DirectoryFrame (procedurales).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+ARC-LIB-001 — SM_Door_LibraryMain_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Door_LibraryMain_A.blend
+Commit: d5d93f4 — 2026-07-12 21:01:38 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la puerta principal doble de cierre
+  magnético que la entidad sella en el Capítulo 1.
+Script (reconstruido): Marco con poste central (para el cierre
+  magnético), dos hojas independientes con pivote propio y panel de
+  vidrio superior.
+Fuente de las dimensiones: Guía_Dimensiones..., sección 3 "Puerta doble"
+  (recomendado 2.20 m de ancho total).
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Metal_MainDoorFrame y M_Glass_MainDoor (procedurales).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+FUR-LIB-003 — SM_Desk_LibraryGuard_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Desk_LibraryGuard_A.blend
+Commit: 3c09ee9 — 2026-07-12 21:05:37 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el mostrador de guardas de la recepción.
+Script (reconstruido): 2 iteraciones. La primera no tenía panel de soporte
+  en el lado abierto (hueco de piernas); el usuario señaló que la tapa se
+  veía sin sostén físico ("ahí se cae"), y se agregó un panel delgado de
+  soporte en ese lado.
+Fuente de las dimensiones: Guía_Dimensiones..., sección 8 "Mostrador".
+Correcciones solicitadas: 1 ronda (soporte de la tapa).
+Referencias externas: Ninguna.
+Materiales: M_Wood_GuardDesk (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+PRP-LIB-002 — SM_Phone_LibraryReception_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Phone_LibraryReception_A.blend
+Commit: b35f463 — 2026-07-12 21:34:17 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el teléfono de recepción.
+Script (reconstruido): 2 iteraciones. La primera era un teléfono de
+  escritorio de época (auricular recto sobre horquilla); el usuario pidió
+  algo más moderno tipo inalámbrico, y se reconstruyó como base cargadora
+  inclinada + auricular de pie + antena corta.
+Fuente de las dimensiones: Estimación propia.
+Correcciones solicitadas: 1 ronda (modernizar el diseño).
+Referencias externas: Ninguna (a diferencia de la silla eliminada, este
+  rediseño se hizo solo a partir de la descripción en texto del usuario,
+  sin imágenes de referencia).
+Materiales: M_Plastic_DeskPhone (primera versión, descartada) /
+  M_Plastic_CordlessPhone (versión final).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+PRP-LIB-003 — SM_LogBook_LibraryReception_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_LogBook_LibraryReception_A.blend
+Commit: b619bf0 — 2026-07-12 21:38:35 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el libro de registro de entradas de la
+  recepción.
+Script (reconstruido): Libro abierto con lomo central y dos mitades de
+  páginas inclinadas levemente hacia afuera desde el lomo.
+Fuente de las dimensiones: Estimación propia.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Leather_LogBookCover y M_Paper_LogBookPages (procedurales).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+FUR-LIB-005 — SM_Desk_LibrarySurveillance_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Desk_LibrarySurveillance_A.blend
+Commit: 98f020f — 2026-07-12 21:41:36 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el escritorio del cuarto de vigilancia.
+Script (reconstruido): Pedestal con 2 cajones + panel de soporte en el
+  otro lado (lección aplicada desde FUR-LIB-003), tapa de 1.60 x 0.70 m.
+Fuente de las dimensiones: Extrapolación propia de "mostrador", ancho
+  fuera del rango típico de la Guía (se necesitaba espacio para varios
+  monitores).
+Correcciones solicitadas: Ninguna (se aplicó preventivamente la corrección
+  aprendida en FUR-LIB-003).
+Referencias externas: Ninguna.
+Materiales: M_Metal_SurveillanceDesk (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+PRP-LIB-004 — SM_MonitorSet_LibrarySurveillance_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_MonitorSet_LibrarySurveillance_A.blend
+Commit: 6ff0e00 — 2026-07-12 21:49:39 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar el set de monitores del cuarto de
+  vigilancia.
+Script (reconstruido): 2 iteraciones. La primera eran monitores CRT de
+  carcasa profunda; el usuario indicó que en 2026 deberían ser "más
+  planos" con patas que los sostengan, y se reconstruyeron como 4
+  monitores planos con base y cuello.
+Fuente de las dimensiones: Estimación propia.
+Correcciones solicitadas: 1 ronda (modernizar a panel plano).
+Referencias externas: Ninguna.
+Materiales: M_Plastic_MonitorBody y M_Screen_MonitorEmissive
+  (procedurales, el segundo con emisión).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+PRP-LIB-005 — SM_Console_LibrarySurveillance_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Console_LibrarySurveillance_A.blend
+Commit: 697801d — 2026-07-12 21:52:47 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la consola/panel de control de vigilancia.
+Script (reconstruido): Panel inclinado 20° con 18 botones cilíndricos
+  sobre base plana.
+Fuente de las dimensiones: Estimación propia.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Plastic_ControlConsole y M_Plastic_ConsoleButtons
+  (procedurales).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+ARC-LIB-004 — SM_Door_LibraryService_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_Door_LibraryService_A.blend
+Commit: 06eac60 — 2026-07-12 21:56:28 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la puerta de servicio lateral (salida de
+  escape del Capítulo 1). Se discutió explícitamente que es una puerta
+  ordinaria con seguro débil, sin lógica narrativa especial de
+  bloqueo/desbloqueo.
+Script (reconstruido): Marco simple + hoja con barra de empuje, sin
+  refuerzos (a diferencia de ARC-LIB-003).
+Fuente de las dimensiones: Guía_Dimensiones..., sección 3 "Puerta de
+  emergencia" (1.10–1.30 m ancho, 2.20–2.40 m alto).
+Correcciones solicitadas: Ninguna sobre el modelo (hubo una discusión de
+  diseño narrativo previa sobre si la puerta debía tener lógica de
+  bloqueo por capítulo; se decidió que no).
+Referencias externas: Ninguna.
+Materiales: M_Metal_ServiceDoor (procedural).
+No verificable: Contenido exacto del script eliminado.
+
+------------------------------------------------------------------------------
+PRP-LIB-008 — SM_ExitSign_Library_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Biblioteca/SM_ExitSign_Library_A.blend
+Commit: fcadb6e — 2026-07-12 21:59:25 -0600
+Generado por IA: Sí, completo.
+Instrucción original: Modelar la señalización de salida de emergencia,
+  último activo de la Fase 1.
+Script (reconstruido): Carcasa + panel frontal emisivo verde, pivote de
+  montaje arriba (dintel de puerta).
+Fuente de las dimensiones: Estimación propia.
+Correcciones solicitadas: Ninguna.
+Referencias externas: Ninguna.
+Materiales: M_Plastic_ExitSignHousing y M_Emissive_ExitSign (procedurales).
+No verificable: Contenido exacto del script eliminado.
+
+================================================================================
+RESUMEN DE ELEMENTOS NO VERIFICABLES (aplica a los 19 activos)
+================================================================================
+[ ] Contenido exacto (código fuente) de cada script de Python: no se
+    conservó ningún archivo .py; la descripción de cada script en este
+    informe es una reconstrucción desde el historial de la conversación.
+[ ] Ninguna verificación de originalidad, ausencia de infracción de
+    derechos, o idoneidad legal fue realizada por Claude. Todas las
+    dimensiones y formas son geometría primitiva simple (cajas, cilindros,
+    toros, esferas) generada matemáticamente a partir de medidas
+    numéricas; no se copió geometría de ningún archivo externo.
+
+================================================================================
+FIN DEL INFORME
+================================================================================
