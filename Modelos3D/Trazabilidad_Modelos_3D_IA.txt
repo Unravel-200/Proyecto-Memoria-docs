@@ -74,7 +74,7 @@ activos listados desde ARC-LIB-005 en adelante tienen su script real
 conservado en el repositorio (no reconstruido desde la conversación).
 
 ================================================================================
-ÍNDICE DE ACTIVOS DOCUMENTADOS (33)
+ÍNDICE DE ACTIVOS DOCUMENTADOS (34)
 ================================================================================
 FUR-LIB-007  SM_Bookshelf_Library_A.blend
 PRP-LIB-006  SM_BookRow_Library_A.blend
@@ -109,6 +109,7 @@ ARC-GEN-002  SM_VestibuloBlockout_Generales_A.blend
 ARC-GEN-003  SM_SodaBlockout_Generales_A.blend
 ARC-GEN-004  SM_Stairs_Generales_A.blend
 FUR-GEN-001  SM_DiningSet_Soda_A.blend
+ARC-GEN-005  SM_AulaBlockout_Generales_A.blend
 
 ================================================================================
 DETALLE POR ACTIVO
@@ -735,9 +736,38 @@ Referencias externas: Ninguna (el usuario compartió una captura de
   una referencia externa de diseño).
 Materiales: M_Plastic_SodaFurniture (procedural).
 
+------------------------------------------------------------------------------
+ARC-GEN-005 — SM_AulaBlockout_Generales_A.blend
+------------------------------------------------------------------------------
+Ruta: Modelos-3D/Generales/SM_AulaBlockout_Generales_A.blend
+Script conservado: Generales/SM_AulaBlockout_Generales_A.py (real).
+Commit: a1e3952 — 2026-07-15 00:57:04 -0600.
+Generado por IA: Sí, completo.
+Instrucción original: Blockout arquitectónico de un aula de Estudios
+  Generales (cuarto piso), primer activo retomado de esa línea de
+  modelado tras la pausa registrada en la sección 9 del checklist.
+Fuente de las dimensiones: Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt,
+  sección 10.2 ("Aulas: 8 x 10 m"); altura de piso de 4.5 m y grosor de
+  pared interior de 0.15 m tomados de la Guía de Dimensiones y de los
+  valores ya usados en ARC-GEN-002/003/004 del mismo edificio.
+Nota de diseño: los pisos 1-3 y el pasillo del piso 4 todavía no tienen
+  blockout, así que la sala se modeló con origen local propio (0,0,0) en
+  vez de encadenarse a las coordenadas del vestíbulo/soda del piso 1. Si
+  se ensambla el edificio completo más adelante, el offset vertical
+  aproximado de este piso sería Z = 13.5 m (3 pisos x 4.5 m). Se dejó una
+  sola puerta (1.20 m) en la pared frontal hacia el futuro pasillo; el
+  resto de paredes queda cerrado por ahora, igual que la pared trasera de
+  la Soda (ARC-GEN-003).
+Correcciones solicitadas: Ninguna; aprobada en la primera revisión visual
+  (el usuario pidió que Claude abriera el .blend en la interfaz de
+  Blender para la revisión y lo cerrara al aprobar, en vez de abrirlo él
+  mismo).
+Referencias externas: Ninguna.
+Materiales: M_Floor_AulaBlockout, M_Wall_AulaBlockout (procedurales).
+
 ================================================================================
 RESUMEN DE ELEMENTOS NO VERIFICABLES (aplica a los 20 activos originales;
-los 13 activos añadidos desde ARC-LIB-005 tienen su script real conservado,
+los 14 activos añadidos desde ARC-LIB-005 tienen su script real conservado,
 no aplica la limitación de "contenido exacto del script" a esos)
 ================================================================================
 [ ] Contenido exacto (código fuente) de cada script de Python: no se
