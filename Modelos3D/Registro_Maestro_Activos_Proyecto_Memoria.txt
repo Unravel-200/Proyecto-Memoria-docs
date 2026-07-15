@@ -782,7 +782,7 @@ ARC-GEN-005 | Blockout arquitectónico de un aula (piso + paredes, 8x10 m, cuart
 FUR-GEN-001 | Mesas y sillas de comedor (Soda) | FUR | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_DiningSet_Soda_A.blend (script: SM_DiningSet_Soda_A.py) | No | [UE] Pendiente | Pendiente
 FUR-GEN-002 | Mostrador de cocina/caja (Soda) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 PRP-GEN-001 | Bandejas puestas para "personas ausentes" (Soda) | PRP | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
-FUR-GEN-003 | Pupitres (aula) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
+FUR-GEN-003 | Pupitre individual del aula (combo pupitre+silla con paleta giratoria tipo tablet-arm) | FUR | GEN | [ ] Planeado — 13 intentos por script (2026-07-15) rechazados en el marco tubular/brazo que sostiene el sobre (nunca convenció la lógica de por dónde salen los tubos, cómo se sostiene el sobre en voladizo, ni la posición del respaldar); el usuario decidió modelarlo el mismo a mano en Blender, no reintentar por script sin que lo pida. | Pendiente | No | [UE] Pendiente | Pendiente
 FUR-GEN-004 | Escritorio del profesor (aula) | FUR | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 PRP-GEN-002 | Pizarra (aula, donde escribe el Profesor sin rostro) | PRP | GEN | [ ] Planeado | Pendiente | No | [UE] Pendiente | Pendiente
 

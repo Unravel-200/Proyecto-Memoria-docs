@@ -1844,6 +1844,12 @@ PROBLEMAS CONOCIDOS
 - Formas orgánicas (árboles, esculturas, follaje) no funcionan bien
   generadas a ciegas por script — ya fallaron 2 veces con árboles y
   5 veces con la fuente. No reintentar sin pedir dirección primero.
+- Lo mismo aplica a mecanismos articulados/soldados complejos: el
+  pupitre individual del aula (FUR-GEN-003, combo silla+paleta con
+  marco tubular) falló 13 veces por script el 2026-07-15 (lógica de
+  por dónde salen los tubos que sostienen el sobre, cómo se sostiene
+  en voladizo, posición del respaldar). El usuario lo va a modelar él
+  mismo a mano; no reintentar por script sin que lo pida.
 - El checklist exige prueba manual antes de usar [X]; la compilación por sí sola
   solo permite registrar la base de v0.1.0 como [~].
 
