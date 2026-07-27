@@ -709,7 +709,7 @@ Vestíbulo (12 x 15 m):
 FUR-LIB-001 | Mostrador de recepción del vestíbulo | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Desk_LibraryLobby_A.blend | No | [UE] Pendiente | Pendiente
 FUR-LIB-002 | Bancas de espera | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Bench_LibraryLobby_A.blend | No | [UE] Pendiente | Pendiente
 PRP-LIB-001 | Cartel/directorio del edificio | PRP | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_DirectorySign_Library_A.blend | No | [UE] Pendiente | Pendiente
-ARC-LIB-001 | Puerta principal doble (cierre magnético), v2 tras revisión: marco con 2 paños fijos vidriados a los lados (0.14 m c/u) + 2 hojas centrales de 0.90 m (1.80 m útil), pivote de cada hoja en el canto exterior junto a su paño fijo, abren hacia los lados; 3 objetos separados (SM_DoorFrame_LibraryMain_A, SM_DoorLeaf_LibraryMain_A_L/_R) en un mismo hueco de 2.20 x 2.60 m | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Door_LibraryMain_A.blend (script: SM_Door_LibraryMain_A.py) | No | [UE] Pendiente | Pendiente
+ARC-LIB-001 | Puerta principal doble (cierre magnético), v3 tras revisión: marco con 2 paños fijos vidriados a los lados, del mismo alto y ancho que las hojas (0.90 x 2.60 m c/u) + 2 hojas centrales de 0.90 m (1.80 m útil), pivote de cada hoja en el canto exterior junto a su paño fijo, abren hacia los lados; 3 objetos separados (SM_DoorFrame_LibraryMain_A, SM_DoorLeaf_LibraryMain_A_L/_R) en un hueco de 3.72 x 2.60 m (ver ARC-LIB-005, hueco ensanchado para esta v3) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Door_LibraryMain_A.blend (script: SM_Door_LibraryMain_A.py) | No | [UE] Pendiente | Pendiente
 
 Recepción (6 x 8 m):
 FUR-LIB-003 | Mostrador de guardas | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Desk_LibraryGuard_A.blend | No | [UE] Pendiente | Pendiente
@@ -745,7 +745,7 @@ A partir de este punto se conserva también el script .py de cada activo,
 junto al .blend, sin eliminarlo (regla vigente desde 2026-07-12).
 
 Vestíbulo:
-ARC-LIB-005 | Blockout arquitectónico del vestíbulo (piso + paredes, 12x15 m; hueco de 1.10 m en la pared derecha hacia la salida lateral ARC-LIB-004) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_VestibuloBlockout_Library_A.blend (script: SM_VestibuloBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
+ARC-LIB-005 | Blockout arquitectónico del vestíbulo (piso + paredes, 12x15 m; hueco frontal ensanchado a 3.72 m en v3 para la puerta principal ARC-LIB-001 con paños fijos del mismo ancho que las hojas; hueco de 1.10 m en la pared derecha hacia la salida lateral ARC-LIB-004) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_VestibuloBlockout_Library_A.blend (script: SM_VestibuloBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
 
 Recepción:
 ARC-LIB-006 | Blockout arquitectónico de recepción (piso + paredes, 6x8 m, alineado con el vestíbulo en Y=7.5) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_RecepcionBlockout_Library_A.blend (script: SM_RecepcionBlockout_Library_A.py) | No | [UE] Pendiente | Pendiente
