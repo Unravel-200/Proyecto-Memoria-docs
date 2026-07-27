@@ -734,6 +734,8 @@ PRP-LIB-007 | Bombilla colgante vieja (parpadeante) | PRP | LIB | [X] Listo en B
 FUR-LIB-009 | Estante de metal industrial (sótano) | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_MetalShelf_LibraryBasement_A.blend | Sí | [UE] Pendiente | Pendiente
 DOC-LIB-001 | Manuscrito "Historias Prohibidas del Campus" (hero asset) | DOC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Manuscript_ForbiddenHistories_Library.blend | Sí | [UE] Pendiente | Pendiente
 ARC-LIB-003 | Puerta metálica pesada del sótano | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Door_LibraryBasement_A.blend | Sí | [UE] Pendiente | Pendiente
+PRP-LIB-009 | Fotografía del Expositor (prop suelto hallado en el sótano, no era static mesh registrado hasta ahora) | PRP | LIB | [P] Provisional — geometría y tarjeta terminadas; la imagen de la fotografía queda como material placeholder morado (M_PLACEHOLDER_PhotoExpositor), es contenido de arte final, no geometría | Modelos-3D/Biblioteca/SM_Photo_Expositor_Library_A.blend (script: SM_Photo_Expositor_Library_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-LIB-010 | Registro de la muerte misteriosa del Expositor (carpeta/legajo hallado en el sótano, no era static mesh registrado hasta ahora) | PRP | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_DeathRecord_Library_A.blend (script: SM_DeathRecord_Library_A.py) | Sí | [UE] Pendiente | Pendiente
 VFX-LIB-001 | Fluido oscuro (decal/VFX, no es static mesh) | VFX | LIB | [ ] Planeado | N/A | N/A | N/A | Pendiente
 
 Salida lateral:
