@@ -702,8 +702,9 @@ NUEVOS ACTIVOS
 
 BIBLIOTECA CENTRAL — INVENTARIO FASE 1 (demo vertical, Capítulo 1)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 1.
-No incluye sala de lectura, sala de computadoras, salas grupales ni sótano 2
-(fuera de alcance de la Fase 1).
+Ampliada el 2026-07-26 para incluir sala de lectura, sala de
+computadoras, sala grupal y sótano 2 (antes fuera de alcance de la
+Fase 1; ver ARC-LIB-010 a ARC-LIB-013 más abajo).
 
 Vestíbulo (12 x 15 m):
 FUR-LIB-001 | Mostrador de recepción del vestíbulo | FUR | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Desk_LibraryLobby_A.blend | Sí | [UE] Pendiente | Pendiente
@@ -760,6 +761,12 @@ ARC-LIB-008 | Blockout arquitectónico de la colección restringida (piso + pare
 
 Sótano 1:
 ARC-LIB-009 | Blockout arquitectónico del Sótano 1 (piso + techo + paredes, 45x35 m, techo de 3.5 m, concreto; posicionado bajo la colección restringida, Z=-3.7 a -0.2; se accede solo por la compuerta ARC-LIB-002, sin conexión de pared con las salas de arriba) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Sotano1Blockout_Library_A.blend (script: SM_Sotano1Blockout_Library_A.py) | Sí | [UE] Pendiente | Pendiente
+
+Ampliación de Fase 1 (2026-07-26) — salas antes fuera de alcance:
+ARC-LIB-010 | Blockout arquitectónico de la sala de lectura (piso + paredes, 14x16 m; sin dimensión oficial en la documentación, se eligió un tamaño típico de sala de lectura universitaria; puerta de 1.80 m; origen local propio, todavía no hay pasillo que la conecte con el resto de la planta baja) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_SalaLecturaBlockout_Library_A.blend (script: SM_SalaLecturaBlockout_Library_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-LIB-011 | Blockout arquitectónico de la sala de computadoras (piso + paredes, 8x10 m; sin dimensión oficial, tamaño típico de sala de cómputo; puerta de 1.20 m; origen local propio, misma salvedad que ARC-LIB-010) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_SalaComputadorasBlockout_Library_A.blend (script: SM_SalaComputadorasBlockout_Library_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-LIB-012 | Blockout arquitectónico de una sala grupal (piso + paredes, 4x5 m, módulo repetible pensado para colocarse 2 a 4 veces según haga falta — el guion habla de "salas grupales" en plural sin cantidad definida; puerta de 0.90 m; origen local propio, misma salvedad que ARC-LIB-010) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_SalaGrupalBlockout_Library_A.blend (script: SM_SalaGrupalBlockout_Library_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-LIB-013 | Blockout arquitectónico del Sótano 2 (piso + techo + paredes, 35x30 m, techo de 3.5 m; dimensión oficial de la sección 10.1. Apilado bajo el Sótano 1 en el mismo sistema de coordenadas del edificio, X=0/Y=29.5, Z=-4.1 a -7.8. El guion no describe contenido para este sótano; sin mecanismo de acceso definido todavía entre Sótano 1 y Sótano 2, solo un marcador de referencia) | ARC | LIB | [X] Listo en Blender | Modelos-3D/Biblioteca/SM_Sotano2Blockout_Library_A.blend (script: SM_Sotano2Blockout_Library_A.py) | Sí | [UE] Pendiente | Pendiente
 
 PLAZA CENTRAL — INVENTARIO FASE 1 (Capítulo 2)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 2,
