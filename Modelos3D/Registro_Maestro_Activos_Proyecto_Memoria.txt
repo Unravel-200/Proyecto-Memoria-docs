@@ -821,6 +821,21 @@ ARC-EDU-004 | Pasillo paranormal en estado normal (piso + 2 paredes laterales, 2
 PRP-EDU-001 | Mapa hacia Mantenimiento e Ingeniería (pista del final del Capítulo 3; panel enmarcado, 0.90x0.70 m; el dibujo del mapa es contenido de arte final vía textura, material placeholder) | PRP | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_Map_Educacion_A.blend (script: SM_Map_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-EDU-002 | Alarma de pared (evento "Alarma" del Capítulo 3; caja + campana + luz indicadora; sonido/parpadeo es lógica de Unreal, no geometría) | PRP | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_Alarm_Educacion_A.blend (script: SM_Alarm_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
 
+MANTENIMIENTO — INVENTARIO INICIAL (2026-07-27, Capítulo 4)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 4,
+y sección 10.4 (edificio 40x25 m, altura de techo 7 m explícita — nave
+industrial de un solo nivel, no varios pisos como los demás edificios).
+Zona MAN (nueva). Este capítulo cierra la Noche 1 (termina en "AMANECER
+1"), junto con Biblioteca, Plaza y Generales, y Educación. Puertas
+industriales (3.50-5.00 m según la guía de dimensiones) en Taller y
+Garaje, donde se mueven vehículos/equipo grande. Todos con origen
+local propio (sin plano de planta todavía).
+
+ARC-MAN-001 | Blockout arquitectónico del taller (piso + paredes, 20x20 m; puerta industrial de 4.00x4.00 m) | ARC | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_TallerBlockout_Mantenimiento_A.blend (script: SM_TallerBlockout_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-MAN-002 | Blockout arquitectónico de la bodega (piso + paredes, 10x15 m; puerta de 1.50 m) | ARC | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_BodegaBlockout_Mantenimiento_A.blend (script: SM_BodegaBlockout_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-MAN-003 | Blockout arquitectónico del garaje (piso + paredes, 12x15 m; puerta industrial de 4.00x4.00 m, para los vehículos que "se encienden" en el Capítulo 4) | ARC | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_GarajeBlockout_Mantenimiento_A.blend (script: SM_GarajeBlockout_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-MAN-004 | Blockout arquitectónico del cuarto de llaves (piso + paredes, 5x8 m; puerta de 0.90 m; aquí el Técnico Nocturno entrega la llave antigua) | ARC | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_CuartoLlavesBlockout_Mantenimiento_A.blend (script: SM_CuartoLlavesBlockout_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
