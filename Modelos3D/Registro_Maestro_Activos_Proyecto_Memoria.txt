@@ -804,6 +804,21 @@ PRP-GEN-003 | Recibo de Nicolás fechado en 1974 (Soda; prop suelto tipo ticket 
 PRP-GEN-004 | Altavoz con pedidos (Soda; panel intercomunicador tipo drive-thru para montar en pared o mostrador) | PRP | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_OrderSpeaker_Soda_A.blend (script: SM_OrderSpeaker_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-GEN-005 | Espejo con mensajes (marco + superficie reflectante, 0.60x1.20 m; el efecto de mensajes apareciendo es material/VFX de Unreal, no geometría, mismo criterio que el fluido oscuro VFX-LIB-001) | PRP | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_Mirror_Generales_A.blend (script: SM_Mirror_Generales_A.py) | Sí | [UE] Pendiente | Pendiente
 
+EDUCACIÓN — INVENTARIO INICIAL (2026-07-27, Capítulo 3)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 3,
+y sección 10.3 (edificio 50x35 m, cuatro pisos). Zona EDU (nueva). Primer
+lote de arquitectura de este edificio: un aula, un archivo, un
+laboratorio pedagógico y el pasillo paranormal. Todos con origen local
+propio (el edificio no tiene plano de planta ni pasillos modelados
+todavía, mismo criterio que el aula de Generales). Altura de piso 4.0 m
+(Guía_Dimensiones: "Edificio académico: 4.00 m"), más baja que los 4.5 m
+usados en Biblioteca/Generales para diferenciar este edificio.
+
+ARC-EDU-001 | Blockout arquitectónico de un aula (piso + paredes, 8x9 m; puerta de 1.20 m) | ARC | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_AulaBlockout_Educacion_A.blend (script: SM_AulaBlockout_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EDU-002 | Blockout arquitectónico del archivo (piso + paredes, 8x12 m; puerta de 1.20 m) | ARC | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_ArchivoBlockout_Educacion_A.blend (script: SM_ArchivoBlockout_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EDU-003 | Blockout arquitectónico del laboratorio pedagógico (piso + paredes, 10x12 m; puerta de 1.50 m, más ancha para equipo) | ARC | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_LabPedagogicoBlockout_Educacion_A.blend (script: SM_LabPedagogicoBlockout_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EDU-004 | Pasillo paranormal en estado normal (piso + 2 paredes laterales, 2.20x15 m, SIN tapas en los extremos a propósito para repetir/alargar en Unreal; es el escenario del evento "Pasillo infinito" del Capítulo 3, el efecto paranormal en sí es lógica/VFX de Unreal, no geometría) | ARC | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_CorridorParanormalBlockout_Educacion_A.blend (script: SM_CorridorParanormalBlockout_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
