@@ -780,6 +780,7 @@ ARC-EXT-002 | Fuente central (20 m de diámetro, profundidad 0.5 m; solo borde y
 FUR-EXT-001 | Bancas de la plaza (concreto/piedra) | FUR | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_Bench_PlazaCentral_A.blend (script: SM_Bench_PlazaCentral_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-EXT-001 | Farolas (poste en L, brazo horizontal de 1.3 m, farol hexagonal colgante) | PRP | EXT | [P] Provisional — el usuario aprobó el diseño actual para seguir avanzando pero lo marcó como temporal en revisarEdificios.txt, sin fecha de reemplazo aún | Modelos-3D/Plaza/SM_Lamppost_PlazaCentral_A.blend (script: SM_Lamppost_PlazaCentral_A.py) | Sí | [UE] Pendiente | Pendiente
 ENV-EXT-001 | Árboles perimetrales | ENV | EXT | [!] Pendiente — el usuario lo va a modelar a mano en Blender (no generado por script; 2 intentos por script rechazados, "parecía poste de luz"). Archivo de intento sin aprobar en Modelos-3D/Plaza/SM_Tree_PlazaCentral_A.blend/.py, sin commitear, solo como posible punto de partida. Alternativa a considerar: usar assets de vegetación de Quixel/Fab (gratis en Unreal) en vez de modelarlo desde cero. | N/A | No | N/A | Pendiente
+PRP-EXT-002 | Linterna que el guarda protector entrega a los jugadores (prop suelto/de mano, hallado al auditar el Capítulo 2 contra este registro — no estaba modelado) | PRP | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_Flashlight_Plaza_A.blend (script: SM_Flashlight_Plaza_A.py) | Sí | [UE] Pendiente | Pendiente
 
 ESTUDIOS GENERALES — INVENTARIO FASE 1 (Capítulo 2)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 2,
@@ -797,6 +798,11 @@ PRP-GEN-001 | Bandejas puestas para "personas ausentes" (Soda, set de 3 con plat
 FUR-GEN-003 | Pupitre individual del aula (combo pupitre+silla con paleta giratoria tipo tablet-arm) | FUR | GEN | [ ] Planeado — 13 intentos por script (2026-07-15) rechazados en el marco tubular/brazo que sostiene el sobre (nunca convenció la lógica de por dónde salen los tubos, cómo se sostiene el sobre en voladizo, ni la posición del respaldar); el usuario decidió modelarlo el mismo a mano en Blender, no reintentar por script sin que lo pida. | Pendiente | No | [UE] Pendiente | Pendiente
 FUR-GEN-004 | Escritorio del profesor (aula, 1.40x0.70x0.75 m) | FUR | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_Desk_Teacher_Aula_A.blend (script: SM_Desk_Teacher_Aula_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-GEN-002 | Pizarra (aula, donde escribe el Profesor sin rostro; 3.60x1.40 m, borde inferior a 0.90 m) | PRP | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_Blackboard_Aula_A.blend (script: SM_Blackboard_Aula_A.py) | Sí | [UE] Pendiente | Pendiente
+
+Ampliación (2026-07-27) — props del Capítulo 2 sin registrar todavía:
+PRP-GEN-003 | Recibo de Nicolás fechado en 1974 (Soda; prop suelto tipo ticket de caja, sin talla de fecha/texto, es contenido de arte final) | PRP | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_Receipt_Soda_A.blend (script: SM_Receipt_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-GEN-004 | Altavoz con pedidos (Soda; panel intercomunicador tipo drive-thru para montar en pared o mostrador) | PRP | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_OrderSpeaker_Soda_A.blend (script: SM_OrderSpeaker_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-GEN-005 | Espejo con mensajes (marco + superficie reflectante, 0.60x1.20 m; el efecto de mensajes apareciendo es material/VFX de Unreal, no geometría, mismo criterio que el fluido oscuro VFX-LIB-001) | PRP | GEN | [X] Listo en Blender | Modelos-3D/Generales/SM_Mirror_Generales_A.blend (script: SM_Mirror_Generales_A.py) | Sí | [UE] Pendiente | Pendiente
 
 ________________________________________________________________________________
 ________________________________________________________________________________
