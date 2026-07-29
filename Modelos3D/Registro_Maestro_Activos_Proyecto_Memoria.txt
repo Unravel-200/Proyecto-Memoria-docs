@@ -936,6 +936,18 @@ ARC-PSI-002 | Blockout arquitectónico de la Cámara de Gesell (piso + paredes, 
 ARC-PSI-003 | Blockout arquitectónico del laboratorio de percepción (piso + paredes, 10x14 m; puerta de 1.20 m) | ARC | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_PercepcionBlockout_Psicologia_A.blend (script: SM_PercepcionBlockout_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-PSI-004 | Blockout arquitectónico del archivo (piso + paredes, 8x10 m; puerta de 1.20 m) | ARC | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_ArchivoBlockout_Psicologia_A.blend (script: SM_ArchivoBlockout_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de Psicología (2026-07-29): completa las 4 salas
+con el prop narrativo central del Capítulo 9 (espejo unidireccional de
+la Cámara de Gesell). Las sillas de la sala de entrevistas reutilizan
+SM_Chair_LibraryGuard_A, el banco de observación reutiliza
+SM_Bench_LibraryLobby_A y el archivo reutiliza SM_FilingCabinet_Educacion_A,
+sin duplicar.
+
+FUR-PSI-001 | Mesa de entrevistas con carpeta de documentos (1.20x0.75 m), sala de Entrevistas; sillas reutilizan SM_Chair_LibraryGuard_A (x2) | FUR | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_InterviewTable_Psicologia_A.blend (script: SM_InterviewTable_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-PSI-001 | Espejo unidireccional empotrado en pared (2.0x1.4 m), Cámara de Gesell (prop narrativo central del Capítulo 9: "Grupo de observadores"); banco del lado de observación reutiliza SM_Bench_LibraryLobby_A | PRP | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_OneWayMirror_Psicologia_A.blend (script: SM_OneWayMirror_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-PSI-002 | Consola de pruebas de percepción y reflejos, con panel de botones y pantalla (1.40x0.70 m), laboratorio de Percepción (Capítulo 9: "Observación de reflejos") | FUR | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_ReactionTestStation_Psicologia_A.blend (script: SM_ReactionTestStation_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-PSI-002 | Cámara de video sobre trípode, laboratorio de Percepción (prop narrativo: "Reacción del perro grabada") | PRP | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_RecordingCamera_Psicologia_A.blend (script: SM_RecordingCamera_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
+
 EXTERIORES — PARADA DE AUTOBÚS (2026-07-28, Capítulo 7)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 7
 (Autobús), y la Guía de Dimensiones (parada principal y autobús interno).
