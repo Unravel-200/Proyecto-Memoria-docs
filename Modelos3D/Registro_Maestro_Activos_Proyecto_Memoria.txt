@@ -912,6 +912,20 @@ ARC-MED-002 | Blockout arquitectónico de laboratorios (piso + paredes, 12x16 m;
 ARC-MED-003 | Blockout arquitectónico de la sala de simulación (piso + paredes, 10x12 m; puerta de 1.20 m; escenario de "Internos entran en un cuarto sin salida" del Capítulo 8 —el bloqueo es lógica de Unreal, no ausencia de puerta física) | ARC | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_SimulacionBlockout_Medicina_A.blend (script: SM_SimulacionBlockout_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-MED-004 | Blockout arquitectónico del auditorio (piso + paredes, 18x22 m; puerta doble ancha de 2.20 m, alto 2.80 m) | ARC | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_AuditorioBlockout_Medicina_A.blend (script: SM_AuditorioBlockout_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de Medicina (2026-07-29): completa las 4 salas.
+La biblioteca reutiliza los activos ya existentes de la Biblioteca
+Central (FUR-LIB-007 estantería y FUR-LIB-010 mesa de lectura), sin
+duplicar. Incluye los props narrativos clave del Capítulo 8 (maniquí
+de simulación, ascensor con panel de 3 pisos, monitores).
+
+FUR-MED-001 | Mesa de laboratorio con bandeja de tubos de muestra, laboratorios (1.80x0.80 m) | FUR | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_LabTable_Medicina_A.blend (script: SM_LabTable_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-MED-001 | Centrífuga de laboratorio | PRP | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_Centrifuge_Medicina_A.blend (script: SM_Centrifuge_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-MED-002 | Camilla/cama de simulación con ruedas (1.95x0.80 m), sala de Simulación | FUR | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_SimulationBed_Medicina_A.blend (script: SM_SimulationBed_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-MED-002 | Maniquí de entrenamiento médico, tumbado (prop narrativo: "Maniquí reproduce mensajes de Nicolás") | PRP | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_Mannequin_Medicina_A.blend (script: SM_Mannequin_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-MED-003 | Monitor de signos vitales sobre poste con ruedas (prop narrativo: "Monitores muestran nombres") | PRP | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_MedicalMonitor_Medicina_A.blend (script: SM_MedicalMonitor_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-MED-003 | Fila de butacas del auditorio de Medicina, 4 asientos (2.24 m de ancho; módulo repetible) | FUR | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_AuditoriumSeatRow_Medicina_A.blend (script: SM_AuditoriumSeatRow_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-MED-004 | Cabina de ascensor con panel de 3 botones (1.6x1.6x2.4 m; puerta corrediza como pieza separada SM_DoorLeaf_ElevatorMedicina_A; prop narrativo: "Ascensor ofrece pisos llamados Recuerdos, Transferencia y Desconexión" — los nombres de piso son contenido de arte final, botones sin etiqueta todavía) | PRP | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_Elevator_Medicina_A.blend (script: SM_Elevator_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+
 PSICOLOGÍA — INVENTARIO INICIAL (2026-07-28, Capítulo 9)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 9,
 y sección 10.8 (edificio 45x35 m, tres pisos). Zona PSI (nueva). Altura de
@@ -928,6 +942,7 @@ Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 7
 
 ARC-EXT-003 | Parada principal de autobús (plataforma elevada de 25x5 m + refugio de 12x3 m con techo, pared trasera y 2 paredes de vidrio, abierto al frente; incluye banca) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_BusStopBlockout_Exteriores_A.blend (script: SM_BusStopBlockout_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 VEH-EXT-001 | Autobús interno del campus (10x2.50x3.15 m; carrocería en 2 cajas apiladas para poder pintar la banda de ventanas distinto del cuerpo; 2 ejes de ruedas) | VEH | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_Bus_Exteriores_A.blend (script: SM_Bus_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-EXT-002 | Fila de asientos del interior del autobús, banca de 2 personas (0.90x0.50 m; módulo repetible a lo largo del pasillo; Capítulo 7: "pasajeros progresivos") | FUR | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_BusSeatRow_Exteriores_A.blend (script: SM_BusSeatRow_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 
 INFORMÁTICA — INVENTARIO INICIAL (2026-07-28, Capítulo 10, abre la Noche 3)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 10,
