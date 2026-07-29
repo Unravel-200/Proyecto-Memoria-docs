@@ -821,6 +821,13 @@ ARC-EDU-004 | Pasillo paranormal en estado normal (piso + 2 paredes laterales, 2
 PRP-EDU-001 | Mapa hacia Mantenimiento e Ingeniería (pista del final del Capítulo 3; panel enmarcado, 0.90x0.70 m; el dibujo del mapa es contenido de arte final vía textura, material placeholder) | PRP | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_Map_Educacion_A.blend (script: SM_Map_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-EDU-002 | Alarma de pared (evento "Alarma" del Capítulo 3; caja + campana + luz indicadora; sonido/parpadeo es lógica de Unreal, no geometría) | PRP | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_Alarm_Educacion_A.blend (script: SM_Alarm_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario del aula/archivo/laboratorio pedagógico (2026-07-28):
+FUR-EDU-001 | Escritorio del profesor (aula, 1.40x0.70x0.75 m; mismo diseño que FUR-GEN-004 de Generales) | FUR | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_Desk_Teacher_Educacion_A.blend (script: SM_Desk_Teacher_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-EDU-003 | Pizarra (aula; 3.60x1.40 m, borde inferior a 0.90 m; mismo diseño que PRP-GEN-002 de Generales) | PRP | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_Blackboard_Educacion_A.blend (script: SM_Blackboard_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-EDU-002 | Pupitre simple + silla (aula; módulo repetible, 0.60x0.45 m; a diferencia del pupitre de Generales FUR-GEN-003 —reservado para modelado a mano tras 13 intentos fallidos con paleta giratoria—, este es un diseño convencional de mesa+silla de 4 patas sin brazo en voladizo) | FUR | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_StudentDesk_Educacion_A.blend (script: SM_StudentDesk_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-EDU-003 | Archivero de 4 gavetas (archivo; 0.45x0.60x1.30 m) | FUR | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_FilingCabinet_Educacion_A.blend (script: SM_FilingCabinet_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-EDU-004 | Mesa de laboratorio + 2 banquitos (laboratorio pedagógico; módulo repetible, mesa de 2.00x0.80 m) | FUR | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_LabTable_Educacion_A.blend (script: SM_LabTable_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+
 MANTENIMIENTO — INVENTARIO INICIAL (2026-07-27, Capítulo 4)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 4,
 y sección 10.4 (edificio 40x25 m, altura de techo 7 m explícita — nave
@@ -836,6 +843,12 @@ ARC-MAN-002 | Blockout arquitectónico de la bodega (piso + paredes, 10x15 m; pu
 ARC-MAN-003 | Blockout arquitectónico del garaje (piso + paredes, 12x15 m; puerta industrial de 4.00x4.00 m, para los vehículos que "se encienden" en el Capítulo 4) | ARC | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_GarajeBlockout_Mantenimiento_A.blend (script: SM_GarajeBlockout_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-MAN-004 | Blockout arquitectónico del cuarto de llaves (piso + paredes, 5x8 m; puerta de 0.90 m; aquí el Técnico Nocturno entrega la llave antigua) | ARC | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_CuartoLlavesBlockout_Mantenimiento_A.blend (script: SM_CuartoLlavesBlockout_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario/equipo (2026-07-28):
+FUR-MAN-001 | Banco de trabajo (taller; mesa + repisa inferior + pizarra de herramientas con 3 ganchos, módulo repetible, 2.40x0.85 m) | FUR | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_Workbench_Mantenimiento_A.blend (script: SM_Workbench_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-MAN-002 | Estantería metálica (bodega; 4 postes + 5 repisas, módulo repetible, 1.20x0.45x2.00 m) | FUR | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_StorageShelf_Mantenimiento_A.blend (script: SM_StorageShelf_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-MAN-004 | Gabinete de llaves de pared (cuarto de llaves; caja + puerta + manija, 0.40x0.10x0.30 m; aquí el Técnico Nocturno entrega la llave antigua) | FUR | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_KeyCabinet_Mantenimiento_A.blend (script: SM_KeyCabinet_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-MAN-003 | Vehículo utilitario tipo carrito (garaje; chasis + 4 ruedas + asiento + arco/techo + platón de carga; escenario de "Vehículos se encienden" del Capítulo 4) | FUR | MAN | [X] Listo en Blender | Modelos-3D/Mantenimiento/SM_UtilityCart_Mantenimiento_A.blend (script: SM_UtilityCart_Mantenimiento_A.py) | Sí | [UE] Pendiente | Pendiente
+
 INGENIERÍA — INVENTARIO INICIAL (2026-07-27, Capítulo 5, abre la Noche 2)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 5,
 y sección 10.5 (edificio 85x60 m, cuatro pisos). Zona ING (nueva). Altura
@@ -849,6 +862,15 @@ ARC-ING-004 | Blockout arquitectónico del laboratorio de eléctrica (piso + par
 ARC-ING-005 | Blockout arquitectónico del laboratorio de electrónica (piso + paredes, 14x18 m; puerta de 1.20 m) | ARC | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_ElectronicaBlockout_Ingenieria_A.blend (script: SM_ElectronicaBlockout_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-ING-006 | Blockout arquitectónico del laboratorio de robótica (piso + paredes, 18x22 m; puerta de 1.50 m, más ancha para el Robot Rastreador y brazos robóticos del Capítulo 5) | ARC | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_RoboticaBlockout_Ingenieria_A.blend (script: SM_RoboticaBlockout_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-ING-007 | Blockout arquitectónico de la sala de prototipos (piso + paredes, 14x18 m; puerta de 1.20 m) | ARC | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_PrototiposBlockout_Ingenieria_A.blend (script: SM_PrototiposBlockout_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
+
+Mobiliario/equipo (2026-07-28):
+FUR-ING-001 | Banco de trabajo (taller; mismo diseño que FUR-MAN-001, módulo repetible, 2.40x0.85 m) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_Workbench_Ingenieria_A.blend (script: SM_Workbench_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ING-002 | Banco del taller mecánico (mismo diseño, un poco más profundo, 2.40x0.95 m) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_MechanicBench_Ingenieria_A.blend (script: SM_MechanicBench_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ING-003 | Estantería metálica (sala de materiales; mismo diseño que FUR-MAN-002, módulo repetible, 1.20x0.45x2.00 m) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_StorageShelf_Ingenieria_A.blend (script: SM_StorageShelf_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ING-004 | Panel eléctrico de pared (laboratorio de eléctrica; caja + puerta + rejilla de 12 interruptores, 0.60x0.90 m) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_ElectricalPanel_Ingenieria_A.blend (script: SM_ElectricalPanel_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ING-005 | Mesa de electrónica con osciloscopio y soporte de cautín (laboratorio de electrónica; mesa de 1.80x0.70 m; la pantalla del osciloscopio es material placeholder, arte final) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_ElectronicsBench_Ingenieria_A.blend (script: SM_ElectronicsBench_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ING-006 | Brazo robótico fijo en L (laboratorio de robótica; base + poste + brazo + pinza, sin articulaciones anguladas; escenario del acertijo "Secuencia de brazos robóticos" del Capítulo 5) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_RoboticArm_Ingenieria_A.blend (script: SM_RoboticArm_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ING-007 | Mesa de prototipos con 3 formas placeholder (sala de prototipos; mesa de 1.60x0.70 m; las formas reales de los prototipos son arte final) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_PrototypeTable_Ingenieria_A.blend (script: SM_PrototypeTable_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 
 ________________________________________________________________________________
 ________________________________________________________________________________
