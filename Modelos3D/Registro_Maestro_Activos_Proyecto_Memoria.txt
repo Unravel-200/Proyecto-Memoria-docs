@@ -911,6 +911,68 @@ Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 7
 ARC-EXT-003 | Parada principal de autobús (plataforma elevada de 25x5 m + refugio de 12x3 m con techo, pared trasera y 2 paredes de vidrio, abierto al frente; incluye banca) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_BusStopBlockout_Exteriores_A.blend (script: SM_BusStopBlockout_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 VEH-EXT-001 | Autobús interno del campus (10x2.50x3.15 m; carrocería en 2 cajas apiladas para poder pintar la banda de ventanas distinto del cuerpo; 2 ejes de ruedas) | VEH | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_Bus_Exteriores_A.blend (script: SM_Bus_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 
+INFORMÁTICA — INVENTARIO INICIAL (2026-07-28, Capítulo 10, abre la Noche 3)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 10,
+y sección 10.9 (edificio 55x40 m, cuatro pisos). Zona INF (nueva). Altura
+de piso 4.0 m, origen local propio.
+
+ARC-INF-001 | Blockout arquitectónico de laboratorios (piso + paredes, 12x16 m; puerta de 1.50 m) | ARC | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_LaboratoriosBlockout_Informatica_A.blend (script: SM_LaboratoriosBlockout_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-INF-002 | Blockout arquitectónico de la sala de servidores (piso + paredes, 15x20 m; puerta de 1.50 m; escenario de "Rostros en monitores" del Capítulo 10) | ARC | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_ServidoresBlockout_Informatica_A.blend (script: SM_ServidoresBlockout_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-INF-003 | Blockout arquitectónico de la sala de monitoreo (piso + paredes, 12x14 m; puerta de 1.20 m) | ARC | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_MonitoreoBlockout_Informatica_A.blend (script: SM_MonitoreoBlockout_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
+
+ARTES — INVENTARIO INICIAL (2026-07-28, Capítulo 11)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 11,
+y sección 10.10 (edificio 60x45 m, tres pisos). Zona ART (nueva). Altura de
+piso 4.0 m, origen local propio.
+
+ARC-ART-001 | Blockout arquitectónico del teatro experimental (piso + paredes, 30x35 m; puerta doble ancha de 2.20 m) | ARC | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_TeatroExperimentalBlockout_Artes_A.blend (script: SM_TeatroExperimentalBlockout_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-ART-002 | Blockout arquitectónico del escenario (piso + paredes, 18x12 m; puerta doble ancha de 2.20 m) | ARC | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_EscenarioBlockout_Artes_A.blend (script: SM_EscenarioBlockout_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-ART-003 | Blockout arquitectónico de la galería (piso + paredes, 15x20 m; puerta doble de 1.80 m) | ARC | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_GaleriaBlockout_Artes_A.blend (script: SM_GaleriaBlockout_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-ART-004 | Blockout arquitectónico del taller de escultura (piso + paredes, 15x18 m; puerta de 1.50 m; escenario de "Esculturas Humanas" del Capítulo 11) | ARC | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_EsculturaBlockout_Artes_A.blend (script: SM_EsculturaBlockout_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+
+AUDITORIO CENTRAL — INVENTARIO INICIAL (2026-07-28, Capítulo 12)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 12,
+y sección 10.11 (edificio 45x40 m; capacidad visual 500-700 personas). Zona
+AUD (nueva). Techo de 4.5 m (sala grande de eventos, como Biblioteca/
+Generales, no 4.0 m estándar). Origen local propio.
+
+ARC-AUD-001 | Blockout arquitectónico de la sala principal (piso + paredes, 30x32 m; puerta doble muy ancha de 2.80 m para acceso masivo de público) | ARC | AUD | [X] Listo en Blender | Modelos-3D/AuditorioCentral/SM_SalaBlockout_AuditorioCentral_A.blend (script: SM_SalaBlockout_AuditorioCentral_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-AUD-002 | Blockout arquitectónico del escenario (piso + paredes, 18x12 m; puerta doble ancha de 2.20 m) | ARC | AUD | [X] Listo en Blender | Modelos-3D/AuditorioCentral/SM_EscenarioBlockout_AuditorioCentral_A.blend (script: SM_EscenarioBlockout_AuditorioCentral_A.py) | Sí | [UE] Pendiente | Pendiente
+
+HISTORIA — INVENTARIO INICIAL (2026-07-28, Capítulo 13)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 13,
+y sección 10.12 (edificio 50x40 m, tres pisos). Zona HIS (nueva). Altura de
+piso 4.0 m, origen local propio.
+
+ARC-HIS-001 | Blockout arquitectónico de la hemeroteca (piso + paredes, 15x18 m; puerta de 1.50 m; escenario de "Periódicos futuros" del Capítulo 13) | ARC | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_HemerotecaBlockout_Historia_A.blend (script: SM_HemerotecaBlockout_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-HIS-002 | Blockout arquitectónico de la mapoteca (piso + paredes, 12x15 m; puerta de 1.20 m; escenario de "Mapas" del Capítulo 13) | ARC | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_MapotecaBlockout_Historia_A.blend (script: SM_MapotecaBlockout_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-HIS-003 | Blockout arquitectónico del archivo fotográfico (piso + paredes, 10x12 m; puerta de 1.20 m; escenario de "Fotografías" del Capítulo 13) | ARC | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_ArchivoFotograficoBlockout_Historia_A.blend (script: SM_ArchivoFotograficoBlockout_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-HIS-004 | Blockout arquitectónico del museo (piso + paredes, 15x20 m; puerta doble de 1.80 m) | ARC | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_MuseoBlockout_Historia_A.blend (script: SM_MuseoBlockout_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
+
+DERECHO Y ADMINISTRACIÓN — INVENTARIO INICIAL (2026-07-28, Capítulo 13)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 13,
+y sección 10.13 (edificio 55x40 m, cuatro pisos). Zona DER (nueva). Altura
+de piso 4.0 m, origen local propio.
+
+ARC-DER-001 | Blockout arquitectónico de la sala de juicio (piso + paredes, 14x18 m; puerta doble de 1.80 m) | ARC | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_SalaJuicioBlockout_Derecho_A.blend (script: SM_SalaJuicioBlockout_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-DER-002 | Blockout arquitectónico del archivo (piso + paredes, 15x20 m; puerta de 1.50 m; escenario de "Actas" y "Desapariciones clasificadas de otra manera" del Capítulo 13) | ARC | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_ArchivoBlockout_Derecho_A.blend (script: SM_ArchivoBlockout_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-DER-003 | Blockout arquitectónico de la sala del Consejo (piso + paredes, 12x16 m; puerta de 1.50 m) | ARC | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_ConsejoBlockout_Derecho_A.blend (script: SM_ConsejoBlockout_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-DER-004 | Blockout arquitectónico de la bóveda (piso + paredes, 8x12 m; puerta simple modelada por ahora, pendiente una puerta blindada específica como prop aparte si se necesita) | ARC | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_BovedaBlockout_Derecho_A.blend (script: SM_BovedaBlockout_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
+
+GIMNASIO — INVENTARIO INICIAL (2026-07-28, Capítulo 14, cierra la Noche 3)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 14,
+y sección 10.15. Zona GYM (nueva). Solo se modelan las 3 naves/cuartos con
+paredes propias; la cancha (40x20 m, dentro del Gimnasio) y la piscina
+(25x12.5 m, basin hundido dentro de la Piscina cubierta) y las graderías
+(40x10 m) son elementos dentro de estas naves, no cuartos con puerta
+propia — quedan pendientes como piezas/pisos especiales aparte. Techo de
+7 m en las 2 naves grandes (deportivas, un solo nivel, como Mantenimiento),
+4.0 m en vestidores.
+
+ARC-GYM-001 | Blockout arquitectónico de la nave principal del gimnasio (piso + paredes, 65x45 m; puerta industrial de 4.00x4.00 m) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_GimnasioBlockout_Gimnasio_A.blend (script: SM_GimnasioBlockout_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-GYM-002 | Blockout arquitectónico de la nave de la piscina cubierta (piso + paredes, 40x25 m; puerta industrial de 4.00x4.00 m) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_PiscinaCubiertaBlockout_Gimnasio_A.blend (script: SM_PiscinaCubiertaBlockout_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-GYM-003 | Blockout arquitectónico de los vestidores (piso + paredes, 10x12 m; puerta de 1.50 m; escenario de "Voces de Vestidores" del Capítulo 14) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_VestidoresBlockout_Gimnasio_A.blend (script: SM_VestidoresBlockout_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
