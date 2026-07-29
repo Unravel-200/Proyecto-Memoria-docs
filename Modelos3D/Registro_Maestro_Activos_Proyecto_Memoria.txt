@@ -116,6 +116,9 @@ GYM = Gimnasio.
 RES = Residencias.
 REC = Rectoría.
 EXT = Exteriores.
+SOD = Soda (edificio independiente, sección 10.14; distinto de la
+      pequeña soda de Generales, zona GEN).
+CCM = Centro Cultural y Memorial (sección 10.18).
 COM = Compartido.
 MAIN = Principal.
 MISC = Misceláneo.
@@ -929,6 +932,7 @@ ARC-ART-001 | Blockout arquitectónico del teatro experimental (piso + paredes, 
 ARC-ART-002 | Blockout arquitectónico del escenario (piso + paredes, 18x12 m; puerta doble ancha de 2.20 m) | ARC | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_EscenarioBlockout_Artes_A.blend (script: SM_EscenarioBlockout_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-ART-003 | Blockout arquitectónico de la galería (piso + paredes, 15x20 m; puerta doble de 1.80 m) | ARC | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_GaleriaBlockout_Artes_A.blend (script: SM_GaleriaBlockout_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-ART-004 | Blockout arquitectónico del taller de escultura (piso + paredes, 15x18 m; puerta de 1.50 m; escenario de "Esculturas Humanas" del Capítulo 11) | ARC | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_EsculturaBlockout_Artes_A.blend (script: SM_EsculturaBlockout_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-ART-005 | Fuente de Artes (10 m de diámetro; mismo diseño que la fuente central, centro vacío a propósito) | PRP | ART | [P] Provisional — mismo criterio que ARC-EXT-002 (fuente central), pendiente de escultura/detalle en pasada de arte final | Modelos-3D/Artes/SM_FountainArtes_A.blend (script: SM_FountainArtes_A.py) | Sí | [UE] Pendiente | Pendiente
 
 AUDITORIO CENTRAL — INVENTARIO INICIAL (2026-07-28, Capítulo 12)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 12,
@@ -972,6 +976,9 @@ propia — quedan pendientes como piezas/pisos especiales aparte. Techo de
 ARC-GYM-001 | Blockout arquitectónico de la nave principal del gimnasio (piso + paredes, 65x45 m; puerta industrial de 4.00x4.00 m) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_GimnasioBlockout_Gimnasio_A.blend (script: SM_GimnasioBlockout_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-GYM-002 | Blockout arquitectónico de la nave de la piscina cubierta (piso + paredes, 40x25 m; puerta industrial de 4.00x4.00 m) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_PiscinaCubiertaBlockout_Gimnasio_A.blend (script: SM_PiscinaCubiertaBlockout_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-GYM-003 | Blockout arquitectónico de los vestidores (piso + paredes, 10x12 m; puerta de 1.50 m; escenario de "Voces de Vestidores" del Capítulo 14) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_VestidoresBlockout_Gimnasio_A.blend (script: SM_VestidoresBlockout_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-GYM-004 | Piso marcado de la cancha (40x20 m; piso + líneas de cancha; elemento dentro de la nave principal ARC-GYM-001, no un cuarto aparte) | PRP | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_CanchaFloor_Gimnasio_A.blend (script: SM_CanchaFloor_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-GYM-004 | Piscina (25x12.5 m, basin hundido de 1.80 m de profundidad; elemento dentro de la nave de la piscina cubierta ARC-GYM-002, no un cuarto aparte; escenario de "Piscina muestra a Sharon" del Capítulo 14) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_Piscina_Gimnasio_A.blend (script: SM_Piscina_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-GYM-005 | Graderías (40x10 m, estructura escalonada de 6 escalones; elemento dentro de la nave principal ARC-GYM-001, no un cuarto aparte) | PRP | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_Graderias_Gimnasio_A.blend (script: SM_Graderias_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
 
 RESIDENCIAS — INVENTARIO INICIAL (2026-07-28, Capítulo 15, abre la Noche 4)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 15,
@@ -984,6 +991,7 @@ ARC-RES-002 | Blockout arquitectónico de una habitación doble (piso + paredes,
 ARC-RES-003 | Blockout arquitectónico de la cocina común (piso + paredes, 8x10 m; puerta de 1.20 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_CocinaBlockout_Residencias_A.blend (script: SM_CocinaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-RES-004 | Blockout arquitectónico de la sala común (piso + paredes, 10x12 m; puerta de 1.50 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_SalaBlockout_Residencias_A.blend (script: SM_SalaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-RES-005 | Blockout arquitectónico de la lavandería (piso + paredes, 6x8 m; puerta de 1.20 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_LavanderiaBlockout_Residencias_A.blend (script: SM_LavanderiaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-RES-006 | Fuente Residencial (10 m de diámetro; mismo diseño que la fuente central, centro vacío a propósito; la "entrada oculta" mencionada en la sección 11 es un mecanismo de gameplay pendiente en Unreal, no geometría) | PRP | RES | [P] Provisional — mismo criterio que ARC-EXT-002 (fuente central), pendiente de escultura/detalle en pasada de arte final | Modelos-3D/Residencias/SM_FountainResidencial_A.blend (script: SM_FountainResidencial_A.py) | Sí | [UE] Pendiente | Pendiente
 
 RECTORÍA Y TORRE — INVENTARIO INICIAL (2026-07-28, Capítulo 17, clímax del guion)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 17,
@@ -994,6 +1002,33 @@ tiene desglose de salas en el guion todavía. Origen local propio.
 
 ARC-REC-001 | Blockout arquitectónico del Núcleo (piso + paredes, 35x35 m, techo de 10 m —sala clímax de doble/triple altura, no piso estándar—; puerta de 2.20 m; escenario de los "Ocho Nodos" y Nicolás dentro de sensores del Capítulo 17) | ARC | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_NucleoBlockout_Rectoria_A.blend (script: SM_NucleoBlockout_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-REC-002 | Blockout arquitectónico de la Torre (piso + paredes, base de 10x10 m —sin especificar en el guion, se eligió una base razonable—, 40 m de alto; puerta de 1.50 m; un solo tramo vertical, sin dividir en pisos todavía) | ARC | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_TorreBlockout_Rectoria_A.blend (script: SM_TorreBlockout_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
+
+SODA (EDIFICIO INDEPENDIENTE) — INVENTARIO INICIAL (2026-07-28)
+Basado en la sección 10.14 (planta 35x25 m: comedor 20x18 m, cocina
+10x12 m, bodega 6x8 m). Zona SOD (nueva), distinta de la pequeña soda
+del edificio de Generales (ARC-GEN-003, 15x12 m, zona GEN) — esta es
+la soda-comedor independiente del campus mencionada en la lista de
+edificios de la sección 10. Solo arquitectura por ahora (piso +
+paredes de cada sala); sin desglose de escenario específico en el
+guion todavía. Origen local propio por sala. Altura de piso 4.0 m
+(estándar de edificios académicos/de servicio).
+
+ARC-SOD-001 | Blockout arquitectónico del comedor (piso + paredes, 20x18 m; puerta de 1.80 m) | ARC | SOD | [X] Listo en Blender | Modelos-3D/Soda/SM_ComedorBlockout_Soda_A.blend (script: SM_ComedorBlockout_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-SOD-002 | Blockout arquitectónico de la cocina (piso + paredes, 10x12 m; puerta de 1.20 m) | ARC | SOD | [X] Listo en Blender | Modelos-3D/Soda/SM_CocinaBlockout_Soda_A.blend (script: SM_CocinaBlockout_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-SOD-003 | Blockout arquitectónico de la bodega (piso + paredes, 6x8 m; puerta de 1.00 m) | ARC | SOD | [X] Listo en Blender | Modelos-3D/Soda/SM_BodegaBlockout_Soda_A.blend (script: SM_BodegaBlockout_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
+
+CENTRO CULTURAL Y MEMORIAL — INVENTARIO INICIAL (2026-07-28)
+Basado en la sección 10.18 (edificio 30x20 m, dos pisos; plaza
+memorial 25x20 m; sala de investigación diurna). Zona CCM (nueva).
+Solo se modela el espacio explícitamente dimensionado (sala de
+investigación) más el piso de la plaza memorial; el resto del
+edificio (dos pisos genéricos) no tiene desglose de salas en el
+guion todavía. El memorial en sí (placa/monumento con nombres, ver
+"El memorial añade el nombre de Sharon" del Capítulo 12 y Día 3) es
+un prop aparte, pendiente. Origen local propio por elemento.
+
+ARC-CCM-001 | Blockout arquitectónico de la sala de investigación diurna (piso + paredes, 12x10 m —dimensión razonable dentro del edificio de 30x20 m, no especificada en el guion—; puerta de 1.20 m) | ARC | CCM | [X] Listo en Blender | Modelos-3D/CentroCultural/SM_SalaInvestigacionBlockout_CentroCultural_A.blend (script: SM_SalaInvestigacionBlockout_CentroCultural_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-CCM-002 | Piso de la plaza memorial (25x20 m; solo geometría plana con material provisional, mismo criterio que la Plaza Central; escenario de "El memorial añade el nombre de Sharon y luego lo borra" del Día 3 y Capítulo 12) | ARC | CCM | [X] Listo en Blender | Modelos-3D/CentroCultural/SM_PlazaMemorialFloorBlockout_A.blend (script: SM_PlazaMemorialFloorBlockout_A.py) | Sí | [UE] Pendiente | Pendiente
 
 ________________________________________________________________________________
 ________________________________________________________________________________
