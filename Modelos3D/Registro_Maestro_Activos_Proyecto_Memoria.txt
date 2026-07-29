@@ -872,6 +872,45 @@ FUR-ING-005 | Mesa de electrónica con osciloscopio y soporte de cautín (labora
 FUR-ING-006 | Brazo robótico fijo en L (laboratorio de robótica; base + poste + brazo + pinza, sin articulaciones anguladas; escenario del acertijo "Secuencia de brazos robóticos" del Capítulo 5) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_RoboticArm_Ingenieria_A.blend (script: SM_RoboticArm_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-ING-007 | Mesa de prototipos con 3 formas placeholder (sala de prototipos; mesa de 1.60x0.70 m; las formas reales de los prototipos son arte final) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_PrototypeTable_Ingenieria_A.blend (script: SM_PrototypeTable_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 
+CIENCIAS — INVENTARIO INICIAL (2026-07-28, Capítulo 6)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 6,
+y sección 10.6 (edificio 75x55 m, cuatro pisos). Zona CIE (nueva). Altura
+de piso 4.0 m, origen local propio (sin plano de planta todavía).
+
+ARC-CIE-001 | Blockout arquitectónico del invernadero (piso + paredes, 25x18 m; puerta de 1.50 m) | ARC | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_InvernaderoBlockout_Ciencias_A.blend (script: SM_InvernaderoBlockout_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-CIE-002 | Blockout arquitectónico del laboratorio de física (piso + paredes, 14x18 m; puerta de 1.20 m) | ARC | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_FisicaBlockout_Ciencias_A.blend (script: SM_FisicaBlockout_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-CIE-003 | Blockout arquitectónico del laboratorio de óptica (piso + paredes, 12x16 m; puerta de 1.20 m) | ARC | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_OpticaBlockout_Ciencias_A.blend (script: SM_OpticaBlockout_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-CIE-004 | Blockout arquitectónico del laboratorio de química (piso + paredes, 14x18 m; puerta de 1.50 m) | ARC | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_QuimicaBlockout_Ciencias_A.blend (script: SM_QuimicaBlockout_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-CIE-005 | Blockout arquitectónico del laboratorio de biología (piso + paredes, 15x20 m; puerta de 1.20 m) | ARC | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_BiologiaBlockout_Ciencias_A.blend (script: SM_BiologiaBlockout_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-CIE-006 | Blockout arquitectónico del herbario (piso + paredes, 10x14 m; puerta de 1.20 m) | ARC | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_HerbarioBlockout_Ciencias_A.blend (script: SM_HerbarioBlockout_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+
+MEDICINA — INVENTARIO INICIAL (2026-07-28, Capítulo 8)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 8,
+y sección 10.7 (edificio 75x50 m, cinco pisos, un sótano). Zona MED (nueva).
+Altura de piso 4.0 m, origen local propio.
+
+ARC-MED-001 | Blockout arquitectónico de la biblioteca de Medicina (piso + paredes, 22x25 m; puerta doble de 1.80 m; distinta de la Biblioteca Central, zona LIB) | ARC | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_BibliotecaBlockout_Medicina_A.blend (script: SM_BibliotecaBlockout_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-MED-002 | Blockout arquitectónico de laboratorios (piso + paredes, 12x16 m; puerta de 1.50 m) | ARC | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_LaboratoriosBlockout_Medicina_A.blend (script: SM_LaboratoriosBlockout_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-MED-003 | Blockout arquitectónico de la sala de simulación (piso + paredes, 10x12 m; puerta de 1.20 m; escenario de "Internos entran en un cuarto sin salida" del Capítulo 8 —el bloqueo es lógica de Unreal, no ausencia de puerta física) | ARC | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_SimulacionBlockout_Medicina_A.blend (script: SM_SimulacionBlockout_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-MED-004 | Blockout arquitectónico del auditorio (piso + paredes, 18x22 m; puerta doble ancha de 2.20 m, alto 2.80 m) | ARC | MED | [X] Listo en Blender | Modelos-3D/Medicina/SM_AuditorioBlockout_Medicina_A.blend (script: SM_AuditorioBlockout_Medicina_A.py) | Sí | [UE] Pendiente | Pendiente
+
+PSICOLOGÍA — INVENTARIO INICIAL (2026-07-28, Capítulo 9)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 9,
+y sección 10.8 (edificio 45x35 m, tres pisos). Zona PSI (nueva). Altura de
+piso 4.0 m, origen local propio.
+
+ARC-PSI-001 | Blockout arquitectónico de la sala de entrevistas (piso + paredes, 4x5 m; puerta de 0.90 m) | ARC | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_EntrevistasBlockout_Psicologia_A.blend (script: SM_EntrevistasBlockout_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-PSI-002 | Blockout arquitectónico de la Cámara de Gesell (piso + paredes, 7x9 m; puerta de 1.20 m; el vidrio unidireccional no se modela aquí, es material/arte final, mismo criterio que el espejo de Generales) | ARC | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_CamaraGesellBlockout_Psicologia_A.blend (script: SM_CamaraGesellBlockout_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-PSI-003 | Blockout arquitectónico del laboratorio de percepción (piso + paredes, 10x14 m; puerta de 1.20 m) | ARC | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_PercepcionBlockout_Psicologia_A.blend (script: SM_PercepcionBlockout_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-PSI-004 | Blockout arquitectónico del archivo (piso + paredes, 8x10 m; puerta de 1.20 m) | ARC | PSI | [X] Listo en Blender | Modelos-3D/Psicologia/SM_ArchivoBlockout_Psicologia_A.blend (script: SM_ArchivoBlockout_Psicologia_A.py) | Sí | [UE] Pendiente | Pendiente
+
+EXTERIORES — PARADA DE AUTOBÚS (2026-07-28, Capítulo 7)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 7
+(Autobús), y la Guía de Dimensiones (parada principal y autobús interno).
+
+ARC-EXT-003 | Parada principal de autobús (plataforma elevada de 25x5 m + refugio de 12x3 m con techo, pared trasera y 2 paredes de vidrio, abierto al frente; incluye banca) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_BusStopBlockout_Exteriores_A.blend (script: SM_BusStopBlockout_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+VEH-EXT-001 | Autobús interno del campus (10x2.50x3.15 m; carrocería en 2 cajas apiladas para poder pintar la banda de ventanas distinto del cuerpo; 2 ejes de ruedas) | VEH | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_Bus_Exteriores_A.blend (script: SM_Bus_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
