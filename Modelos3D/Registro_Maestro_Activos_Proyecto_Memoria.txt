@@ -973,6 +973,28 @@ ARC-GYM-001 | Blockout arquitectónico de la nave principal del gimnasio (piso +
 ARC-GYM-002 | Blockout arquitectónico de la nave de la piscina cubierta (piso + paredes, 40x25 m; puerta industrial de 4.00x4.00 m) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_PiscinaCubiertaBlockout_Gimnasio_A.blend (script: SM_PiscinaCubiertaBlockout_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-GYM-003 | Blockout arquitectónico de los vestidores (piso + paredes, 10x12 m; puerta de 1.50 m; escenario de "Voces de Vestidores" del Capítulo 14) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_VestidoresBlockout_Gimnasio_A.blend (script: SM_VestidoresBlockout_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
 
+RESIDENCIAS — INVENTARIO INICIAL (2026-07-28, Capítulo 15, abre la Noche 4)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 15,
+y sección 10.16 (tres bloques de 55x18 m, cinco pisos). Zona RES (nueva).
+Altura de piso 3.2 m (Guía_Dimensiones: "Residencias: 3.20 a 3.60 m", más
+bajo que los edificios académicos de 4.0 m). Origen local propio.
+
+ARC-RES-001 | Blockout arquitectónico de una habitación individual (piso + paredes, 3.5x4.5 m; puerta de 0.90 m; módulo repetible) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_HabitacionIndividualBlockout_Residencias_A.blend (script: SM_HabitacionIndividualBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-RES-002 | Blockout arquitectónico de una habitación doble (piso + paredes, 4.5x5 m; puerta de 0.90 m; módulo repetible) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_HabitacionDobleBlockout_Residencias_A.blend (script: SM_HabitacionDobleBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-RES-003 | Blockout arquitectónico de la cocina común (piso + paredes, 8x10 m; puerta de 1.20 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_CocinaBlockout_Residencias_A.blend (script: SM_CocinaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-RES-004 | Blockout arquitectónico de la sala común (piso + paredes, 10x12 m; puerta de 1.50 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_SalaBlockout_Residencias_A.blend (script: SM_SalaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-RES-005 | Blockout arquitectónico de la lavandería (piso + paredes, 6x8 m; puerta de 1.20 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_LavanderiaBlockout_Residencias_A.blend (script: SM_LavanderiaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+
+RECTORÍA Y TORRE — INVENTARIO INICIAL (2026-07-28, Capítulo 17, clímax del guion)
+Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 17,
+y sección 10.17 (edificio 50x40 m, cuatro pisos, dos sótanos). Zona REC
+(nueva). Solo se modelan los 2 espacios explícitamente dimensionados
+(Núcleo y Torre); el resto del edificio (4 pisos + 2 sótanos genéricos) no
+tiene desglose de salas en el guion todavía. Origen local propio.
+
+ARC-REC-001 | Blockout arquitectónico del Núcleo (piso + paredes, 35x35 m, techo de 10 m —sala clímax de doble/triple altura, no piso estándar—; puerta de 2.20 m; escenario de los "Ocho Nodos" y Nicolás dentro de sensores del Capítulo 17) | ARC | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_NucleoBlockout_Rectoria_A.blend (script: SM_NucleoBlockout_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-REC-002 | Blockout arquitectónico de la Torre (piso + paredes, base de 10x10 m —sin especificar en el guion, se eligió una base razonable—, 40 m de alto; puerta de 1.50 m; un solo tramo vertical, sin dividir en pisos todavía) | ARC | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_TorreBlockout_Rectoria_A.blend (script: SM_TorreBlockout_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
+
 ________________________________________________________________________________
 ________________________________________________________________________________
 
