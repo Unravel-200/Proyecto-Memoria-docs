@@ -887,6 +887,21 @@ ARC-CIE-004 | Blockout arquitectónico del laboratorio de química (piso + pared
 ARC-CIE-005 | Blockout arquitectónico del laboratorio de biología (piso + paredes, 15x20 m; puerta de 1.20 m) | ARC | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_BiologiaBlockout_Ciencias_A.blend (script: SM_BiologiaBlockout_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-CIE-006 | Blockout arquitectónico del herbario (piso + paredes, 10x14 m; puerta de 1.20 m) | ARC | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_HerbarioBlockout_Ciencias_A.blend (script: SM_HerbarioBlockout_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de Ciencias (2026-07-29): completa las 6 salas con
+props narrativos clave del Capítulo 6 (microscopio, péndulo, prisma,
+tubería del invernadero) y equipo genérico de laboratorio.
+
+FUR-CIE-001 | Mesa de siembra del invernadero, con 5 macetas y plantas (2.20x0.70 m) | FUR | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_GreenhouseTable_Ciencias_A.blend (script: SM_GreenhouseTable_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-CIE-001 | Sistema de tuberías de riego del invernadero, montado en pared (4.0 m de largo; prop narrativo: "Plantas siguen tuberías") | PRP | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_PipeSystem_Ciencias_A.blend (script: SM_PipeSystem_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-CIE-002 | Soporte de péndulo de demostración, sala de física (marco de 2.0 m de alto; prop narrativo: "Péndulos apuntan a imitadores") | PRP | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_PendulumStand_Ciencias_A.blend (script: SM_PendulumStand_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-CIE-003 | Soporte con prisma óptico, sala de óptica (pedestal de 0.75 m; prop narrativo: "Figura solo visible en prismas") | PRP | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_PrismStand_Ciencias_A.blend (script: SM_PrismStand_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-CIE-002 | Mesa de laboratorio con lavabo y grifo, mobiliario genérico repetible (1.80x0.80 m) | FUR | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_LabTable_Ciencias_A.blend (script: SM_LabTable_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-CIE-003 | Campana de extracción, sala de química (1.20x0.65x2.50 m) | FUR | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_FumeHood_Ciencias_A.blend (script: SM_FumeHood_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-CIE-004 | Gabinete de químicos con panel de advertencia, sala de química (1.0x0.5x2.0 m) | FUR | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_ChemCabinet_Ciencias_A.blend (script: SM_ChemCabinet_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-CIE-004 | Microscopio de laboratorio, sala de biología (prop narrativo: "Microscopio muestra una persona detrás del grupo") | PRP | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_Microscope_Ciencias_A.blend (script: SM_Microscope_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-CIE-005 | Vitrina de especímenes con frascos, sala de biología (1.0x0.4x2.0 m) | FUR | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_SpecimenCabinet_Ciencias_A.blend (script: SM_SpecimenCabinet_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-CIE-006 | Estantería de secado con bandejas de especímenes prensados, herbario (1.2x0.6x1.8 m) | FUR | CIE | [X] Listo en Blender | Modelos-3D/Ciencias/SM_HerbariumShelf_Ciencias_A.blend (script: SM_HerbariumShelf_Ciencias_A.py) | Sí | [UE] Pendiente | Pendiente
+
 MEDICINA — INVENTARIO INICIAL (2026-07-28, Capítulo 8)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 8,
 y sección 10.7 (edificio 75x50 m, cinco pisos, un sótano). Zona MED (nueva).
