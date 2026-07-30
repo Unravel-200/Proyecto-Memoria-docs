@@ -1098,6 +1098,19 @@ ARC-RES-004 | Blockout arquitectónico de la sala común (piso + paredes, 10x12 
 ARC-RES-005 | Blockout arquitectónico de la lavandería (piso + paredes, 6x8 m; puerta de 1.20 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_LavanderiaBlockout_Residencias_A.blend (script: SM_LavanderiaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-RES-006 | Fuente Residencial (10 m de diámetro; mismo diseño que la fuente central, centro vacío a propósito; la "entrada oculta" mencionada en la sección 11 es un mecanismo de gameplay pendiente en Unreal, no geometría) | PRP | RES | [P] Provisional — mismo criterio que ARC-EXT-002 (fuente central), pendiente de escultura/detalle en pasada de arte final | Modelos-3D/Residencias/SM_FountainResidencial_A.blend (script: SM_FountainResidencial_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de Residencias (2026-07-29): completa las 5 salas
+con el prop narrativo del Capítulo 15 ("Sus puertas tienen nombres
+conocidos"). Abre el mobiliario de la Noche 4 del guion.
+
+FUR-RES-001 | Cama individual con almohada (1.0x1.9 m), Habitación Individual | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Bed_Individual_Residencias_A.blend (script: SM_Bed_Individual_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-002 | Cama doble con 2 almohadas (1.5x2.0 m), Habitación Doble | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Bed_Doble_Residencias_A.blend (script: SM_Bed_Doble_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-003 | Mesa de noche con lámpara, repetible (0.4x0.4x0.68 m) | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Nightstand_Residencias_A.blend (script: SM_Nightstand_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-004 | Armario de 2 puertas, repetible (1.0x0.63x2.0 m) | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Wardrobe_Residencias_A.blend (script: SM_Wardrobe_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-005 | Mueble de cocina con estufa de 2 hornillas (2.0x0.6x0.91 m), Cocina común | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_KitchenCounter_Residencias_A.blend (script: SM_KitchenCounter_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-006 | Sofá de 3 plazas (2.2x0.9x0.87 m), Sala común | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Sofa_Residencias_A.blend (script: SM_Sofa_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-007 | Lavadora con puerta circular de vidrio (0.6x0.63x0.85 m), Lavandería | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_WashingMachine_Residencias_A.blend (script: SM_WashingMachine_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-RES-007 | Placa de nombre de puerta, repetible (0.18x0.06 m; prop narrativo: "Sus puertas tienen nombres conocidos" — el nombre grabado es contenido dinámico de arte final, pendiente) | PRP | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_DoorNameplate_Residencias_A.blend (script: SM_DoorNameplate_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+
 RECTORÍA Y TORRE — INVENTARIO INICIAL (2026-07-28, Capítulo 17, clímax del guion)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 17,
 y sección 10.17 (edificio 50x40 m, cuatro pisos, dos sótanos). Zona REC
