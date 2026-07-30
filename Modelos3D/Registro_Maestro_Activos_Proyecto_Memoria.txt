@@ -1121,6 +1121,18 @@ tiene desglose de salas en el guion todavía. Origen local propio.
 ARC-REC-001 | Blockout arquitectónico del Núcleo (piso + paredes, 35x35 m, techo de 10 m —sala clímax de doble/triple altura, no piso estándar—; puerta de 2.20 m; escenario de los "Ocho Nodos" y Nicolás dentro de sensores del Capítulo 17) | ARC | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_NucleoBlockout_Rectoria_A.blend (script: SM_NucleoBlockout_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-REC-002 | Blockout arquitectónico de la Torre (piso + paredes, base de 10x10 m —sin especificar en el guion, se eligió una base razonable—, 40 m de alto; puerta de 1.50 m; un solo tramo vertical, sin dividir en pisos todavía) | ARC | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_TorreBlockout_Rectoria_A.blend (script: SM_TorreBlockout_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Props del Núcleo, clímax del Capítulo 17 (2026-07-29): "Nicolás dentro
+de sensores", "ocho terminales", "cables", "servidores", "tuberías",
+"proteger la consola". Los "servidores" y "tuberías" reutilizan
+SM_ServerRack_Informatica_A y SM_PipeSystem_Ciencias_A sin duplicar.
+No se modeló nada para la Torre (el guion no especifica contenido
+interior más allá de "un solo tramo vertical").
+
+PRP-REC-001 | Terminal/nodo vertical repetible (0.5x0.5x1.29 m; pedestal con pantalla inclinada emisiva, panel de 8 luces indicadoras y placa placeholder para diferenciar edificio); un único módulo pensado para colocarse 8 veces (Biblioteca, Generales, Educación, Ingeniería, Ciencias, Medicina, Psicología, Informática/Auditorio) — prop narrativo: "ocho terminales" | PRP | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_Terminal_Rectoria_A.blend (script: SM_Terminal_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-REC-002 | Consola central de protección (1.8x1.8x1.6 m; podio circular con 4 pantallas radiales emisivas, anillo de 16 luces de alarma y beacon central), centro del Núcleo — prop narrativo: "Proteger la consola" | PRP | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_ProtectionConsole_Rectoria_A.blend (script: SM_ProtectionConsole_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-REC-003 | Haz de cables con abrazaderas, módulo repetible de 2 m (7 cables en empaquetado hexagonal) — prop narrativo: "cables" del Núcleo | PRP | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_CableBundle_Rectoria_A.blend (script: SM_CableBundle_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-REC-004 | Anillo de sensores (4.18x4.18x2.2 m de diámetro exterior, radio interior ~2 m; 8 postes con panel/cámara y lente emisivo rojo apuntando hacia el centro) — prop narrativo central: "Nicolás dentro de sensores" | PRP | REC | [X] Listo en Blender | Modelos-3D/Rectoria/SM_SensorRing_Rectoria_A.blend (script: SM_SensorRing_Rectoria_A.py) | Sí | [UE] Pendiente | Pendiente
+
 SODA (EDIFICIO INDEPENDIENTE) — INVENTARIO INICIAL (2026-07-28)
 Basado en la sección 10.14 (planta 35x25 m: comedor 20x18 m, cocina
 10x12 m, bodega 6x8 m). Zona SOD (nueva), distinta de la pequeña soda
@@ -1147,6 +1159,16 @@ un prop aparte, pendiente. Origen local propio por elemento.
 
 ARC-CCM-001 | Blockout arquitectónico de la sala de investigación diurna (piso + paredes, 12x10 m —dimensión razonable dentro del edificio de 30x20 m, no especificada en el guion—; puerta de 1.20 m) | ARC | CCM | [X] Listo en Blender | Modelos-3D/CentroCultural/SM_SalaInvestigacionBlockout_CentroCultural_A.blend (script: SM_SalaInvestigacionBlockout_CentroCultural_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-CCM-002 | Piso de la plaza memorial (25x20 m; solo geometría plana con material provisional, mismo criterio que la Plaza Central; escenario de "El memorial añade el nombre de Sharon y luego lo borra" del Día 3 y Capítulo 12) | ARC | CCM | [X] Listo en Blender | Modelos-3D/CentroCultural/SM_PlazaMemorialFloorBlockout_A.blend (script: SM_PlazaMemorialFloorBlockout_A.py) | Sí | [UE] Pendiente | Pendiente
+
+Props de las escenas diurnas "DÍA" (2026-07-29): hallados al auditar
+las secciones DÍA 2/3/4 del guion contra este registro — no estaban
+modelados. El memorial (monumento físico, distinto del piso ya
+existente ARC-CCM-002) y el mobiliario de la Sala de Investigación
+del Centro Cultural, que hasta ahora solo tenía arquitectura vacía.
+
+PRP-CCM-001 | Monumento del memorial con superficie de nombres en blanco (1.5x1.0x2.1 m; prop narrativo central: "El memorial añade el nombre de Sharon y luego lo borra" — el texto es contenido dinámico gestionado en Unreal, no geometría), Plaza Memorial | PRP | CCM | [X] Listo en Blender | Modelos-3D/CentroCultural/SM_MemorialMonument_CentroCultural_A.blend (script: SM_MemorialMonument_CentroCultural_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-CCM-001 | Mesa de trabajo con radio antigua, detector de interferencia portátil, baterías y linterna UV (1.6x0.7x1.3 m), Sala de Investigación (Día 2: "Reparar radios", "Construir luz ultravioleta", "Conseguir baterías"; Día 3: "Construir detector de interferencia", "Reparar un dispositivo de radio") | FUR | CCM | [X] Listo en Blender | Modelos-3D/CentroCultural/SM_RadioWorkbench_CentroCultural_A.blend (script: SM_RadioWorkbench_CentroCultural_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-CCM-002 | Mesa de investigación con 8 pilas de documentos, una por nodo (3.2x1.4x0.79 m), Sala de Investigación (prop narrativo del Día 4: "Mesa de investigación: Biblioteca, Generales, Educación, Ingeniería, Ciencias, Medicina, Psicología, Informática/Auditorio" — los Ocho Nodos; etiquetas de carpeta sin texto, contenido de arte final pendiente) | FUR | CCM | [X] Listo en Blender | Modelos-3D/CentroCultural/SM_InvestigationTable_CentroCultural_A.blend (script: SM_InvestigationTable_CentroCultural_A.py) | Sí | [UE] Pendiente | Pendiente
 
 ________________________________________________________________________________
 ________________________________________________________________________________
