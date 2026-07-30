@@ -970,6 +970,8 @@ ARC-EXT-006 | Segmento de calle secundaria de asfalto simple (5.5x20 m) | ARC | 
 ARC-EXT-007 | Segmento de sendero peatonal tipo adoquín/tierra compactada (2.5x15 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_SenderoSegment_Exteriores_A.blend (script: SM_SenderoSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-EXT-008 | Segmento de cauce de quebrada con taludes inclinados y lámina de agua (ancho superior 6.5 m, fondo 3.5 m, profundidad 1.8 m, 30 m de largo) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_QuebradaSegment_Exteriores_A.blend (script: SM_QuebradaSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-EXT-009 | Parqueo pequeño con piso de asfalto y líneas de espacios marcadas (25x30 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_ParkingLotSmall_Exteriores_A.blend (script: SM_ParkingLotSmall_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EXT-010 | Parqueo mediano con piso de asfalto y líneas de espacios marcadas (45x55 m; mismo diseño que ARC-EXT-009) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_ParkingLotMedium_Exteriores_A.blend (script: SM_ParkingLotMedium_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EXT-011 | Parqueo grande con piso de asfalto y líneas de espacios marcadas (70x90 m; mismo diseño que ARC-EXT-009) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_ParkingLotLarge_Exteriores_A.blend (script: SM_ParkingLotLarge_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 
 INFORMÁTICA — INVENTARIO INICIAL (2026-07-28, Capítulo 10, abre la Noche 3)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 10,
