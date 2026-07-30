@@ -1007,6 +1007,14 @@ Generales, no 4.0 m estándar). Origen local propio.
 ARC-AUD-001 | Blockout arquitectónico de la sala principal (piso + paredes, 30x32 m; puerta doble muy ancha de 2.80 m para acceso masivo de público) | ARC | AUD | [X] Listo en Blender | Modelos-3D/AuditorioCentral/SM_SalaBlockout_AuditorioCentral_A.blend (script: SM_SalaBlockout_AuditorioCentral_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-AUD-002 | Blockout arquitectónico del escenario (piso + paredes, 18x12 m; puerta doble ancha de 2.20 m) | ARC | AUD | [X] Listo en Blender | Modelos-3D/AuditorioCentral/SM_EscenarioBlockout_AuditorioCentral_A.blend (script: SM_EscenarioBlockout_AuditorioCentral_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de Auditorio Central (2026-07-29): completa las 2
+salas con el prop narrativo del Capítulo 12 ("Carteles muestran
+decisiones del jugador").
+
+FUR-AUD-001 | Fila de butacas de la Sala, 6 asientos (3.34 m de ancho; módulo repetible; Capítulo 12: "Público de 1974") | FUR | AUD | [X] Listo en Blender | Modelos-3D/AuditorioCentral/SM_AuditoriumSeatRow_AuditorioCentral_A.blend (script: SM_AuditoriumSeatRow_AuditorioCentral_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-AUD-002 | Podio/atril del Escenario (0.6x0.5x1.2 m; Capítulo 12: "Profesor hace preguntas") | FUR | AUD | [X] Listo en Blender | Modelos-3D/AuditorioCentral/SM_Podium_AuditorioCentral_A.blend (script: SM_Podium_AuditorioCentral_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-AUD-001 | Cartel de pie con panel en blanco, repetible (0.7x1.73 m; prop narrativo: "Carteles muestran decisiones del jugador" — el texto es contenido dinámico pendiente) | PRP | AUD | [X] Listo en Blender | Modelos-3D/AuditorioCentral/SM_DecisionSign_AuditorioCentral_A.blend (script: SM_DecisionSign_AuditorioCentral_A.py) | Sí | [UE] Pendiente | Pendiente
+
 HISTORIA — INVENTARIO INICIAL (2026-07-28, Capítulo 13)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 13,
 y sección 10.12 (edificio 50x40 m, tres pisos). Zona HIS (nueva). Altura de
