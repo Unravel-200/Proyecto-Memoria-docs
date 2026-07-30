@@ -1162,6 +1162,14 @@ ARC-SOD-001 | Blockout arquitectónico del comedor (piso + paredes, 20x18 m; pue
 ARC-SOD-002 | Blockout arquitectónico de la cocina (piso + paredes, 10x12 m; puerta de 1.20 m) | ARC | SOD | [X] Listo en Blender | Modelos-3D/Soda/SM_CocinaBlockout_Soda_A.blend (script: SM_CocinaBlockout_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-SOD-003 | Blockout arquitectónico de la bodega (piso + paredes, 6x8 m; puerta de 1.00 m) | ARC | SOD | [X] Listo en Blender | Modelos-3D/Soda/SM_BodegaBlockout_Soda_A.blend (script: SM_BodegaBlockout_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de la Soda independiente (2026-07-29): completa
+las 3 salas (tenía solo arquitectura vacía). El comedor reutiliza
+SM_DiningSet_Soda_A (Generales, módulo repetible, varias instancias
+para cubrir los 20x18 m) y la bodega reutiliza SM_StorageShelf_Mantenimiento_A,
+sin duplicar.
+
+FUR-SOD-001 | Línea de cocina industrial de acero inoxidable, 4 hornillas + campana de extracción + olla grande (3.0x0.85x3.1 m con ducto), Cocina | FUR | SOD | [X] Listo en Blender | Modelos-3D/Soda/SM_IndustrialKitchenCounter_Soda_A.blend (script: SM_IndustrialKitchenCounter_Soda_A.py) | Sí | [UE] Pendiente | Pendiente
+
 CENTRO CULTURAL Y MEMORIAL — INVENTARIO INICIAL (2026-07-28)
 Basado en la sección 10.18 (edificio 30x20 m, dos pisos; plaza
 memorial 25x20 m; sala de investigación diurna). Zona CCM (nueva).
