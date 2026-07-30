@@ -954,7 +954,7 @@ Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 7
 
 ARC-EXT-003 | Parada principal de autobús (plataforma elevada de 25x5 m + refugio de 12x3 m con techo, pared trasera y 2 paredes de vidrio, abierto al frente; incluye banca) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_BusStopBlockout_Exteriores_A.blend (script: SM_BusStopBlockout_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 VEH-EXT-001 | Autobús interno del campus (10x2.50x3.15 m; carrocería en 2 cajas apiladas para poder pintar la banda de ventanas distinto del cuerpo; 2 ejes de ruedas) | VEH | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_Bus_Exteriores_A.blend (script: SM_Bus_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-FUR-EXT-002 | Fila de asientos del interior del autobús, banca de 2 personas (0.90x0.50 m; módulo repetible a lo largo del pasillo; Capítulo 7: "pasajeros progresivos") | FUR | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_BusSeatRow_Exteriores_A.blend (script: SM_BusSeatRow_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-EXT-002 | Fila de asientos del interior del autobús, banca de 2 personas, cojín y respaldo continuos sin divisor (0.90x0.50 m; módulo repetible a lo largo del pasillo; Capítulo 7: "pasajeros progresivos"); CORREGIDO 2026-07-30: se quitó el divisor/apoyabrazos central que tenía — el usuario pidió "un solo sillón", sin nada en el medio | FUR | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_BusSeatRow_Exteriores_A.blend (script: SM_BusSeatRow_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 
 (2026-07-30: los 3 activos de arriba se movieron de Modelos-3D/Plaza/ a
 Modelos-3D/Exteriores/, que es donde debían haber quedado desde el
