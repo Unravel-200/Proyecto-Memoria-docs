@@ -985,6 +985,19 @@ ARC-ART-003 | Blockout arquitectónico de la galería (piso + paredes, 15x20 m; 
 ARC-ART-004 | Blockout arquitectónico del taller de escultura (piso + paredes, 15x18 m; puerta de 1.50 m; escenario de "Esculturas Humanas" del Capítulo 11) | ARC | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_EsculturaBlockout_Artes_A.blend (script: SM_EsculturaBlockout_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-ART-005 | Fuente de Artes (10 m de diámetro; mismo diseño que la fuente central, centro vacío a propósito) | PRP | ART | [P] Provisional — mismo criterio que ARC-EXT-002 (fuente central), pendiente de escultura/detalle en pasada de arte final | Modelos-3D/Artes/SM_FountainArtes_A.blend (script: SM_FountainArtes_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de Artes (2026-07-29): completa las 4 salas con
+los props narrativos del Capítulo 11 (maniquí/estatua humana
+repetible para "Actores inmóviles" y "Maniquíes representan el
+accidente", pedestal de escultura para "Escultura nueva copia la
+postura del jugador").
+
+PRP-ART-006 | Maniquí/estatua humana de pie, repetible (0.55x0.22x1.82 m; prop narrativo: "Actores inmóviles", "Esculturas Humanas", "Maniquíes representan el accidente") | PRP | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_MannequinActor_Artes_A.blend (script: SM_MannequinActor_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ART-001 | Fila de butacas de teatro, 5 asientos (2.79 m de ancho; módulo repetible), Teatro Experimental | FUR | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_TheaterSeatRow_Artes_A.blend (script: SM_TheaterSeatRow_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-ART-007 | Rig de luces de escenario, truss con 4 focos (4.0 m de largo; prop narrativo: "Actores cambian con la luz", "Directora nunca entra en iluminación"), Escenario | PRP | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_StageLightRig_Artes_A.blend (script: SM_StageLightRig_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ART-002 | Pedestal de galería con escultura abstracta pequeña, repetible (0.4x0.4x1.33 m), Galería | FUR | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_GalleryPedestal_Artes_A.blend (script: SM_GalleryPedestal_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-ART-008 | Cuadro de pared con lienzo placeholder, repetible (0.9x1.2 m), Galería | PRP | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_Painting_Artes_A.blend (script: SM_Painting_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-ART-009 | Pedestal de trabajo con bloque de piedra sin tallar (1.5x0.6x0.85 m), taller de Escultura (prop narrativo central: "Escultura nueva copia la postura del jugador" — la escultura generada es lógica de gameplay en Unreal, pendiente) | PRP | ART | [X] Listo en Blender | Modelos-3D/Artes/SM_SculpturePedestal_Artes_A.blend (script: SM_SculpturePedestal_Artes_A.py) | Sí | [UE] Pendiente | Pendiente
+
 AUDITORIO CENTRAL — INVENTARIO INICIAL (2026-07-28, Capítulo 12)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 12,
 y sección 10.11 (edificio 45x40 m; capacidad visual 500-700 personas). Zona
