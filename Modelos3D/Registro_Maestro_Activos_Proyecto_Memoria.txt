@@ -827,7 +827,7 @@ PRP-EDU-002 | Alarma de pared (evento "Alarma" del Capítulo 3; caja + campana +
 Mobiliario del aula/archivo/laboratorio pedagógico (2026-07-28):
 FUR-EDU-001 | Escritorio del profesor (aula, 1.40x0.70x0.75 m; mismo diseño que FUR-GEN-004 de Generales) | FUR | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_Desk_Teacher_Educacion_A.blend (script: SM_Desk_Teacher_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-EDU-003 | Pizarra (aula; 3.60x1.40 m, borde inferior a 0.90 m; mismo diseño que PRP-GEN-002 de Generales) | PRP | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_Blackboard_Educacion_A.blend (script: SM_Blackboard_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
-FUR-EDU-002 | Pupitre simple + silla (aula; módulo repetible, 0.60x0.45 m; a diferencia del pupitre de Generales FUR-GEN-003 —reservado para modelado a mano tras 13 intentos fallidos con paleta giratoria—, este es un diseño convencional de mesa+silla de 4 patas sin brazo en voladizo) | FUR | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_StudentDesk_Educacion_A.blend (script: SM_StudentDesk_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-EDU-002 | Pupitre simple + silla (aula) | FUR | EDU | [D] Descartado (2026-07-30): el usuario decidió que el aula de Educación reutiliza el MISMO pupitre que está modelando a mano para Generales (FUR-GEN-003), en vez de tener un diseño propio distinto. Se eliminó el archivo generado por script | Ver FUR-GEN-003 (Modelos-3D/Generales/, pendiente, modelado a mano por el usuario) | N/A | [UE] Pendiente | Pendiente
 FUR-EDU-003 | Archivero de 4 gavetas (archivo; 0.45x0.60x1.30 m) | FUR | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_FilingCabinet_Educacion_A.blend (script: SM_FilingCabinet_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-EDU-004 | Mesa de laboratorio + 2 banquitos (laboratorio pedagógico; módulo repetible, mesa de 2.00x0.80 m) | FUR | EDU | [X] Listo en Blender | Modelos-3D/Educacion/SM_LabTable_Educacion_A.blend (script: SM_LabTable_Educacion_A.py) | Sí | [UE] Pendiente | Pendiente
 
@@ -869,7 +869,7 @@ ARC-ING-007 | Blockout arquitectónico de la sala de prototipos (piso + paredes,
 Mobiliario/equipo (2026-07-28):
 FUR-ING-001 | Banco de trabajo (taller; mismo diseño que FUR-MAN-001, módulo repetible, 2.40x0.85 m) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_Workbench_Ingenieria_A.blend (script: SM_Workbench_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-ING-002 | Banco del taller mecánico (mismo diseño, un poco más profundo, 2.40x0.95 m) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_MechanicBench_Ingenieria_A.blend (script: SM_MechanicBench_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
-FUR-ING-003 | Estantería metálica (sala de materiales; mismo diseño que FUR-MAN-002, módulo repetible, 1.20x0.45x2.00 m) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_StorageShelf_Ingenieria_A.blend (script: SM_StorageShelf_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-ING-003 | Estantería metálica (sala de materiales; mismo diseño que FUR-MAN-002, módulo repetible, 1.20x0.45x2.00 m; CORREGIDO 2026-07-30: se agregó la tapa superior que faltaba, a nivel de la punta de los postes) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_StorageShelf_Ingenieria_A.blend (script: SM_StorageShelf_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-ING-004 | Panel eléctrico de pared (laboratorio de eléctrica; caja + puerta + rejilla de 12 interruptores, 0.60x0.90 m) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_ElectricalPanel_Ingenieria_A.blend (script: SM_ElectricalPanel_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-ING-005 | Mesa de electrónica con osciloscopio y soporte de cautín (laboratorio de electrónica; mesa de 1.80x0.70 m; la pantalla del osciloscopio es material placeholder, arte final) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_ElectronicsBench_Ingenieria_A.blend (script: SM_ElectronicsBench_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-ING-006 | Brazo robótico fijo en L (laboratorio de robótica; base + poste + brazo + pinza, sin articulaciones anguladas; escenario del acertijo "Secuencia de brazos robóticos" del Capítulo 5) | FUR | ING | [X] Listo en Blender | Modelos-3D/Ingenieria/SM_RoboticArm_Ingenieria_A.blend (script: SM_RoboticArm_Ingenieria_A.py) | Sí | [UE] Pendiente | Pendiente
@@ -952,26 +952,39 @@ EXTERIORES — PARADA DE AUTOBÚS (2026-07-28, Capítulo 7)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 7
 (Autobús), y la Guía de Dimensiones (parada principal y autobús interno).
 
-ARC-EXT-003 | Parada principal de autobús (plataforma elevada de 25x5 m + refugio de 12x3 m con techo, pared trasera y 2 paredes de vidrio, abierto al frente; incluye banca) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_BusStopBlockout_Exteriores_A.blend (script: SM_BusStopBlockout_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-VEH-EXT-001 | Autobús interno del campus (10x2.50x3.15 m; carrocería en 2 cajas apiladas para poder pintar la banda de ventanas distinto del cuerpo; 2 ejes de ruedas) | VEH | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_Bus_Exteriores_A.blend (script: SM_Bus_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-FUR-EXT-002 | Fila de asientos del interior del autobús, banca de 2 personas (0.90x0.50 m; módulo repetible a lo largo del pasillo; Capítulo 7: "pasajeros progresivos") | FUR | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_BusSeatRow_Exteriores_A.blend (script: SM_BusSeatRow_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EXT-003 | Parada principal de autobús (plataforma elevada de 25x5 m + refugio de 12x3 m con techo, pared trasera y 2 paredes de vidrio, abierto al frente; incluye banca) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_BusStopBlockout_Exteriores_A.blend (script: SM_BusStopBlockout_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+VEH-EXT-001 | Autobús interno del campus (10x2.50x3.15 m; carrocería en 2 cajas apiladas para poder pintar la banda de ventanas distinto del cuerpo; 2 ejes de ruedas) | VEH | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_Bus_Exteriores_A.blend (script: SM_Bus_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-EXT-002 | Fila de asientos del interior del autobús, banca de 2 personas (0.90x0.50 m; módulo repetible a lo largo del pasillo; Capítulo 7: "pasajeros progresivos") | FUR | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_BusSeatRow_Exteriores_A.blend (script: SM_BusSeatRow_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+
+(2026-07-30: los 3 activos de arriba se movieron de Modelos-3D/Plaza/ a
+Modelos-3D/Exteriores/, que es donde debían haber quedado desde el
+principio según su propio sufijo "_Exteriores_A" — el usuario no los
+encontraba porque el lote original los guardó en la carpeta equivocada
+por error. Sin cambio de contenido, solo de ubicación de archivo y de
+la ruta de guardado dentro de cada script.)
 
 Calles y exteriores del campus (2026-07-29), sección 11 del guion. El
 guion no tiene un plano con posiciones exactas — son especificaciones
 de ancho únicamente, así que se modelaron como segmentos rectos
 modulares repetibles (mismo criterio que el pavimento de la Plaza
 Central), listos para acomodarse según el layout final en Unreal.
-Los parqueos mediano y grande quedan pendientes (no narrativamente
-urgentes).
 
-ARC-EXT-004 | Segmento recto de avenida con línea central discontinua pintada (7.5x20 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_AvenidaSegment_Exteriores_A.blend (script: SM_AvenidaSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-ARC-EXT-005 | Segmento de acera de concreto con juntas de losa cada 1.5 m (2.75x20 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_AceraSegment_Exteriores_A.blend (script: SM_AceraSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-ARC-EXT-006 | Segmento de calle secundaria de asfalto simple (5.5x20 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_CalleSecundariaSegment_Exteriores_A.blend (script: SM_CalleSecundariaSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-ARC-EXT-007 | Segmento de sendero peatonal tipo adoquín/tierra compactada (2.5x15 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_SenderoSegment_Exteriores_A.blend (script: SM_SenderoSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-ARC-EXT-008 | Segmento de cauce de quebrada con taludes inclinados y lámina de agua (ancho superior 6.5 m, fondo 3.5 m, profundidad 1.8 m, 30 m de largo) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_QuebradaSegment_Exteriores_A.blend (script: SM_QuebradaSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-ARC-EXT-009 | Parqueo pequeño con piso de asfalto y líneas de espacios marcadas (25x30 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_ParkingLotSmall_Exteriores_A.blend (script: SM_ParkingLotSmall_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-ARC-EXT-010 | Parqueo mediano con piso de asfalto y líneas de espacios marcadas (45x55 m; mismo diseño que ARC-EXT-009) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_ParkingLotMedium_Exteriores_A.blend (script: SM_ParkingLotMedium_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
-ARC-EXT-011 | Parqueo grande con piso de asfalto y líneas de espacios marcadas (70x90 m; mismo diseño que ARC-EXT-009) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_ParkingLotLarge_Exteriores_A.blend (script: SM_ParkingLotLarge_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+DESCARTADOS (2026-07-30): el usuario revisó este lote y decidió que
+las calles, aceras y parqueos del campus se van a hacer directamente
+en Unreal (splines/landscape), no en Blender — "es mejor hacerlo en
+Unreal, si al final decido hacerlo con Blender te digo y los volvemos
+hacer". Se eliminaron los 8 archivos .blend/.fbx/.py de
+Modelos-3D/Exteriores/. Los IDs quedan reservados por si se retoman
+más adelante.
+
+ARC-EXT-004 | Segmento recto de avenida con línea central discontinua pintada (7.5x20 m) | ARC | EXT | [D] Descartado (2026-07-30): el usuario prefiere modelar calles/aceras/parqueos directamente en Unreal | Archivo eliminado del repositorio | N/A | N/A | N/A
+ARC-EXT-005 | Segmento de acera de concreto con juntas de losa cada 1.5 m (2.75x20 m) | ARC | EXT | [D] Descartado (2026-07-30): mismo motivo que ARC-EXT-004 | Archivo eliminado del repositorio | N/A | N/A | N/A
+ARC-EXT-006 | Segmento de calle secundaria de asfalto simple (5.5x20 m) | ARC | EXT | [D] Descartado (2026-07-30): mismo motivo que ARC-EXT-004 | Archivo eliminado del repositorio | N/A | N/A | N/A
+ARC-EXT-007 | Segmento de sendero peatonal tipo adoquín/tierra compactada (2.5x15 m) | ARC | EXT | [D] Descartado (2026-07-30): mismo motivo que ARC-EXT-004 | Archivo eliminado del repositorio | N/A | N/A | N/A
+ARC-EXT-008 | Segmento de cauce de quebrada con taludes inclinados y lámina de agua (ancho superior 6.5 m, fondo 3.5 m, profundidad 1.8 m, 30 m de largo) | ARC | EXT | [D] Descartado (2026-07-30): mismo motivo que ARC-EXT-004 | Archivo eliminado del repositorio | N/A | N/A | N/A
+ARC-EXT-009 | Parqueo pequeño con piso de asfalto y líneas de espacios marcadas (25x30 m) | ARC | EXT | [D] Descartado (2026-07-30): mismo motivo que ARC-EXT-004 | Archivo eliminado del repositorio | N/A | N/A | N/A
+ARC-EXT-010 | Parqueo mediano con piso de asfalto y líneas de espacios marcadas (45x55 m; mismo diseño que ARC-EXT-009) | ARC | EXT | [D] Descartado (2026-07-30): mismo motivo que ARC-EXT-004 | Archivo eliminado del repositorio | N/A | N/A | N/A
+ARC-EXT-011 | Parqueo grande con piso de asfalto y líneas de espacios marcadas (70x90 m; mismo diseño que ARC-EXT-009) | ARC | EXT | [D] Descartado (2026-07-30): mismo motivo que ARC-EXT-004 | Archivo eliminado del repositorio | N/A | N/A | N/A
 
 INFORMÁTICA — INVENTARIO INICIAL (2026-07-28, Capítulo 10, abre la Noche 3)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 10,
@@ -1108,8 +1121,8 @@ y sección 10.16 (tres bloques de 55x18 m, cinco pisos). Zona RES (nueva).
 Altura de piso 3.2 m (Guía_Dimensiones: "Residencias: 3.20 a 3.60 m", más
 bajo que los edificios académicos de 4.0 m). Origen local propio.
 
-ARC-RES-001 | Blockout arquitectónico de una habitación individual (piso + paredes, 3.5x4.5 m; puerta de 0.90 m; módulo repetible) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_HabitacionIndividualBlockout_Residencias_A.blend (script: SM_HabitacionIndividualBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
-ARC-RES-002 | Blockout arquitectónico de una habitación doble (piso + paredes, 4.5x5 m; puerta de 0.90 m; módulo repetible) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_HabitacionDobleBlockout_Residencias_A.blend (script: SM_HabitacionDobleBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-RES-001 | Blockout arquitectónico de una habitación individual (piso + paredes, 3.5x4.5 m; puerta de 0.90 m; módulo repetible; CORREGIDO 2026-07-30: se agregó un nicho de baño privado con ducha de 1.6x1.8 m en la esquina trasera-derecha, con pared propia y puerta interior de 0.80 m, sin cambiar el footprint exterior) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_HabitacionIndividualBlockout_Residencias_A.blend (script: SM_HabitacionIndividualBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-RES-002 | Blockout arquitectónico de una habitación doble (piso + paredes, 4.5x5 m; puerta de 0.90 m; módulo repetible; "doble" = ocupación doble, no cama doble; CORREGIDO 2026-07-30: se agregó el mismo nicho de baño privado con ducha de 1.6x1.8 m que la individual) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_HabitacionDobleBlockout_Residencias_A.blend (script: SM_HabitacionDobleBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-RES-003 | Blockout arquitectónico de la cocina común (piso + paredes, 8x10 m; puerta de 1.20 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_CocinaBlockout_Residencias_A.blend (script: SM_CocinaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-RES-004 | Blockout arquitectónico de la sala común (piso + paredes, 10x12 m; puerta de 1.50 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_SalaBlockout_Residencias_A.blend (script: SM_SalaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-RES-005 | Blockout arquitectónico de la lavandería (piso + paredes, 6x8 m; puerta de 1.20 m) | ARC | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_LavanderiaBlockout_Residencias_A.blend (script: SM_LavanderiaBlockout_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
@@ -1119,14 +1132,29 @@ Mobiliario y equipo de Residencias (2026-07-29): completa las 5 salas
 con el prop narrativo del Capítulo 15 ("Sus puertas tienen nombres
 conocidos"). Abre el mobiliario de la Noche 4 del guion.
 
-FUR-RES-001 | Cama individual con almohada (1.0x1.9 m), Habitación Individual | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Bed_Individual_Residencias_A.blend (script: SM_Bed_Individual_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
-FUR-RES-002 | Cama doble con 2 almohadas (1.5x2.0 m), Habitación Doble | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Bed_Doble_Residencias_A.blend (script: SM_Bed_Doble_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-001 | Cama individual con almohada (1.0x1.9 m); en la Habitación Doble se colocan 2 instancias separadas (una por ocupante) en vez de una cama doble | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Bed_Individual_Residencias_A.blend (script: SM_Bed_Individual_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-002 | Cama doble con 2 almohadas (1.5x2.0 m), Habitación Doble | FUR | RES | [D] Descartado (2026-07-30): el usuario rechazó este activo — "doble" es ocupación doble, no cama doble; la Habitación Doble debe tener 2 camas individuales separadas (cada una con 1 almohada), no una cama compartida. Se reutiliza FUR-RES-001 (2 instancias) en su lugar; se eliminó el archivo | Archivo eliminado del repositorio | N/A | N/A | N/A
 FUR-RES-003 | Mesa de noche con lámpara, repetible (0.4x0.4x0.68 m) | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Nightstand_Residencias_A.blend (script: SM_Nightstand_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
-FUR-RES-004 | Armario de 2 puertas, repetible (1.0x0.63x2.0 m) | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Wardrobe_Residencias_A.blend (script: SM_Wardrobe_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-004 | Armario de 2 puertas, repetible (1.0x0.63x2.0 m); en la Habitación Doble se colocan 2 instancias (una por ocupante) | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Wardrobe_Residencias_A.blend (script: SM_Wardrobe_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-RES-005 | Mueble de cocina con estufa de 2 hornillas (2.0x0.6x0.91 m), Cocina común | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_KitchenCounter_Residencias_A.blend (script: SM_KitchenCounter_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-RES-006 | Sofá de 3 plazas (2.2x0.9x0.87 m), Sala común | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_Sofa_Residencias_A.blend (script: SM_Sofa_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-RES-007 | Lavadora con puerta circular de vidrio (0.6x0.63x0.85 m), Lavandería | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_WashingMachine_Residencias_A.blend (script: SM_WashingMachine_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-RES-007 | Placa de nombre de puerta, repetible (0.18x0.06 m; prop narrativo: "Sus puertas tienen nombres conocidos" — el nombre grabado es contenido dinámico de arte final, pendiente) | PRP | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_DoorNameplate_Residencias_A.blend (script: SM_DoorNameplate_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+
+Corrección de habitaciones tras revisión del usuario (2026-07-30): se
+rechazó SM_Bed_Doble_Residencias_A y se pidió que cada habitación
+tenga campo para 2 camas individuales separadas, 2 escritorios con
+silla, 2 armarios de ropa, 2 armarios aéreos sobre las camas, y su
+propio baño con ducha. Como el mobiliario no se fija dentro del
+blockout (son props sueltos para acomodar en Unreal), solo hicieron
+falta 3 activos nuevos — el resto se resuelve reutilizando FUR-RES-001
+y FUR-RES-004 por duplicado en la Habitación Doble. Ambos blockouts
+(ARC-RES-001 y ARC-RES-002) se corrigieron para incluir el nicho de
+baño (ver notas de esas filas).
+
+FUR-RES-008 | Escritorio con silla de estudio (escritorio 1.20x0.60x0.75 m + silla simple de 4 patas sin apoyabrazos, silla de cara al escritorio; 1 instancia en la Habitación Individual, 2 en la Doble) | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_StudyDesk_Residencias_A.blend (script: SM_StudyDesk_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-009 | Armario aéreo de pared, repetible (1.0x0.30x0.45 m, 2 puertas; para montar encima del cabecero de cada cama; 1 instancia en la Individual, 2 en la Doble) | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_OverheadCabinet_Residencias_A.blend (script: SM_OverheadCabinet_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-RES-010 | Set de baño privado: ducha de esquina + inodoro + lavamanos, dimensionado para el nicho de 1.6x1.8 m de ambos blockouts (ARC-RES-001 y ARC-RES-002); no hay medida oficial de baño privado en el guion (solo "Baño universitario: 6x8 m", para servicios públicos), se usaron medidas estándar de plomería residencial; vidrio de la ducha en placeholder (M_PLACEHOLDER_ShowerGlass), pendiente de pasada de arte final | FUR | RES | [X] Listo en Blender | Modelos-3D/Residencias/SM_BathroomSet_Residencias_A.blend (script: SM_BathroomSet_Residencias_A.py) | Sí | [UE] Pendiente | Pendiente
 
 RECTORÍA Y TORRE — INVENTARIO INICIAL (2026-07-28, Capítulo 17, clímax del guion)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 17,
