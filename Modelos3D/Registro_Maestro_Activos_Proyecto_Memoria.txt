@@ -1025,6 +1025,16 @@ ARC-HIS-002 | Blockout arquitectónico de la mapoteca (piso + paredes, 12x15 m; 
 ARC-HIS-003 | Blockout arquitectónico del archivo fotográfico (piso + paredes, 10x12 m; puerta de 1.20 m; escenario de "Fotografías" del Capítulo 13) | ARC | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_ArchivoFotograficoBlockout_Historia_A.blend (script: SM_ArchivoFotograficoBlockout_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-HIS-004 | Blockout arquitectónico del museo (piso + paredes, 15x20 m; puerta doble de 1.80 m) | ARC | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_MuseoBlockout_Historia_A.blend (script: SM_MuseoBlockout_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de Historia (2026-07-29): completa las 4 salas con
+el prop narrativo del Capítulo 13 ("Periódicos futuros", volumen
+especial en la hemeroteca) y la vitrina de "Evidencia anterior a
+1974" del museo. El archivo fotográfico reutiliza
+SM_FilingCabinet_Educacion_A, sin duplicar.
+
+FUR-HIS-001 | Estantería de periódicos encuadernados, repetible (1.4x0.4x2.0 m), Hemeroteca (uno de los volúmenes marcado como el "periódico futuro" narrativo) | FUR | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_NewspaperRack_Historia_A.blend (script: SM_NewspaperRack_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-HIS-002 | Mueble de mapas con gavetas planas y mapa extendido encima (1.6x1.11x0.92 m), Mapoteca | FUR | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_MapTable_Historia_A.blend (script: SM_MapTable_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-HIS-001 | Vitrina de evidencia con objeto placeholder (0.8x0.6x1.36 m), Museo (prop narrativo: "Evidencia anterior a 1974") | PRP | HIS | [X] Listo en Blender | Modelos-3D/Historia/SM_MuseumDisplayCase_Historia_A.blend (script: SM_MuseumDisplayCase_Historia_A.py) | Sí | [UE] Pendiente | Pendiente
+
 DERECHO Y ADMINISTRACIÓN — INVENTARIO INICIAL (2026-07-28, Capítulo 13)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 13,
 y sección 10.13 (edificio 55x40 m, cuatro pisos). Zona DER (nueva). Altura
@@ -1034,6 +1044,18 @@ ARC-DER-001 | Blockout arquitectónico de la sala de juicio (piso + paredes, 14x
 ARC-DER-002 | Blockout arquitectónico del archivo (piso + paredes, 15x20 m; puerta de 1.50 m; escenario de "Actas" y "Desapariciones clasificadas de otra manera" del Capítulo 13) | ARC | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_ArchivoBlockout_Derecho_A.blend (script: SM_ArchivoBlockout_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-DER-003 | Blockout arquitectónico de la sala del Consejo (piso + paredes, 12x16 m; puerta de 1.50 m) | ARC | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_ConsejoBlockout_Derecho_A.blend (script: SM_ConsejoBlockout_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-DER-004 | Blockout arquitectónico de la bóveda (piso + paredes, 8x12 m; puerta simple modelada por ahora, pendiente una puerta blindada específica como prop aparte si se necesita) | ARC | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_BovedaBlockout_Derecho_A.blend (script: SM_BovedaBlockout_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
+
+Mobiliario y equipo de Derecho (2026-07-29): completa las 4 salas,
+incluida la puerta blindada de la bóveda anticipada en ARC-DER-004
+(Capítulo 13: "Desapariciones clasificadas de otra manera"). El
+archivo de Derecho reutiliza SM_MetalShelf_LibraryBasement_A, sin
+duplicar; las sillas de la mesa del Consejo reutilizan
+SM_Chair_LibraryGuard_A.
+
+FUR-DER-001 | Estrado del juez, plataforma elevada con mueble frontal (2.4x1.35x1.7 m), Sala de Juicio | FUR | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_JudgeBench_Derecho_A.blend (script: SM_JudgeBench_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-DER-002 | Estrado de testigos con barandal en U (0.9x0.9x1.15 m), Sala de Juicio | FUR | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_WitnessStand_Derecho_A.blend (script: SM_WitnessStand_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-DER-003 | Mesa de reuniones con carpetas de actas (3.0x1.2x0.77 m), sala del Consejo | FUR | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_CouncilTable_Derecho_A.blend (script: SM_CouncilTable_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-DER-001 | Puerta blindada de la bóveda con rueda de manija (marco 1.6x2.2 m; hoja circular como pieza separada SM_DoorLeaf_VaultDerecho_A; prop narrativo: "Desapariciones clasificadas de otra manera") | PRP | DER | [X] Listo en Blender | Modelos-3D/Derecho/SM_VaultDoor_Derecho_A.blend (script: SM_VaultDoor_Derecho_A.py) | Sí | [UE] Pendiente | Pendiente
 
 GIMNASIO — INVENTARIO INICIAL (2026-07-28, Capítulo 14, cierra la Noche 3)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 14,
