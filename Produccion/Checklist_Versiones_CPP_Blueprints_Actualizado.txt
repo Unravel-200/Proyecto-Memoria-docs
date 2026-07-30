@@ -1963,4 +1963,21 @@ La prioridad es avanzar mediante versiones pequeñas, estables, jugables y compr
 
 Cada versión debe poder abrirse, jugarse y probarse antes de comenzar la siguiente.
 
+==========================================================================================
+12. SINCRONIZACIÓN DE ACTIVOS — 2026-07-29
+==========================================================================================
+
+[X] Claude revisó y publicó la rama `main` de `Proyecto-Memoria-docs`.
+[X] `main` local y `origin/main` quedaron sincronizadas en `0702dd6`.
+[X] El registro maestro documenta los activos de exteriores, parqueos, soda,
+    residencias y edificios registrados durante esta sesión.
+[X] Los cambios se limitaron al repositorio de documentación y a `Modelos3D`.
+[UE] Los activos permanecen pendientes de importación y validación dentro de Unreal.
+[X] `Registros/Registro_Activos_Importados.txt` permanece sin registros porque no
+    se ha realizado una importación de estos activos a Unreal.
+
+PRÓXIMA ACCIÓN:
+Importar y validar únicamente los activos aprobados cuando corresponda, registrando
+cada importación en `Registros/Registro_Activos_Importados.txt`.
+
 FIN DEL DOCUMENTO
