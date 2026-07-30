@@ -956,6 +956,21 @@ ARC-EXT-003 | Parada principal de autobús (plataforma elevada de 25x5 m + refug
 VEH-EXT-001 | Autobús interno del campus (10x2.50x3.15 m; carrocería en 2 cajas apiladas para poder pintar la banda de ventanas distinto del cuerpo; 2 ejes de ruedas) | VEH | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_Bus_Exteriores_A.blend (script: SM_Bus_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 FUR-EXT-002 | Fila de asientos del interior del autobús, banca de 2 personas (0.90x0.50 m; módulo repetible a lo largo del pasillo; Capítulo 7: "pasajeros progresivos") | FUR | EXT | [X] Listo en Blender | Modelos-3D/Plaza/SM_BusSeatRow_Exteriores_A.blend (script: SM_BusSeatRow_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Calles y exteriores del campus (2026-07-29), sección 11 del guion. El
+guion no tiene un plano con posiciones exactas — son especificaciones
+de ancho únicamente, así que se modelaron como segmentos rectos
+modulares repetibles (mismo criterio que el pavimento de la Plaza
+Central), listos para acomodarse según el layout final en Unreal.
+Los parqueos mediano y grande quedan pendientes (no narrativamente
+urgentes).
+
+ARC-EXT-004 | Segmento recto de avenida con línea central discontinua pintada (7.5x20 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_AvenidaSegment_Exteriores_A.blend (script: SM_AvenidaSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EXT-005 | Segmento de acera de concreto con juntas de losa cada 1.5 m (2.75x20 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_AceraSegment_Exteriores_A.blend (script: SM_AceraSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EXT-006 | Segmento de calle secundaria de asfalto simple (5.5x20 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_CalleSecundariaSegment_Exteriores_A.blend (script: SM_CalleSecundariaSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EXT-007 | Segmento de sendero peatonal tipo adoquín/tierra compactada (2.5x15 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_SenderoSegment_Exteriores_A.blend (script: SM_SenderoSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EXT-008 | Segmento de cauce de quebrada con taludes inclinados y lámina de agua (ancho superior 6.5 m, fondo 3.5 m, profundidad 1.8 m, 30 m de largo) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_QuebradaSegment_Exteriores_A.blend (script: SM_QuebradaSegment_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+ARC-EXT-009 | Parqueo pequeño con piso de asfalto y líneas de espacios marcadas (25x30 m) | ARC | EXT | [X] Listo en Blender | Modelos-3D/Exteriores/SM_ParkingLotSmall_Exteriores_A.blend (script: SM_ParkingLotSmall_Exteriores_A.py) | Sí | [UE] Pendiente | Pendiente
+
 INFORMÁTICA — INVENTARIO INICIAL (2026-07-28, Capítulo 10, abre la Noche 3)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 10,
 y sección 10.9 (edificio 55x40 m, cuatro pisos). Zona INF (nueva). Altura
