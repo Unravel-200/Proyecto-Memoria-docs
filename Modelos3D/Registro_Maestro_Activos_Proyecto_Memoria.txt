@@ -1074,6 +1074,17 @@ PRP-GYM-004 | Piso marcado de la cancha (40x20 m; piso + líneas de cancha; elem
 ARC-GYM-004 | Piscina (25x12.5 m, basin hundido de 1.80 m de profundidad; elemento dentro de la nave de la piscina cubierta ARC-GYM-002, no un cuarto aparte; escenario de "Piscina muestra a Sharon" del Capítulo 14) | ARC | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_Piscina_Gimnasio_A.blend (script: SM_Piscina_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
 PRP-GYM-005 | Graderías (40x10 m, estructura escalonada de 6 escalones; elemento dentro de la nave principal ARC-GYM-001, no un cuarto aparte) | PRP | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_Graderias_Gimnasio_A.blend (script: SM_Graderias_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo del Gimnasio (2026-07-29): completa las 3 naves
+con los props narrativos del Capítulo 14 ("Voces de Vestidores",
+"Salvavidas mira desde el reflejo", "Equipo inmóvil"). Cierra el
+mobiliario de toda la Noche 3 del guion.
+
+FUR-GYM-001 | Fila de 6 casilleros con puertas de color alterno y rejillas de ventilación, repetible (2.1x0.53x1.8 m), Vestidores (Capítulo 14: "Voces de Vestidores") | FUR | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_LockerRow_Gimnasio_A.blend (script: SM_LockerRow_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-GYM-002 | Banca de vestidores, repetible (1.8x0.34x0.45 m), Vestidores | FUR | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_Bench_Gimnasio_A.blend (script: SM_Bench_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-GYM-006 | Silla de salvavidas con escalera lateral (0.76x0.95x2.06 m), Piscina Cubierta (prop narrativo: "Salvavidas mira desde el reflejo") | PRP | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_LifeguardChair_Gimnasio_A.blend (script: SM_LifeguardChair_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-GYM-007 | Escalera metálica de la piscina (0.54x0.15x1.9 m), para SM_Piscina_Gimnasio_A | PRP | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_PoolLadder_Gimnasio_A.blend (script: SM_PoolLadder_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-GYM-008 | Rack de equipo deportivo con pelotas y conos (1.8x0.5x1.63 m), nave principal (prop narrativo: "Equipo inmóvil" que luego "comienza a seguir" al grupo) | PRP | GYM | [X] Listo en Blender | Modelos-3D/Gimnasio/SM_SportsEquipmentRack_Gimnasio_A.blend (script: SM_SportsEquipmentRack_Gimnasio_A.py) | Sí | [UE] Pendiente | Pendiente
+
 RESIDENCIAS — INVENTARIO INICIAL (2026-07-28, Capítulo 15, abre la Noche 4)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 15,
 y sección 10.16 (tres bloques de 55x18 m, cinco pisos). Zona RES (nueva).
