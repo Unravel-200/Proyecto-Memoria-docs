@@ -965,6 +965,15 @@ ARC-INF-001 | Blockout arquitectónico de laboratorios (piso + paredes, 12x16 m;
 ARC-INF-002 | Blockout arquitectónico de la sala de servidores (piso + paredes, 15x20 m; puerta de 1.50 m; escenario de "Rostros en monitores" del Capítulo 10) | ARC | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_ServidoresBlockout_Informatica_A.blend (script: SM_ServidoresBlockout_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
 ARC-INF-003 | Blockout arquitectónico de la sala de monitoreo (piso + paredes, 12x14 m; puerta de 1.20 m) | ARC | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_MonitoreoBlockout_Informatica_A.blend (script: SM_MonitoreoBlockout_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
 
+Mobiliario y equipo de Informática (2026-07-29): completa las 3 salas
+con los props narrativos clave del Capítulo 10 (muro de monitores con
+"rostros en monitores" y la cámara de seguridad de techo).
+
+FUR-INF-001 | Escritorio de computadora con monitor, teclado y torre (1.45x0.60 m), laboratorios | FUR | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_ComputerDesk_Informatica_A.blend (script: SM_ComputerDesk_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-INF-002 | Rack de servidores con grilla de luces indicadoras (0.6x0.9x2.0 m; módulo repetible), sala de Servidores | FUR | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_ServerRack_Informatica_A.blend (script: SM_ServerRack_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
+FUR-INF-003 | Muro de 6 monitores de vigilancia (1.72x0.80 m), sala de Monitoreo (prop narrativo: "Rostros en monitores") | FUR | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_MonitorWall_Informatica_A.blend (script: SM_MonitorWall_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
+PRP-INF-001 | Cámara de seguridad de techo con luz indicadora roja, sala de Monitoreo (prop narrativo: "Cámara muestra al jugador desde la misma habitación") | PRP | INF | [X] Listo en Blender | Modelos-3D/Informatica/SM_SecurityCamera_Informatica_A.blend (script: SM_SecurityCamera_Informatica_A.py) | Sí | [UE] Pendiente | Pendiente
+
 ARTES — INVENTARIO INICIAL (2026-07-28, Capítulo 11)
 Basado en Proyecto_Memoria_Definitivo_3_Dias_Terror_Intenso.txt, Capítulo 11,
 y sección 10.10 (edificio 60x45 m, tres pisos). Zona ART (nueva). Altura de
