@@ -2018,8 +2018,11 @@ cambio permanente de la regla.
     la muestra se ve correctamente con iluminación y plataforma. El mapa ahora
     presenta una muestra organizada de las 20 zonas; esto no es una revisión
     individual de los 203 FBX.
-[ ] NO se mergeó `feature/import-modelos3d-assets` a `main` ni a la
-    rama de Codex -- queda pendiente de que el usuario decida cuándo.
+[X] Verificación automática completa: 210 StaticMesh importados revisados;
+    0 bounds inválidos, 0 sin materiales, 0 sin colisión convexa/box y 0
+    errores de lectura. Informe: `Tools/Logs/verify_all_imported_2026-07-31.txt`.
+[X] `feature/import-modelos3d-assets` ya se fusionó en la rama de Codex;
+    `main` permanece intacta.
 [ ] Los árboles de la Plaza y el pupitre del aula (modelado a mano por
     el usuario) siguen sin .fbx aprobado, por lo tanto NO se importaron.
 
