@@ -1,4 +1,82 @@
 PROYECTO MEMORIA
 REGISTRO DE ACTIVOS IMPORTADOS EN UNREAL
 
-Sin registros todavía.
+=====================================
+LOTE 1 -- 2026-07-30
+=====================================
+
+Contexto: el usuario terminó de revisar revisarEdificios.txt (Modelos-3D) y
+los 203 activos quedaron en [check]. Pidió explícitamente importar todo lo
+que estuviera listo, y autorizó una excepción puntual a la regla de no
+tocar Proyecto-Memory ("la regla no cambia pero en este momento tienes
+permiso de hacerlo") porque Codex no estaba trabajando en ese momento.
+
+Rama: feature/import-modelos3d-assets (creada a partir de
+feature/v0.1-player-cameras, para no mezclar este trabajo con el de Codex).
+NO se mergeó a main ni a feature/v0.1-player-cameras todavía -- queda
+pendiente de que el usuario decida cuándo integrarla.
+
+Método: UnrealEditor-Cmd.exe (Engine 5.8) en modo commandlet de Python
+(-run=pythonscript -script=... -EnablePlugins=PythonScriptPlugin), usando
+unreal.AssetImportTask + unreal.FbxImportUI (combine_meshes=False) para
+importar cada .fbx aprobado de Modelos-3D. Script fuente:
+Proyecto-Memory/Tools/import_modelos3d_batch.py. Log completo:
+Proyecto-Memory/Tools/Logs/import_report_2026-07-30.txt.
+
+Resultado: 203/203 archivos .fbx importados sin fallos, generando 606
+assets de Unreal (StaticMesh + sus materiales Principled BSDF, cada
+material llegó como su propio Material de Unreal con el mismo nombre que
+tenía en Blender, incluyendo los M_PLACEHOLDER_*). Destino:
+/Game/Modelos3D/<Zona>/ (una carpeta por zona, mismos 20 nombres de
+carpeta que en el repositorio Modelos-3D: Artes, AuditorioCentral,
+Biblioteca, CentroCultural, Ciencias, Derecho, Educacion, Exteriores,
+Generales, Gimnasio, Historia, Informatica, Ingenieria, Mantenimiento,
+Medicina, Plaza, Psicologia, Rectoria, Residencias, Soda).
+
+Piezas móviles (puertas, etc.): cada objeto separado del .fbx se importó
+como su propio StaticMesh (combine_meshes=False), tal como se modelaron en
+Blender -- ej. SM_Door_LibraryMain_A.fbx generó
+SM_DoorFrame_LibraryMain_A + SM_DoorLeaf_LibraryMain_A_L +
+SM_DoorLeaf_LibraryMain_A_R como 3 StaticMesh separados.
+
+Colisión: verificado en una muestra de 5 activos variados (armario,
+set de baño, hoja de puerta, autobús, estante) que la malla UCX_ de cada
+uno se importó como colisión convexa propia del StaticMesh (no como un
+mesh visible aparte). Ningún activo quedó con colisión vacía en la
+muestra.
+
+Escala: verificado en la misma muestra que 1 m en Blender = 100 cm en
+Unreal (ej. SM_Wardrobe_Residencias_A: 1.0x0.63x2.0 m en Blender ->
+100.0x63.0x200.0 cm en Unreal).
+
+NO se hizo todavía: crear el nivel L_AssetValidation que pide el
+checklist de v0.3.0_assets, ni una revisión visual dentro del editor
+abierto (esta importación se hizo con el editor en modo headless/
+commandlet, sin abrir la interfaz). Los 2 activos que el usuario modela a
+mano (árboles de la Plaza, pupitre del aula) NO se importaron porque
+todavía no existen como .fbx aprobados.
+
+Activos importados (203), por zona:
+- Artes: 11
+- AuditorioCentral: 5
+- Biblioteca: 35
+- CentroCultural: 5
+- Ciencias: 16
+- Derecho: 8
+- Educacion: 10
+- Exteriores: 3
+- Generales: 13
+- Gimnasio: 11
+- Historia: 7
+- Informatica: 7
+- Ingenieria: 14
+- Mantenimiento: 8
+- Medicina: 11
+- Plaza: 5
+- Psicologia: 8
+- Rectoria: 6
+- Residencias: 16
+- Soda: 4
+
+Lista completa archivo por archivo (nombre .fbx -> ruta(s) de Unreal):
+ver Proyecto-Memory/Tools/Logs/import_report_2026-07-30.txt.
