@@ -2015,8 +2015,9 @@ cambio permanente de la regla.
     activos importados; queda pendiente abrirlo en el editor para la revisión
     visual (checklist v0.3.0).
 [X] Se abrió `L_AssetValidation` en el editor y el propietario confirmó que
-    la muestra se ve correctamente con iluminación y plataforma. Esta es una
-    validación visual de la muestra, no una revisión individual de los 203 FBX.
+    la muestra se ve correctamente con iluminación y plataforma. El mapa ahora
+    presenta una muestra organizada de las 20 zonas; esto no es una revisión
+    individual de los 203 FBX.
 [ ] NO se mergeó `feature/import-modelos3d-assets` a `main` ni a la
     rama de Codex -- queda pendiente de que el usuario decida cuándo.
 [ ] Los árboles de la Plaza y el pupitre del aula (modelado a mano por
