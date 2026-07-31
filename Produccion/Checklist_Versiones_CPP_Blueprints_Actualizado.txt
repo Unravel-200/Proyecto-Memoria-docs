@@ -2011,7 +2011,9 @@ cambio permanente de la regla.
 [X] Se registró el lote completo en
     `Registros/Registro_Activos_Importados.txt` y se actualizó el
     checklist de v0.3.0 (arriba).
-[ ] NO se creó el mapa `L_AssetValidation` (pendiente, checklist v0.3.0).
+[X] Se creó el mapa `L_AssetValidation` por commandlet con una muestra de
+    activos importados; queda pendiente abrirlo en el editor para la revisión
+    visual (checklist v0.3.0).
 [ ] NO se abrió el editor de Unreal con interfaz gráfica para revisión
     visual (todo se hizo headless); falta una pasada visual real dentro
     del editor.
