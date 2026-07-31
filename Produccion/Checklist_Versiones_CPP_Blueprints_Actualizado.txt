@@ -2014,18 +2014,16 @@ cambio permanente de la regla.
 [X] Se creó el mapa `L_AssetValidation` por commandlet con una muestra de
     activos importados; queda pendiente abrirlo en el editor para la revisión
     visual (checklist v0.3.0).
-[ ] NO se abrió el editor de Unreal con interfaz gráfica para revisión
-    visual (todo se hizo headless); falta una pasada visual real dentro
-    del editor.
+[X] Se abrió `L_AssetValidation` en el editor y el propietario confirmó que
+    la muestra se ve correctamente con iluminación y plataforma. Esta es una
+    validación visual de la muestra, no una revisión individual de los 203 FBX.
 [ ] NO se mergeó `feature/import-modelos3d-assets` a `main` ni a la
     rama de Codex -- queda pendiente de que el usuario decida cuándo.
 [ ] Los árboles de la Plaza y el pupitre del aula (modelado a mano por
     el usuario) siguen sin .fbx aprobado, por lo tanto NO se importaron.
 
 PRÓXIMA ACCIÓN:
-Codex (o el usuario) debe revisar `feature/import-modelos3d-assets` con
-el editor abierto antes de fusionarla, crear `L_AssetValidation` y
-confirmar visualmente escala/colisión/materiales de una muestra más
-amplia que los 5 activos verificados por script.
+Ampliar la revisión visual por zonas y confirmar escala, colisión, materiales
+y pivotes de una muestra mayor que los cinco activos iniciales.
 
 FIN DEL DOCUMENTO
